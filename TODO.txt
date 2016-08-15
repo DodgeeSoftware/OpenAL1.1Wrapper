@@ -1,0 +1,56 @@
+~~~~~~~~
+~ TODO ~
+~~~~~~~~
+
+Nothing left, finished
+
+[] DOXYGEN TAGS NEEDED AND DOXYGEN DOCUMENTATION NEEDS TO BE GENERATED
+
+TASKS COMPLETED
+
+14/08/2016 - 15/08/2016
+Final Unit Tests for Wrapper Completion
+[DONE] Sound
+[DONE] Stream
+[DONE] Music
+[DONE] Sound2D
+[DONE] Sound3D
+[DONE] Stream2D
+[DONE] Stream3D
+[DONE] Capture Audio / Recording
+[DONE] Moving the listener around
+[DONE] Implemented mute and volume functons at audiosystem scope
+    although they dont work very robustly (not my fault OpenAL is pretty bad on this one)
+[DONE] Fully implement AudioSystem functions
+    [DONE] Capture System / Recording
+        [DONE] Initialise the Devices for the AudioSystem in audiosystem::init
+        [DONE] Delete the Devices on AudioSystem::shutdown
+[DONE] Implement base functions in the source class
+[DONE] Make all the audio classes only generate a source after a play method is called
+    this will allow us to have better control over how many sources exist
+[DONE] Clean up and document the unit tests [Only one not done yet are the capture related ones]
+[DONE] Need to be able to set the frequency of sounds, streams (and possibly music)
+[DONE] Handle mute for streams, sounds and tracker music
+[DONE] Consider adding a 'Source', object to Utils that classes such as Sound, Sound2d, Sound3D, Music, Stream, Stream2D, Stream3d
+    can use as base class. This would make the wrapper much much more maintainable. At present we repeat the same
+    source related functions over and over again in each of these objects
+[DONE] Positional Sound and Stream functions fully implemented
+    [DONE] Sound2D
+    [DONE] Sound3D
+    [DONE] Stream2D
+    [DONE] Stream3D
+
+05/08/2016 - 13/08/2016
+[DONE] Fully implement Streaming
+[DONE] Fully implement Tracker Music
+[DONE] Handle looping streams, sounds and tracker music
+    [DONE] Music
+    [DONE] Sounds
+    [DONE] Streams
+
+4/08/2016
+    [DONE] Streams now Support Looping
+    [DONE] Sounds Now support looping
+    [DONE] Mute and Unmute for Music  now work
+    [DONE] Looping flag now works for Music
+    [DONE] TODO: Implement and use the OpenALVector2D nad OpenALVector3D classes

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="OpenALWrapper" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Win32">
+				<Option output="OpenALWrapper/OpenALWrapperW32" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="OpenALWrapper" />
+				<Option object_output="./" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="$(#OpenAL.include)" />
+					<Add directory="$(#OGG.include)" />
+					<Add directory="$(#libSndFile.include)" />
+					<Add directory="$(#libxmp.include)" />
+					<Add directory="GameAudio" />
+					<Add directory="GameAudio/Capture" />
+					<Add directory="GameAudio/Music" />
+					<Add directory="GameAudio/Sound" />
+					<Add directory="GameAudio/Stream" />
+					<Add directory="GameAudio/System" />
+					<Add directory="GameAudio/Utils" />
+					<Add directory="GameContent" />
+					<Add directory="GameAudio/Source" />
+				</Compiler>
+				<Linker>
+					<Add library="OpenAL32" />
+					<Add library="libSndFile" />
+					<Add library="xmp_dll" />
+					<Add directory="$(#OpenAL.lib)/Win32" />
+					<Add directory="$(#OGG.lib)" />
+					<Add directory="$(#Vorbis.lib)" />
+					<Add directory="$(#libSndFile.lib)" />
+					<Add directory="$(#libxmp.lib)" />
+				</Linker>
+			</Target>
+			<Target title="Win64">
+				<Option output="OpenALWrapper/OpenALWrapperW64" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="OpenALWrapper" />
+				<Option object_output="./" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="$(#OpenAL.include)" />
+					<Add directory="$(#OGG.include)" />
+					<Add directory="$(#libSndFile.include)" />
+					<Add directory="$(#libxmp.include)" />
+					<Add directory="GameAudio" />
+					<Add directory="GameAudio/Capture" />
+					<Add directory="GameAudio/Music" />
+					<Add directory="GameAudio/Sound" />
+					<Add directory="GameAudio/Stream" />
+					<Add directory="GameAudio/System" />
+					<Add directory="GameAudio/Utils" />
+					<Add directory="GameContent" />
+					<Add directory="GameAudio/Source" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="OpenAL32" />
+					<Add library="libSndFile" />
+					<Add library="xmp_dll" />
+					<Add directory="$(#OpenAL.lib)/Win64" />
+					<Add directory="$(#OGG.lib)" />
+					<Add directory="$(#Vorbis.lib)" />
+					<Add directory="$(#libSndFile.lib)" />
+					<Add directory="$(#libxmp.lib)" />
+				</Linker>
+			</Target>
+			<Target title="Mac">
+				<Option output="OpenALWrapper/OpenALWrapperMac" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add directory="$(#OpenAL.include)" />
+					<Add directory="$(#OGG.include)" />
+					<Add directory="$(#libSndFile.include)" />
+					<Add directory="$(#libxmp.include)" />
+					<Add directory="GameAudio" />
+					<Add directory="GameAudio/Capture" />
+					<Add directory="GameAudio/Music" />
+					<Add directory="GameAudio/Sound" />
+					<Add directory="GameAudio/Stream" />
+					<Add directory="GameAudio/System" />
+					<Add directory="GameAudio/Utils" />
+					<Add directory="GameContent" />
+					<Add directory="GameAudio/Source" />
+				</Compiler>
+				<Linker>
+					<Add library="OpenAL32" />
+					<Add library="libSndFile" />
+					<Add library="xmp_so" />
+					<Add directory="$(#OpenAL.lib)/Mac" />
+					<Add directory="$(#OGG.lib)" />
+					<Add directory="$(#Vorbis.lib)" />
+					<Add directory="$(#libSndFile.lib)" />
+					<Add directory="$(#libxmp.lib)" />
+				</Linker>
+			</Target>
+			<Target title="Linux">
+				<Option output="./OpenALWrapperLinux" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add directory="$(#OpenAL.include)" />
+					<Add directory="$(#OGG.include)" />
+					<Add directory="$(#libSndFile.include)" />
+					<Add directory="$(#libxmp.include)" />
+					<Add directory="GameAudio" />
+					<Add directory="GameAudio/Capture" />
+					<Add directory="GameAudio/Music" />
+					<Add directory="GameAudio/Sound" />
+					<Add directory="GameAudio/Stream" />
+					<Add directory="GameAudio/System" />
+					<Add directory="GameAudio/Utils" />
+					<Add directory="GameContent" />
+					<Add directory="GameAudio/Source" />
+				</Compiler>
+				<Linker>
+					<Add library="OpenAL32" />
+					<Add library="libSndFile" />
+					<Add library="xmp_so" />
+					<Add directory="$(#OpenAL.lib)/Linux" />
+					<Add directory="$(#OGG.lib)" />
+					<Add directory="$(#Vorbis.lib)" />
+					<Add directory="$(#libSndFile.lib)" />
+					<Add directory="$(#libxmp.lib)" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="GameAudio/Capture/CaptureDevice.cpp" />
+		<Unit filename="GameAudio/Capture/CaptureDevice.h" />
+		<Unit filename="GameAudio/GameAudio.h">
+			<Option target="Win32" />
+			<Option target="Win64" />
+		</Unit>
+		<Unit filename="GameAudio/Music/Music.cpp" />
+		<Unit filename="GameAudio/Music/Music.h" />
+		<Unit filename="GameAudio/NOTES.txt" />
+		<Unit filename="GameAudio/OpenALGlobals.cpp" />
+		<Unit filename="GameAudio/OpenALGlobals.h" />
+		<Unit filename="GameAudio/Sound/Sound.cpp" />
+		<Unit filename="GameAudio/Sound/Sound.h" />
+		<Unit filename="GameAudio/Sound/Sound2D.cpp" />
+		<Unit filename="GameAudio/Sound/Sound2D.h" />
+		<Unit filename="GameAudio/Sound/Sound3D.cpp" />
+		<Unit filename="GameAudio/Sound/Sound3D.h" />
+		<Unit filename="GameAudio/Sound/SoundBuffer.h" />
+		<Unit filename="GameAudio/Source/Source.cpp" />
+		<Unit filename="GameAudio/Source/Source.h" />
+		<Unit filename="GameAudio/Stream/Stream.cpp" />
+		<Unit filename="GameAudio/Stream/Stream.h" />
+		<Unit filename="GameAudio/Stream/Stream2D.cpp" />
+		<Unit filename="GameAudio/Stream/Stream2D.h" />
+		<Unit filename="GameAudio/Stream/Stream3D.cpp" />
+		<Unit filename="GameAudio/Stream/Stream3D.h" />
+		<Unit filename="GameAudio/System/AudioSystem.cpp">
+			<Option target="Win32" />
+			<Option target="Win64" />
+		</Unit>
+		<Unit filename="GameAudio/System/AudioSystem.h">
+			<Option target="Win32" />
+			<Option target="Win64" />
+		</Unit>
+		<Unit filename="GameAudio/Utils/LibSNDFileUtils.h" />
+		<Unit filename="GameAudio/Utils/LibXMPUtils.h" />
+		<Unit filename="GameAudio/Utils/OpenALUtils.h" />
+		<Unit filename="GameAudio/Utils/OpenALVector2D.h" />
+		<Unit filename="GameAudio/Utils/OpenALVector3D.h" />
+		<Unit filename="GameContent/AudioManager.cpp" />
+		<Unit filename="GameContent/AudioManager.h" />
+		<Unit filename="LICENCE.txt" />
+		<Unit filename="OpenALWrapper/media/music/placeholder.txt" />
+		<Unit filename="OpenALWrapper/media/placeholder.txt">
+			<Option target="Win32" />
+			<Option target="Win64" />
+		</Unit>
+		<Unit filename="OpenALWrapper/media/sounds/placeholder.txt" />
+		<Unit filename="README.txt" />
+		<Unit filename="TODO.txt" />
+		<Unit filename="main.cpp">
+			<Option target="Win32" />
+			<Option target="Win64" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
