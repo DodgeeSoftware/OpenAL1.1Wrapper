@@ -29,6 +29,8 @@ void Sound3D::play()
     this->setRollOff(this->rollOff);
     // Set Reference Distance
     this->setReferenceDistance(this->referenceDistance);
+    // Set Max Distance
+    this->setMaxDistance(this->maxDistance);
 }
 
 void Sound3D::start()
@@ -42,9 +44,8 @@ void Sound3D::stop()
     // Validate the Source
     if (alIsSource(this->source) == AL_FALSE)
         return;
-    /* Make the source NOT relative to the position, velocity,
-        cone and direction relative to the listener */
-    alSourcei(this->source, AL_SOURCE_RELATIVE, AL_TRUE);
+    // Make sure co-ordinates are seen in world coords and not relative to the listner
+    alSourcei(this->source, AL_SOURCE_RELATIVE, AL_FALSE);
     // Stop the Sound
     Sound::stop();
 }

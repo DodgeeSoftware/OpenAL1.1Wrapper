@@ -71,14 +71,14 @@ int main(int argc, char* argv[])
     //// Run Stream Unit Test
     //streamUnitTest();
 
-    //// Run Stream2D Unit Test
-    //stream2DUnitTest(); // TODO: Not working yet fix it
+    // Run Stream2D Unit Test
+    stream2DUnitTest(); // TODO: Not working yet fix it
 
     //// Run Stream3D Unit Test
     //stream3DUnitTest(); // TODO: Not working yet fix it
 
-    // Run Music Unit Test
-    musicUnitTest();
+    //// Run Music Unit Test
+    //musicUnitTest();
 
     //// Run Capture Test
     //captureTest();
@@ -87,6 +87,7 @@ int main(int argc, char* argv[])
     audioSystem.shutdown();
 
     // Send a message to the console
+    std::cout << std::endl;
     std::cout << "NOTICE: Shutdown AudioSystem" << std::endl;
 
     // return
@@ -353,8 +354,8 @@ void stream2DUnitTest()
     //stream2D.setMaxDistance(100);
     // unit test variable to control sound movement
     float theta = 0.0f;
-    // Set Sound Volume
-    audioSystem.setSoundVolume(1.0f);
+    //// Set Sound Volume
+    //audioSystem.setSoundVolume(1.0f);
     // Psuedo Main Loop
     while (true)
     {
