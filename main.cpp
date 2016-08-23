@@ -10,6 +10,7 @@
 #include <cstdio>
 #include <conio.h>
 #include <vector>
+#include <limits>
 
 // GAMEAUDIO Includes
 #include "GameAudio.h"
@@ -67,17 +68,17 @@ int main(int argc, char* argv[])
     //// Run Sound3D Unit Test
     //sound3DUnitTest();
 
-    // Run Stream Unit Test
-    streamUnitTest();
+    //// Run Stream Unit Test
+    //streamUnitTest();
 
     //// Run Stream2D Unit Test
-    //stream2DUnitTest();
+    //stream2DUnitTest(); // TODO: Not working yet fix it
 
     //// Run Stream3D Unit Test
-    //stream3DUnitTest();
+    //stream3DUnitTest(); // TODO: Not working yet fix it
 
-    //// Run Music Unit Test
-    //musicUnitTest();
+    // Run Music Unit Test
+    musicUnitTest();
 
     //// Run Capture Test
     //captureTest();
@@ -144,7 +145,7 @@ void sound2DUnitTest()
     std::cout << "PERFORMING SOUND2D UNIT TEST" << std::endl;
     std::cout << std::endl;
     std::cout << "Loading Sound...";
-    SoundBuffer* pSoundBuffer = audioManager.getSoundBuffer("media/sounds/bensound-betterdays.ogg");
+    SoundBuffer* pSoundBuffer = audioManager.getSoundBuffer("media/sounds/positionalSound.wav");
     if (pSoundBuffer == 0)
     {
         // Send a message to the console
@@ -162,13 +163,31 @@ void sound2DUnitTest()
     sound2D.setLooping(true);
     // Set Spacial Position
     sound2D.setPosition(100.0f, 0.0f);
+    // Set Min Volume
+    sound2D.setMinVolume(0.0f);
+    // Set Max Volume
+    sound2D.setMaxVolume(1.0f);
     // Play the Sound2D
     sound2D.play();
+    // Set reference distance
+    sound2D.setReferenceDistance(1);
+    // Set Roll off
+    sound2D.setRollOff(50.0f);
+    // Set Max Distance
+    //sound2D.setMaxDistance(100);
     // Set the Position of the listener
     audioSystem.setListenerPosition(0.0f, 0.0f);
+    // unit test variable to control sound movement
+    float theta = 0.0f;
     // Psuedo Main Loop
     while (true)
     {
+        // Interpolate theta
+        theta = theta + 0.00005f;
+        // Set the Sound's position
+        sound2D.setPosition(cos(theta) * 100, 0.0f);
+        // Send a message to the console
+        std::cout << cos(theta) * 100 << std::endl;
         // Update the Sound2D
         sound2D.update(1.0f / 60.0f);
         // When Sound2D is finished (impossible when looping)
@@ -194,7 +213,7 @@ void sound3DUnitTest()
     std::cout << "PERFORMING SOUND3D UNIT TEST" << std::endl;
     std::cout << std::endl;
     std::cout << "Loading Sound...";
-    SoundBuffer* pSoundBuffer = audioManager.getSoundBuffer("media/sounds/bensound-betterdays.ogg");
+    SoundBuffer* pSoundBuffer = audioManager.getSoundBuffer("media/sounds/positionalSound.wav");
     if (pSoundBuffer == 0)
     {
         // Send a message to the console
@@ -212,13 +231,31 @@ void sound3DUnitTest()
     sound3D.setLooping(true);
     // Set Spacial Position
     sound3D.setPosition(100.0f, 0.0f, 0.0f);
+    // Set Min Volume
+    sound3D.setMinVolume(0.0f);
+    // Set Max Volume
+    sound3D.setMaxVolume(1.0f);
     // Play the Sound3D
     sound3D.play();
-    // Set hte Listener Positoin
+    // Set the Listener Positoin
     audioSystem.setListenerPosition(0.0f, 0.0f);
+    // Set reference distance
+    sound3D.setReferenceDistance(1);
+    // Set Roll off
+    sound3D.setRollOff(50.0f);
+    // Set Max Distance
+    //sound2D.setMaxDistance(100);
+    // unit test variable to control sound movement
+    float theta = 0.0f;
     // Psuedo Main Loop
     while (true)
     {
+        // Interpolate theta
+        theta = theta + 0.00005f;
+        // Set the Sound's position
+        sound3D.setPosition(cos(theta) * 100.0f, 0.0f, sin(theta) * 100.0f);
+        // Send a message to the console
+        std::cout << cos(theta) * 100.0f << ", 0.0f, " << sin(theta) * 100.0f << std::endl;
         // Update the Sound3D
         sound3D.update(1.0f / 60.0f);
         // When Sound3D is finished (impossible when looping)
@@ -289,7 +326,7 @@ void stream2DUnitTest()
     // Make a Stream2D
     Stream2D stream2D;
     // Try and load our stream
-    if (stream2D.load("media/sounds/bensound-betterdays.ogg") == false)
+    if (stream2D.load("media/sounds/positionalSound.wav") == false)
     {
         // Send a message to the console
         std::cout << "ERROR: Failed to load file" << std::endl;
@@ -298,15 +335,35 @@ void stream2DUnitTest()
     }
     // Set Looping
     stream2D.setLooping(true);
+    // Set Spacial Position
+    stream2D.setPosition(100.0f, 0.0f);
+    // Set Min Volume
+    stream2D.setMinVolume(0.0f);
+    // Set Max Volume
+    stream2D.setMaxVolume(1.0f);
     // Play Stream2D
     stream2D.play();
     // Set the Listener position
     audioSystem.setListenerPosition(0.0f, 0.0f);
+    // Set reference distance
+    stream2D.setReferenceDistance(1);
+    // Set Roll off
+    stream2D.setRollOff(50.0f);
+    // Set Max Distance
+    //stream2D.setMaxDistance(100);
+    // unit test variable to control sound movement
+    float theta = 0.0f;
     // Set Sound Volume
     audioSystem.setSoundVolume(1.0f);
     // Psuedo Main Loop
     while (true)
     {
+        // Interpolate theta
+        theta = theta + 0.00005f;
+        // Set the Sound's position
+        stream2D.setPosition(cos(theta) * 100.0f, 0.0f);
+        // Send a message to the console
+        std::cout << cos(theta) * 100.0f << std::endl;
         // Update Stream2D
         stream2D.update(1.0f / 60.0f);
         // When Stream is finished (impossible when looping)
@@ -333,7 +390,7 @@ void stream3DUnitTest()
     std::cout << std::endl;
     // Make a Stream3D
     Stream3D stream3D;
-    if (stream3D.load("media/sounds/bensound-betterdays.ogg") == false)
+    if (stream3D.load("media/sounds/positionalSound.wav") == false)
     {
         // Send a message to the console
         std::cout << "ERROR: Failed to load file" << std::endl;
@@ -342,15 +399,35 @@ void stream3DUnitTest()
     }
     // Set Looping
     stream3D.setLooping(true);
+    // Set Spacial Position
+    stream3D.setPosition(0.0f, 0.0f, 0.0f);
+    // Set Min Volume
+    stream3D.setMinVolume(0.0f);
+    // Set Max Volume
+    stream3D.setMaxVolume(1.0f);
     // Play the Stream3D
     stream3D.play();
     // Set the Listener position
     audioSystem.setListenerPosition(0.0f, 0.0f);
+    // Set reference distance
+    stream3D.setReferenceDistance(1);
+    // Set Roll off
+    stream3D.setRollOff(50.0f);
+    // Set Max Distance
+    //stream3D.setMaxDistance(100);
+    // unit test variable to control sound movement
+    float theta = 0.0f;
     // Set Sound Volume
     audioSystem.setSoundVolume(1.0f);
     // Psuedo Main Loop
     while (true)
     {
+        // Interpolate theta
+        theta = theta + 0.00005f;
+        // Set the Sound's position
+        stream3D.setPosition(cos(theta) * 100.0f, 0.0f, sin(theta) * 100.0f);
+        // Send a message to the console
+        std::cout << cos(theta) * 100.0f << ", 0.0f, " << sin(theta) * 100.0f << std::endl;
         // Update our Stream3D
         stream3D.update(1.0f / 60.0f);
         // When Stream3D is finished (impossible when looping)

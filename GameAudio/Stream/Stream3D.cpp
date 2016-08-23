@@ -7,9 +7,8 @@ void Stream3D::play()
     // Validate the Source
     if (alIsSource(this->source) == AL_FALSE)
         return;
-    /* Make the source relative to the position, velocity,
-        cone and direction relative to the listener */
-    alSourcei(this->source, AL_SOURCE_RELATIVE, AL_TRUE);
+    // Make sure co-ordinates are seen in world coords and not relative to the listner
+    alSourcei(this->source, AL_SOURCE_RELATIVE, AL_FALSE);
     // Set MinVolume
     this->setMinVolume(this->minVolume);
     // Set MaxVolume
@@ -316,6 +315,23 @@ void Stream3D::setReferenceDistance(float referenceDistance)
         return;
     // Set the Reference Distance
     alSourcef(this->source, AL_REFERENCE_DISTANCE, this->referenceDistance);
+}
+
+float Stream3D::getMaxDistance()
+{
+    // return max distance
+    return this->maxDistance;
+}
+
+void Stream3D::setMaxDistance(float maxDistance)
+{
+    // Set local maxDistance
+    this->maxDistance = maxDistance;
+    // Validate the Source
+    if (alIsSource(this->source) == AL_FALSE)
+        return;
+    // Set the Reference Distance
+    alSourcef(this->source, AL_MAX_DISTANCE, this->maxDistance);
 }
 
 float Stream3D::getMinVolume()

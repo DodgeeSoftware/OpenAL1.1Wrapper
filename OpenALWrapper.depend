@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1471272023 source:c:\myprograms\openalwrapper\gameaudio\system\audiosystem.cpp
+1471920881 source:c:\myprograms\openalwrapper\gameaudio\system\audiosystem.cpp
 	"AudioSystem.h"
 
 1471274902 c:\myprograms\openalwrapper\gameaudio\system\audiosystem.h
@@ -19,11 +19,12 @@
 
 1176444168 c:\mingw-4.8.1\libraries\openal\include\alc.h
 
-1471918564 source:c:\myprograms\openalwrapper\main.cpp
+1471926006 source:c:\myprograms\openalwrapper\main.cpp
 	<iostream>
 	<cstdio>
 	<conio.h>
 	<vector>
+	<limits>
 	"GameAudio.h"
 	"AudioManager.h"
 	<xmp.h>
@@ -84,7 +85,8 @@
 	<al.h>
 	<alc.h>
 
-1471274867 c:\myprograms\openalwrapper\gameaudio\sound\sound2d.h
+1471922466 c:\myprograms\openalwrapper\gameaudio\sound\sound2d.h
+	<limits>
 	<al.h>
 	<alc.h>
 	"Utils/OpenALUtils.h"
@@ -93,7 +95,8 @@
 	"Source/Source.h"
 	"Sound/Sound.h"
 
-1471274871 c:\myprograms\openalwrapper\gameaudio\sound\sound3d.h
+1471922457 c:\myprograms\openalwrapper\gameaudio\sound\sound3d.h
+	<limits>
 	<al.h>
 	<alc.h>
 	"Utils/OpenALUtils.h"
@@ -102,10 +105,10 @@
 	"Source/Source.h"
 	"Sound/Sound.h"
 
-1471256134 source:c:\myprograms\openalwrapper\gameaudio\sound\sound2d.cpp
+1471923196 source:c:\myprograms\openalwrapper\gameaudio\sound\sound2d.cpp
 	"Sound2D.h"
 
-1471250956 source:c:\myprograms\openalwrapper\gameaudio\sound\sound3d.cpp
+1471923201 source:c:\myprograms\openalwrapper\gameaudio\sound\sound3d.cpp
 	"Sound3D.h"
 
 1471918770 c:\myprograms\openalwrapper\gameaudio\stream\stream.h
@@ -119,9 +122,10 @@
 	"Utils/OpenALVector3D.h"
 	"Source/Source.h"
 
-1471274890 c:\myprograms\openalwrapper\gameaudio\stream\stream2d.h
+1471922440 c:\myprograms\openalwrapper\gameaudio\stream\stream2d.h
 	<iostream>
 	<vector>
+	<limits>
 	<sndfile.hh>
 	<al.h>
 	<alc.h>
@@ -129,9 +133,10 @@
 	"Utils/OpenALVector2D.h"
 	"Stream/Stream.h"
 
-1471274894 c:\myprograms\openalwrapper\gameaudio\stream\stream3d.h
+1471922401 c:\myprograms\openalwrapper\gameaudio\stream\stream3d.h
 	<iostream>
 	<vector>
+	<limits>
 	<sndfile.hh>
 	<al.h>
 	<alc.h>
@@ -139,13 +144,13 @@
 	"Utils/OpenALVector3D.h"
 	"Stream/Stream.h"
 
-1471272941 source:c:\myprograms\openalwrapper\gameaudio\stream\stream.cpp
+1471918806 source:c:\myprograms\openalwrapper\gameaudio\stream\stream.cpp
 	"Stream.h"
 
-1471257698 source:c:\myprograms\openalwrapper\gameaudio\stream\stream2d.cpp
+1471923208 source:c:\myprograms\openalwrapper\gameaudio\stream\stream2d.cpp
 	"Stream2D.h"
 
-1471257811 source:c:\myprograms\openalwrapper\gameaudio\stream\stream3d.cpp
+1471923213 source:c:\myprograms\openalwrapper\gameaudio\stream\stream3d.cpp
 	"Stream3D.h"
 
 1471274874 c:\myprograms\openalwrapper\gameaudio\sound\soundbuffer.h

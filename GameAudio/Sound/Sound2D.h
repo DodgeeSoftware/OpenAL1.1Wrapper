@@ -8,6 +8,9 @@
 #ifndef SOUND2D_H
 #define SOUND2D_H
 
+// C++ Includes
+#include <limits>
+
 // OPENAL Includes
 #include <al.h>
 #include <alc.h>
@@ -61,6 +64,7 @@ class Sound2D : public Sound
             // Attenuation
             this->rollOff = 1.0f;
             this->referenceDistance = 1.0f;
+            this->maxDistance = std::numeric_limits<float>::max();
         }
         //! Destructor
         virtual ~Sound2D() {}
@@ -177,12 +181,18 @@ class Sound2D : public Sound
         virtual float getReferenceDistance();
         //! Set Reference Distances
         virtual void setReferenceDistance(float referenceDistance);
+        //! Get Max Distance
+        virtual float getMaxDistance();
+        //! Set Max Distance
+        virtual void setMaxDistance(float maxDistance);
 
     protected:
         // RollOff
         float rollOff;
         // Reference Distance
         float referenceDistance;
+        // Max Distance
+        float maxDistance;
 
     // **********************
     // * MIN AND MAX VOLUME *

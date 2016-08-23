@@ -299,13 +299,13 @@ float AudioSystem::getListenerZ()
 void AudioSystem::setListenerPosition(float x, float y)
 {
     // Set the Listener Position
-    alListener3f(AL_ORIENTATION, x, y, 0.0f);
+    alListener3f(AL_POSITION, x, y, 0.0f);
 }
 
 void AudioSystem::setListenerPosition(float x, float y, float z)
 {
     // Set the Listener Position
-    alListener3f(AL_ORIENTATION, x, y, z);
+    alListener3f(AL_POSITION, x, y, z);
 }
 
 void AudioSystem::setListenerDirection(float xDirection, float yDirection, float zDirection, float xUp, float yUp, float zUp)

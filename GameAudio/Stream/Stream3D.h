@@ -11,6 +11,7 @@
 // C++ Includes
 #include <iostream>
 #include <vector>
+#include <limits>
 
 // libSndFile Includes
 #include <sndfile.hh>
@@ -57,6 +58,7 @@ class Stream3D : public Stream
             // Attenuation
             this->rollOff = 1.0f;
             this->referenceDistance = 1.0f;
+            this->maxDistance = std::numeric_limits<float>::max();
         }
         //! Destructor
         virtual ~Stream3D() {}
@@ -183,12 +185,18 @@ class Stream3D : public Stream
         virtual float getReferenceDistances();
         //! Set Reference Distances
         virtual void setReferenceDistance(float referenceDistance);
+        //! Get Max Distance
+        virtual float getMaxDistance();
+        //! Set Max Distance
+        virtual void setMaxDistance(float maxDistance);
 
     protected:
         // RollOff
         float rollOff;
         // Reference Distance
         float referenceDistance;
+        // Max Distance
+        float maxDistance;
 
     // **********************
     // * MIN AND MAX VOLUME *

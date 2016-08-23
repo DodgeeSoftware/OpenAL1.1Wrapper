@@ -8,6 +8,9 @@
 #ifndef SOUND3D_H
 #define SOUND3D_H
 
+// C++ Includes
+#include <limits>
+
 // OPENAL Includes
 #include <al.h>
 #include <alc.h>
@@ -64,6 +67,7 @@ class Sound3D : public Sound
             // Attenuation
             this->rollOff = 1.0f;
             this->referenceDistance = 1.0f;
+            this->maxDistance = std::numeric_limits<float>::max();
         }
         //! Destructor
         virtual ~Sound3D() {}
@@ -182,16 +186,24 @@ class Sound3D : public Sound
     // * ATTENUATION *
     // ***************
     public:
+        //! Get RollOff
+        virtual float getRollOff();
         //! Set RollOff
         virtual void setRollOff(float rollOff);
         //! Set Reference Distances
         virtual void setReferenceDistance(float referenceDistance);
+        //! Get Max Distance
+        virtual float getMaxDistance();
+        //! Set Max Distance
+        virtual void setMaxDistance(float maxDistance);
 
     protected:
         // RollOff
         float rollOff;
         // Reference Distance
         float referenceDistance;
+        // Max Distance
+        float maxDistance;
 
     // **********************
     // * MIN AND MAX VOLUME *

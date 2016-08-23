@@ -7,9 +7,8 @@ void Sound3D::play()
     // Validate the Source
     if (alIsSource(this->source) == AL_FALSE)
         return;
-    /* Make the source relative to the position, velocity,
-        cone and direction relative to the listener */
-    alSourcei(this->source, AL_SOURCE_RELATIVE, AL_TRUE);
+    // Make sure co-ordinates are seen in world coords and not relative to the listner
+    alSourcei(this->source, AL_SOURCE_RELATIVE, AL_FALSE);
     // Set MinVolume
     this->setMinVolume(this->minVolume);
     // Set MaxVolume
@@ -322,6 +321,11 @@ void Sound3D::setOuterConeGain(float gain)
     alSourcef(this->source, AL_CONE_OUTER_GAIN, this->outerConeGain);
 }
 
+float Sound3D::getRollOff()
+{
+    return this->rollOff;
+}
+
 void Sound3D::setRollOff(float rollOff)
 {
     // Set RollOff
@@ -342,6 +346,23 @@ void Sound3D::setReferenceDistance(float referenceDistance)
         return;
     // Set the Reference Distance
     alSourcef(this->source, AL_REFERENCE_DISTANCE, this->referenceDistance);
+}
+
+float Sound3D::getMaxDistance()
+{
+    // Return max distance
+    return this->maxDistance;
+}
+
+void Sound3D::setMaxDistance(float maxDistance)
+{
+    // Set local maxDistance
+    this->maxDistance = maxDistance;
+    // Validate the Source
+    if (alIsSource(this->source) == AL_FALSE)
+        return;
+    // Set the Reference Distance
+    alSourcef(this->source, AL_MAX_DISTANCE, this->maxDistance);
 }
 
 float Sound3D::getMinVolume()
