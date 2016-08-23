@@ -50,6 +50,7 @@ int main(int argc, char* argv[])
     // Send a message to the console
     std::cout << "NOTICE: Init AudioSystem" << std::endl;
     std::cout << std::endl;
+
     // Initialise the AudioSystem
     if (audioSystem.init() == false)
     {
@@ -66,8 +67,8 @@ int main(int argc, char* argv[])
     //// Run Sound3D Unit Test
     //sound3DUnitTest();
 
-    //// Run Stream Unit Test
-    //streamUnitTest();
+    // Run Stream Unit Test
+    streamUnitTest();
 
     //// Run Stream2D Unit Test
     //stream2DUnitTest();
@@ -75,8 +76,8 @@ int main(int argc, char* argv[])
     //// Run Stream3D Unit Test
     //stream3DUnitTest();
 
-    // Run Music Unit Test
-    musicUnitTest();
+    //// Run Music Unit Test
+    //musicUnitTest();
 
     //// Run Capture Test
     //captureTest();
@@ -86,6 +87,7 @@ int main(int argc, char* argv[])
 
     // Send a message to the console
     std::cout << "NOTICE: Shutdown AudioSystem" << std::endl;
+
     // return
     return 0;
 }
@@ -244,7 +246,7 @@ void streamUnitTest()
     // Make a Stream
     Stream stream;
     // Load a stream
-    if (stream.load("media/sounds/bensound-betterdays.ogg") == false)
+    if (stream.load("media/sounds/bensound-jazzyfrenchy.ogg") == false)
     {
         // Send a message to the console
         std::cout << "ERROR: Unable to open file" << std::endl;
@@ -378,7 +380,8 @@ void musicUnitTest()
     // Set Looping
     music.setLooping(false);
     // Try and Load the Music
-    if (music.load("media/music/ShortLoop.xm") == false)
+    //if (music.load("media/music/ShortLoop.xm") == false)
+    if (music.load("media/music/Level5.mod") == false)
     {
         // Send a message to the console
         std::cout << "ERROR: Failed to load file" << std::endl;

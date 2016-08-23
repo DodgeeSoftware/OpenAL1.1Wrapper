@@ -19,7 +19,7 @@
 
 1176444168 c:\mingw-4.8.1\libraries\openal\include\alc.h
 
-1471272479 source:c:\myprograms\openalwrapper\main.cpp
+1471918564 source:c:\myprograms\openalwrapper\main.cpp
 	<iostream>
 	<cstdio>
 	<conio.h>
@@ -28,7 +28,7 @@
 	"AudioManager.h"
 	<xmp.h>
 
-1471257604 c:\myprograms\openalwrapper\gameaudio\gameaudio.h
+1471274964 c:\myprograms\openalwrapper\gameaudio\gameaudio.h
 	"OpenALGlobals.h"
 	"OpenALUtils.h"
 	"LibSNDFileUtils.h"
@@ -108,7 +108,7 @@
 1471250956 source:c:\myprograms\openalwrapper\gameaudio\sound\sound3d.cpp
 	"Sound3D.h"
 
-1471274887 c:\myprograms\openalwrapper\gameaudio\stream\stream.h
+1471918770 c:\myprograms\openalwrapper\gameaudio\stream\stream.h
 	<iostream>
 	<vector>
 	<sndfile.hh>
@@ -217,7 +217,7 @@
 1471274912 c:\myprograms\openalwrapper\gameaudio\utils\libxmputils.h
 	<xmp.h>
 
-1470307362 c:\myprograms\openalwrapper\gameaudio\utils\libsndfileutils.h
+1471274908 c:\myprograms\openalwrapper\gameaudio\utils\libsndfileutils.h
 	<sndfile.hh>
 
 1471274882 c:\myprograms\openalwrapper\gameaudio\source\source.h

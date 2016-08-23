@@ -93,11 +93,27 @@ class Stream : public Source
         // Buffers
         ALuint buffer[6]; // NUM_BUFFERS
 
+    // ***********
+    // * LOOPING *
+    // ***********
+    /* NOTE: we override the default loop functions here
+        because a streaming source cannot loop, we handle
+        looping when a stream comes to an end we stop/play
+        it again */
+    public:
+        //! Is Looping
+        virtual bool isLooping();
+        //! Set Loop Mode
+        virtual void setLooping(bool mode);
+
+    protected:
+        // methods and members
+
     // ************
     // * CHANNELS *
     // ************
     public:
-        //! Get Chanels
+        //! Get Channels
         virtual int getChannels();
 
     protected:

@@ -73,8 +73,8 @@ void Stream::play()
     this->setVolume(this->volume);
     // Set Mute
     this->setMute(this->muteFlag);
-    // Set Looping
-    this->setLooping(this->loopFlag);
+//    // Set Looping
+//    this->setLooping(this->loopFlag);
     // Set Pitch
     this->setPitch(this->pitch);
 }
@@ -230,6 +230,23 @@ bool Stream::stream(int buffer)
     }
     // Unable to grab any more data
     return false;
+}
+
+bool Stream::isLooping()
+{
+    //return flag;
+    return this->loopFlag;
+    /* NOTE: we could have used
+        alGetSource(this->source, AL_LOOPING, &flag);
+        but that would have been a very poor design choice */
+}
+
+void Stream::setLooping(bool mode)
+{
+    /* NOTE:  Queries to AL_BUFFERS_PROCESSED will always
+        return false if our source is set to looping
+        thus here we keep a local lopp flag */
+    this->loopFlag = mode;
 }
 
 int Stream::getChannels()
