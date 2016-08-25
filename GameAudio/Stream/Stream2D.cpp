@@ -72,6 +72,7 @@ void Stream2D::clear()
     // Attenuation
     this->rollOff = 1.0f;
     this->referenceDistance = 1.0f;
+    this->maxDistance = std::numeric_limits<float>::max();
     // Validate the Source
     if (alIsSource(this->source) == AL_TRUE)
     {
@@ -104,6 +105,7 @@ void Stream2D::free()
     // Attenuation
     this->rollOff = 1.0f;
     this->referenceDistance = 1.0f;
+    this->maxDistance = std::numeric_limits<float>::max();
     // Validate the Source
     if (alIsSource(this->source) == AL_TRUE)
     {

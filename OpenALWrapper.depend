@@ -19,7 +19,7 @@
 
 1176444168 c:\mingw-4.8.1\libraries\openal\include\alc.h
 
-1471952293 source:c:\myprograms\openalwrapper\main.cpp
+1472101718 source:c:\myprograms\openalwrapper\main.cpp
 	<iostream>
 	<cstdio>
 	<conio.h>
@@ -105,10 +105,10 @@
 	"Source/Source.h"
 	"Sound/Sound.h"
 
-1471951438 source:c:\myprograms\openalwrapper\gameaudio\sound\sound2d.cpp
+1472101952 source:c:\myprograms\openalwrapper\gameaudio\sound\sound2d.cpp
 	"Sound2D.h"
 
-1471951981 source:c:\myprograms\openalwrapper\gameaudio\sound\sound3d.cpp
+1472101952 source:c:\myprograms\openalwrapper\gameaudio\sound\sound3d.cpp
 	"Sound3D.h"
 
 1471918770 c:\myprograms\openalwrapper\gameaudio\stream\stream.h
@@ -144,13 +144,13 @@
 	"Utils/OpenALVector3D.h"
 	"Stream/Stream.h"
 
-1471918806 source:c:\myprograms\openalwrapper\gameaudio\stream\stream.cpp
+1472101043 source:c:\myprograms\openalwrapper\gameaudio\stream\stream.cpp
 	"Stream.h"
 
-1471952526 source:c:\myprograms\openalwrapper\gameaudio\stream\stream2d.cpp
+1472101952 source:c:\myprograms\openalwrapper\gameaudio\stream\stream2d.cpp
 	"Stream2D.h"
 
-1471952536 source:c:\myprograms\openalwrapper\gameaudio\stream\stream3d.cpp
+1472101952 source:c:\myprograms\openalwrapper\gameaudio\stream\stream3d.cpp
 	"Stream3D.h"
 
 1471274874 c:\myprograms\openalwrapper\gameaudio\sound\soundbuffer.h

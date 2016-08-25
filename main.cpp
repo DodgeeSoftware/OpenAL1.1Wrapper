@@ -71,10 +71,10 @@ int main(int argc, char* argv[])
     //// Run Stream Unit Test
     //streamUnitTest();
 
-    // Run Stream2D Unit Test
-    stream2DUnitTest(); // TODO: Not working yet fix it
+    //// Run Stream2D Unit Test
+    //stream2DUnitTest(); // TODO: Not working yet fix it
 
-    //// Run Stream3D Unit Test
+    // Run Stream3D Unit Test
     //stream3DUnitTest(); // TODO: Not working yet fix it
 
     //// Run Music Unit Test
@@ -364,7 +364,7 @@ void stream2DUnitTest()
         // Set the Sound's position
         stream2D.setPosition(cos(theta) * 100.0f, 0.0f);
         // Send a message to the console
-        std::cout << cos(theta) * 100.0f << std::endl;
+        //std::cout << cos(theta) * 100.0f << std::endl;
         // Update Stream2D
         stream2D.update(1.0f / 60.0f);
         // When Stream is finished (impossible when looping)

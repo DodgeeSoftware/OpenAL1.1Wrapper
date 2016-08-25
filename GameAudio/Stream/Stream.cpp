@@ -48,12 +48,14 @@ void Stream::play()
     // Validate the Source
     if (alIsSource(this->source) == AL_FALSE)
         return;
-    // Make Buffer 0
+    // Make Buffers
     alGenBuffers(6, &(this->buffer[0]));  // NUM_BUFFERS
     // Queue our first few buffers
     for (int i = 0; i < 6; i++) // NUM_BUFFERS
     {
+        // Stream some file data into the buffers
         this->stream(this->buffer[i]);
+        // Queue the buffers intot hte source
         alSourceQueueBuffers(this->source, 1, &(this->buffer[i]));
     }
     /* NOTE: Make sure the source isn't looping
