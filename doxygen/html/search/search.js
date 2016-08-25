@@ -10,7 +10,7 @@ var indexSectionsWithContent =
   0: "acdefgilmnoprstu~",
   1: "acmos",
   2: "ou",
-  3: "a",
+  3: "acglmos",
   4: "acdefgilmnoprstu~",
   5: "g"
 };

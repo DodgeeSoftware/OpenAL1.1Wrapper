@@ -1,49 +1,81 @@
-C:/myPrograms/OpenALWrapper/GameAudio/Sound/SoundBuffer.h:29: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameContent/AudioManager.h:40: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Sound/SoundBuffer.h:31: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameContent/AudioManager.h:31: warning: Found unknown command `\detail'
 C:/myPrograms/OpenALWrapper/GameAudio/Capture/CaptureDevice.h:36: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:30: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream.h:30: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:33: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream.h:32: warning: Found unknown command `\detail'
 C:/myPrograms/OpenALWrapper/GameAudio/Sound/Sound.h:33: warning: Found unknown command `\detail'
 C:/myPrograms/OpenALWrapper/GameAudio/Music/Music.h:38: warning: Found unknown command `\detail'
 C:/myPrograms/OpenALWrapper/GameAudio/Sound/Sound3D.h:36: warning: Found unknown command `\detail'
 C:/myPrograms/OpenALWrapper/GameAudio/Sound/Sound2D.h:36: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:31: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:31: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameAudio/Source/Source.h:24: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameAudio/Utils/OpenALVector2D.h:16: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameAudio/Utils/OpenALVector3D.h:16: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameContent/AudioManager.h:40: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameContent/AudioManager.h:10: warning: Found unknown command `\Author'
-C:/myPrograms/OpenALWrapper/GameContent/AudioManager.h:40: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameContent/AudioManager.h:40: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameContent/AudioManager.h:117: warning: argument 'in' of command @param is not found in the argument list of AudioManager::convertBoolToString(bool value)
-C:/myPrograms/OpenALWrapper/GameContent/AudioManager.h:121: warning: argument 'in' of command @param is not found in the argument list of AudioManager::convertStringToBool(std::string value)
-C:/myPrograms/OpenALWrapper/GameContent/AudioManager.h:105: warning: argument 'in' of command @param is not found in the argument list of AudioManager::getLocalPath(std::string filename)
-C:/myPrograms/OpenALWrapper/GameContent/AudioManager.h:75: warning: argument 'in' of command @param is not found in the argument list of AudioManager::getSoundBuffer(std::string filename)
-C:/myPrograms/OpenALWrapper/GameContent/AudioManager.h:81: warning: argument 'in' of command @param is not found in the argument list of AudioManager::getSoundBuffer(std::string filename, bool addToMap)
-C:/myPrograms/OpenALWrapper/GameContent/AudioManager.h:81: warning: argument 'in' of command @param is not found in the argument list of AudioManager::getSoundBuffer(std::string filename, bool addToMap)
-C:/myPrograms/OpenALWrapper/GameContent/AudioManager.h:113: warning: argument 'in' of command @param is not found in the argument list of AudioManager::toLowerCase(std::string text)
-C:/myPrograms/OpenALWrapper/GameContent/AudioManager.h:109: warning: argument 'in' of command @param is not found in the argument list of AudioManager::toUpperCase(std::string text)
-C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:30: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:30: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:260: warning: argument 'in' of command @param is not found in the argument list of AudioSystem::disable(int feature)
-C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:257: warning: argument 'in' of command @param is not found in the argument list of AudioSystem::enable(int feature)
-C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:318: warning: argument 'in' of command @param is not found in the argument list of AudioSystem::getAudioCaptureDevice(int id)
-C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:254: warning: argument 'in' of command @param is not found in the argument list of AudioSystem::isEnabled(int feature)
-C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:222: warning: argument 'in' of command @param is not found in the argument list of AudioSystem::setListenerDirection(float directionX, float directionY, float directionZ, float upX, float upY, float upZ)
-C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:222: warning: argument 'in' of command @param is not found in the argument list of AudioSystem::setListenerDirection(float directionX, float directionY, float directionZ, float upX, float upY, float upZ)
-C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:222: warning: argument 'in' of command @param is not found in the argument list of AudioSystem::setListenerDirection(float directionX, float directionY, float directionZ, float upX, float upY, float upZ)
-C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:222: warning: argument 'in' of command @param is not found in the argument list of AudioSystem::setListenerDirection(float directionX, float directionY, float directionZ, float upX, float upY, float upZ)
-C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:222: warning: argument 'in' of command @param is not found in the argument list of AudioSystem::setListenerDirection(float directionX, float directionY, float directionZ, float upX, float upY, float upZ)
-C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:222: warning: argument 'in' of command @param is not found in the argument list of AudioSystem::setListenerDirection(float directionX, float directionY, float directionZ, float upX, float upY, float upZ)
-C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:213: warning: argument 'in' of command @param is not found in the argument list of AudioSystem::setListenerPosition(float x, float y)
-C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:213: warning: argument 'in' of command @param is not found in the argument list of AudioSystem::setListenerPosition(float x, float y)
-C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:217: warning: argument 'in' of command @param is not found in the argument list of AudioSystem::setListenerPosition(float x, float y, float z)
-C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:217: warning: argument 'in' of command @param is not found in the argument list of AudioSystem::setListenerPosition(float x, float y, float z)
-C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:217: warning: argument 'in' of command @param is not found in the argument list of AudioSystem::setListenerPosition(float x, float y, float z)
-C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:278: warning: argument 'in' of command @param is not found in the argument list of AudioSystem::setMusicVolume(float volume)
-C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:290: warning: argument 'in' of command @param is not found in the argument list of AudioSystem::setMute(bool state)
-C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:284: warning: argument 'in' of command @param is not found in the argument list of AudioSystem::setSoundVolume(float volume)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:34: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:34: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Source/Source.h:25: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Utils/OpenALVector2D.h:17: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Utils/OpenALVector3D.h:17: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameContent/AudioManager.h:31: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameContent/AudioManager.h:3: warning: Found unknown command `\Author'
+C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:33: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:3: warning: Found unknown command `\Author'
+C:/myPrograms/OpenALWrapper/GameAudio/Capture/CaptureDevice.h:36: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Capture/CaptureDevice.h:3: warning: Found unknown command `\Author'
+C:/myPrograms/OpenALWrapper/GameAudio/GameAudio.h:3: warning: Found unknown command `\Author'
+C:/myPrograms/OpenALWrapper/GameAudio/Utils/LibSNDFileUtils.h:3: warning: Found unknown command `\Author'
+C:/myPrograms/OpenALWrapper/GameAudio/Utils/LibXMPUtils.h:3: warning: Found unknown command `\Author'
+C:/myPrograms/OpenALWrapper/main.cpp:3: warning: Found unknown command `\Author'
+C:/myPrograms/OpenALWrapper/GameAudio/Music/Music.h:38: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Music/Music.h:3: warning: Found unknown command `\Author'
+C:/myPrograms/OpenALWrapper/GameAudio/OpenALGlobals.h:3: warning: Found unknown command `\Author'
+C:/myPrograms/OpenALWrapper/GameAudio/Utils/OpenALUtils.h:3: warning: Found unknown command `\Author'
+C:/myPrograms/OpenALWrapper/GameAudio/Utils/OpenALVector2D.h:17: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Utils/OpenALVector2D.h:3: warning: Found unknown command `\Author'
+C:/myPrograms/OpenALWrapper/GameAudio/Utils/OpenALVector3D.h:17: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Utils/OpenALVector3D.h:3: warning: Found unknown command `\Author'
+C:/myPrograms/OpenALWrapper/GameAudio/Sound/Sound.h:33: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Sound/Sound.h:3: warning: Found unknown command `\Author'
+C:/myPrograms/OpenALWrapper/GameAudio/Sound/Sound2D.h:36: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Sound/Sound2D.h:3: warning: Found unknown command `\Author'
+C:/myPrograms/OpenALWrapper/GameAudio/Sound/Sound3D.h:36: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Sound/Sound3D.h:3: warning: Found unknown command `\Author'
+C:/myPrograms/OpenALWrapper/GameAudio/Sound/SoundBuffer.h:31: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Sound/SoundBuffer.h:3: warning: Found unknown command `\Author'
+C:/myPrograms/OpenALWrapper/GameAudio/Source/Source.h:25: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Source/Source.h:3: warning: Found unknown command `\Author'
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream.h:32: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream.h:3: warning: Found unknown command `\Author'
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:34: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:3: warning: Found unknown command `\Author'
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:34: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:3: warning: Found unknown command `\Author'
+C:/myPrograms/OpenALWrapper/GameContent/AudioManager.h:31: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameContent/AudioManager.h:31: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameContent/AudioManager.h:108: warning: argument 'in' of command @param is not found in the argument list of AudioManager::convertBoolToString(bool value)
+C:/myPrograms/OpenALWrapper/GameContent/AudioManager.h:112: warning: argument 'in' of command @param is not found in the argument list of AudioManager::convertStringToBool(std::string value)
+C:/myPrograms/OpenALWrapper/GameContent/AudioManager.h:96: warning: argument 'in' of command @param is not found in the argument list of AudioManager::getLocalPath(std::string filename)
+C:/myPrograms/OpenALWrapper/GameContent/AudioManager.h:66: warning: argument 'in' of command @param is not found in the argument list of AudioManager::getSoundBuffer(std::string filename)
+C:/myPrograms/OpenALWrapper/GameContent/AudioManager.h:72: warning: argument 'in' of command @param is not found in the argument list of AudioManager::getSoundBuffer(std::string filename, bool addToMap)
+C:/myPrograms/OpenALWrapper/GameContent/AudioManager.h:72: warning: argument 'in' of command @param is not found in the argument list of AudioManager::getSoundBuffer(std::string filename, bool addToMap)
+C:/myPrograms/OpenALWrapper/GameContent/AudioManager.h:104: warning: argument 'in' of command @param is not found in the argument list of AudioManager::toLowerCase(std::string text)
+C:/myPrograms/OpenALWrapper/GameContent/AudioManager.h:100: warning: argument 'in' of command @param is not found in the argument list of AudioManager::toUpperCase(std::string text)
+C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:33: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:33: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:263: warning: argument 'in' of command @param is not found in the argument list of AudioSystem::disable(int feature)
+C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:260: warning: argument 'in' of command @param is not found in the argument list of AudioSystem::enable(int feature)
+C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:321: warning: argument 'in' of command @param is not found in the argument list of AudioSystem::getAudioCaptureDevice(int id)
+C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:257: warning: argument 'in' of command @param is not found in the argument list of AudioSystem::isEnabled(int feature)
+C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:225: warning: argument 'in' of command @param is not found in the argument list of AudioSystem::setListenerDirection(float directionX, float directionY, float directionZ, float upX, float upY, float upZ)
+C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:225: warning: argument 'in' of command @param is not found in the argument list of AudioSystem::setListenerDirection(float directionX, float directionY, float directionZ, float upX, float upY, float upZ)
+C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:225: warning: argument 'in' of command @param is not found in the argument list of AudioSystem::setListenerDirection(float directionX, float directionY, float directionZ, float upX, float upY, float upZ)
+C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:225: warning: argument 'in' of command @param is not found in the argument list of AudioSystem::setListenerDirection(float directionX, float directionY, float directionZ, float upX, float upY, float upZ)
+C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:225: warning: argument 'in' of command @param is not found in the argument list of AudioSystem::setListenerDirection(float directionX, float directionY, float directionZ, float upX, float upY, float upZ)
+C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:225: warning: argument 'in' of command @param is not found in the argument list of AudioSystem::setListenerDirection(float directionX, float directionY, float directionZ, float upX, float upY, float upZ)
+C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:216: warning: argument 'in' of command @param is not found in the argument list of AudioSystem::setListenerPosition(float x, float y)
+C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:216: warning: argument 'in' of command @param is not found in the argument list of AudioSystem::setListenerPosition(float x, float y)
+C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:220: warning: argument 'in' of command @param is not found in the argument list of AudioSystem::setListenerPosition(float x, float y, float z)
+C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:220: warning: argument 'in' of command @param is not found in the argument list of AudioSystem::setListenerPosition(float x, float y, float z)
+C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:220: warning: argument 'in' of command @param is not found in the argument list of AudioSystem::setListenerPosition(float x, float y, float z)
+C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:281: warning: argument 'in' of command @param is not found in the argument list of AudioSystem::setMusicVolume(float volume)
+C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:293: warning: argument 'in' of command @param is not found in the argument list of AudioSystem::setMute(bool state)
+C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:287: warning: argument 'in' of command @param is not found in the argument list of AudioSystem::setSoundVolume(float volume)
 C:/myPrograms/OpenALWrapper/GameAudio/Capture/CaptureDevice.h:36: warning: Found unknown command `\detail'
 C:/myPrograms/OpenALWrapper/GameAudio/Capture/CaptureDevice.h:36: warning: Found unknown command `\detail'
 C:/myPrograms/OpenALWrapper/GameAudio/Capture/CaptureDevice.h:86: warning: argument 'in' of command @param is not found in the argument list of CaptureDevice::captureSamples(void *pBuffer, int samples)
@@ -64,10 +96,10 @@ C:/myPrograms/OpenALWrapper/GameAudio/Music/Music.h:90: warning: argument 'in' o
 C:/myPrograms/OpenALWrapper/GameAudio/Music/Music.h:96: warning: argument 'in' of command @param is not found in the argument list of Music::seek(int time)
 C:/myPrograms/OpenALWrapper/GameAudio/Music/Music.h:99: warning: argument 'in' of command @param is not found in the argument list of Music::setPosition(int pos)
 C:/myPrograms/OpenALWrapper/GameAudio/Music/Music.h:102: warning: argument 'in' of command @param is not found in the argument list of Music::update(float dTime)
-C:/myPrograms/OpenALWrapper/GameAudio/Utils/OpenALVector2D.h:16: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameAudio/Utils/OpenALVector2D.h:16: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameAudio/Utils/OpenALVector3D.h:16: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameAudio/Utils/OpenALVector3D.h:16: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Utils/OpenALVector2D.h:17: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Utils/OpenALVector2D.h:17: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Utils/OpenALVector3D.h:17: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Utils/OpenALVector3D.h:17: warning: Found unknown command `\detail'
 C:/myPrograms/OpenALWrapper/GameAudio/Sound/Sound.h:33: warning: Found unknown command `\detail'
 C:/myPrograms/OpenALWrapper/GameAudio/Sound/Sound.h:33: warning: Found unknown command `\detail'
 C:/myPrograms/OpenALWrapper/GameAudio/Sound/Sound.h:100: warning: argument 'in' of command @param is not found in the argument list of Sound::setName(std::string name)
@@ -124,115 +156,115 @@ C:/myPrograms/OpenALWrapper/GameAudio/Sound/Sound3D.h:144: warning: The followin
   parameter 'y'
   parameter 'z'
 C:/myPrograms/OpenALWrapper/GameAudio/Sound/Sound3D.h:149: warning: argument 'in' of command @param is not found in the argument list of Sound3D::setVelocity(OpenALVector3D v)
-C:/myPrograms/OpenALWrapper/GameAudio/Sound/SoundBuffer.h:29: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameAudio/Sound/SoundBuffer.h:29: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameAudio/Sound/SoundBuffer.h:124: warning: argument 'in' of command @param is not found in the argument list of SoundBuffer::setBits(int bits)
-C:/myPrograms/OpenALWrapper/GameAudio/Sound/SoundBuffer.h:132: warning: argument 'BufferID' of command @param is not found in the argument list of SoundBuffer::setBufferID(ALuint bufferID)
-C:/myPrograms/OpenALWrapper/GameAudio/Sound/SoundBuffer.h:132: warning: The following parameters of SoundBuffer::setBufferID(ALuint bufferID) are not documented:
+C:/myPrograms/OpenALWrapper/GameAudio/Sound/SoundBuffer.h:31: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Sound/SoundBuffer.h:31: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Sound/SoundBuffer.h:126: warning: argument 'in' of command @param is not found in the argument list of SoundBuffer::setBits(int bits)
+C:/myPrograms/OpenALWrapper/GameAudio/Sound/SoundBuffer.h:134: warning: argument 'BufferID' of command @param is not found in the argument list of SoundBuffer::setBufferID(ALuint bufferID)
+C:/myPrograms/OpenALWrapper/GameAudio/Sound/SoundBuffer.h:134: warning: The following parameters of SoundBuffer::setBufferID(ALuint bufferID) are not documented:
   parameter 'bufferID'
-C:/myPrograms/OpenALWrapper/GameAudio/Sound/SoundBuffer.h:118: warning: argument 'in' of command @param is not found in the argument list of SoundBuffer::setChannels(int channels)
-C:/myPrograms/OpenALWrapper/GameAudio/Sound/SoundBuffer.h:91: warning: argument 'in' of command @param is not found in the argument list of SoundBuffer::setFilename(std::string filename)
-C:/myPrograms/OpenALWrapper/GameAudio/Sound/SoundBuffer.h:106: warning: argument 'in' of command @param is not found in the argument list of SoundBuffer::setFrequency(int frequency)
-C:/myPrograms/OpenALWrapper/GameAudio/Sound/SoundBuffer.h:112: warning: argument 'in' of command @param is not found in the argument list of SoundBuffer::setSize(int size)
-C:/myPrograms/OpenALWrapper/GameAudio/Source/Source.h:24: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameAudio/Source/Source.h:24: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameAudio/Source/Source.h:121: warning: argument 'state' of command @param is not found in the argument list of Source::setLooping(bool mode)
-C:/myPrograms/OpenALWrapper/GameAudio/Source/Source.h:121: warning: argument 'in' of command @param is not found in the argument list of Source::setLooping(bool mode)
-C:/myPrograms/OpenALWrapper/GameAudio/Source/Source.h:121: warning: The following parameters of Source::setLooping(bool mode) are not documented:
+C:/myPrograms/OpenALWrapper/GameAudio/Sound/SoundBuffer.h:120: warning: argument 'in' of command @param is not found in the argument list of SoundBuffer::setChannels(int channels)
+C:/myPrograms/OpenALWrapper/GameAudio/Sound/SoundBuffer.h:93: warning: argument 'in' of command @param is not found in the argument list of SoundBuffer::setFilename(std::string filename)
+C:/myPrograms/OpenALWrapper/GameAudio/Sound/SoundBuffer.h:108: warning: argument 'in' of command @param is not found in the argument list of SoundBuffer::setFrequency(int frequency)
+C:/myPrograms/OpenALWrapper/GameAudio/Sound/SoundBuffer.h:114: warning: argument 'in' of command @param is not found in the argument list of SoundBuffer::setSize(int size)
+C:/myPrograms/OpenALWrapper/GameAudio/Source/Source.h:25: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Source/Source.h:25: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Source/Source.h:122: warning: argument 'state' of command @param is not found in the argument list of Source::setLooping(bool mode)
+C:/myPrograms/OpenALWrapper/GameAudio/Source/Source.h:122: warning: argument 'in' of command @param is not found in the argument list of Source::setLooping(bool mode)
+C:/myPrograms/OpenALWrapper/GameAudio/Source/Source.h:122: warning: The following parameters of Source::setLooping(bool mode) are not documented:
   parameter 'mode'
-C:/myPrograms/OpenALWrapper/GameAudio/Source/Source.h:111: warning: argument 'in' of command @param is not found in the argument list of Source::setMute(bool state)
-C:/myPrograms/OpenALWrapper/GameAudio/Source/Source.h:99: warning: argument 'in' of command @param is not found in the argument list of Source::setPaused(bool state)
-C:/myPrograms/OpenALWrapper/GameAudio/Source/Source.h:127: warning: argument 'in' of command @param is not found in the argument list of Source::setPitch(float pitch)
-C:/myPrograms/OpenALWrapper/GameAudio/Source/Source.h:105: warning: argument 'volumep' of command @param is not found in the argument list of Source::setVolume(int volume)
-C:/myPrograms/OpenALWrapper/GameAudio/Source/Source.h:105: warning: argument 'in' of command @param is not found in the argument list of Source::setVolume(int volume)
-C:/myPrograms/OpenALWrapper/GameAudio/Source/Source.h:105: warning: The following parameters of Source::setVolume(int volume) are not documented:
+C:/myPrograms/OpenALWrapper/GameAudio/Source/Source.h:112: warning: argument 'in' of command @param is not found in the argument list of Source::setMute(bool state)
+C:/myPrograms/OpenALWrapper/GameAudio/Source/Source.h:100: warning: argument 'in' of command @param is not found in the argument list of Source::setPaused(bool state)
+C:/myPrograms/OpenALWrapper/GameAudio/Source/Source.h:128: warning: argument 'in' of command @param is not found in the argument list of Source::setPitch(float pitch)
+C:/myPrograms/OpenALWrapper/GameAudio/Source/Source.h:106: warning: argument 'volumep' of command @param is not found in the argument list of Source::setVolume(int volume)
+C:/myPrograms/OpenALWrapper/GameAudio/Source/Source.h:106: warning: argument 'in' of command @param is not found in the argument list of Source::setVolume(int volume)
+C:/myPrograms/OpenALWrapper/GameAudio/Source/Source.h:106: warning: The following parameters of Source::setVolume(int volume) are not documented:
   parameter 'volume'
-C:/myPrograms/OpenALWrapper/GameAudio/Source/Source.h:75: warning: argument 'in' of command @param is not found in the argument list of Source::update(float dTime)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream.h:30: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream.h:30: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream.h:74: warning: argument 'in' of command @param is not found in the argument list of Stream::load(std::string filename)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream.h:116: warning: argument 'in' of command @param is not found in the argument list of Stream::setLooping(bool mode)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream.h:95: warning: argument 'in' of command @param is not found in the argument list of Stream::stream(int buffer)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream.h:86: warning: argument 'in' of command @param is not found in the argument list of Stream::update(float dTime)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:31: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:31: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:157: warning: argument 'in' of command @param is not found in the argument list of Stream2D::setDirection(float xDirection, float yDirection)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:157: warning: argument 'in' of command @param is not found in the argument list of Stream2D::setDirection(float xDirection, float yDirection)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:161: warning: argument 'in' of command @param is not found in the argument list of Stream2D::setDirection(OpenALVector2D direction)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:167: warning: argument 'in' of command @param is not found in the argument list of Stream2D::setInnerConeAngle(float angle)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:211: warning: argument 'in' of command @param is not found in the argument list of Stream2D::setMaxDistance(float maxDistance)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:236: warning: argument 'in' of command @param is not found in the argument list of Stream2D::setMaxVolume(float maxVolume)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:230: warning: argument 'in' of command @param is not found in the argument list of Stream2D::setMinVolume(float minVolume)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:173: warning: argument 'in' of command @param is not found in the argument list of Stream2D::setOuterConeAngle(float angle)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:176: warning: argument 'in' of command @param is not found in the argument list of Stream2D::setOuterConeGain(float gain)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:116: warning: argument 'in' of command @param is not found in the argument list of Stream2D::setPosition(float x, float y)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:116: warning: argument 'in' of command @param is not found in the argument list of Stream2D::setPosition(float x, float y)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:120: warning: argument 'in' of command @param is not found in the argument list of Stream2D::setPosition(OpenALVector2D v)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:205: warning: argument 'in' of command @param is not found in the argument list of Stream2D::setReferenceDistance(float referenceDistance)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:199: warning: argument 'rolloff' of command @param is not found in the argument list of Stream2D::setRollOff(float rollOff)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:199: warning: argument 'in' of command @param is not found in the argument list of Stream2D::setRollOff(float rollOff)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:199: warning: The following parameters of Stream2D::setRollOff(float rollOff) are not documented:
+C:/myPrograms/OpenALWrapper/GameAudio/Source/Source.h:76: warning: argument 'in' of command @param is not found in the argument list of Source::update(float dTime)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream.h:32: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream.h:32: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream.h:76: warning: argument 'in' of command @param is not found in the argument list of Stream::load(std::string filename)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream.h:118: warning: argument 'in' of command @param is not found in the argument list of Stream::setLooping(bool mode)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream.h:97: warning: argument 'in' of command @param is not found in the argument list of Stream::stream(int buffer)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream.h:88: warning: argument 'in' of command @param is not found in the argument list of Stream::update(float dTime)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:34: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:34: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:160: warning: argument 'in' of command @param is not found in the argument list of Stream2D::setDirection(float xDirection, float yDirection)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:160: warning: argument 'in' of command @param is not found in the argument list of Stream2D::setDirection(float xDirection, float yDirection)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:164: warning: argument 'in' of command @param is not found in the argument list of Stream2D::setDirection(OpenALVector2D direction)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:170: warning: argument 'in' of command @param is not found in the argument list of Stream2D::setInnerConeAngle(float angle)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:214: warning: argument 'in' of command @param is not found in the argument list of Stream2D::setMaxDistance(float maxDistance)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:239: warning: argument 'in' of command @param is not found in the argument list of Stream2D::setMaxVolume(float maxVolume)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:233: warning: argument 'in' of command @param is not found in the argument list of Stream2D::setMinVolume(float minVolume)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:176: warning: argument 'in' of command @param is not found in the argument list of Stream2D::setOuterConeAngle(float angle)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:179: warning: argument 'in' of command @param is not found in the argument list of Stream2D::setOuterConeGain(float gain)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:119: warning: argument 'in' of command @param is not found in the argument list of Stream2D::setPosition(float x, float y)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:119: warning: argument 'in' of command @param is not found in the argument list of Stream2D::setPosition(float x, float y)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:123: warning: argument 'in' of command @param is not found in the argument list of Stream2D::setPosition(OpenALVector2D v)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:208: warning: argument 'in' of command @param is not found in the argument list of Stream2D::setReferenceDistance(float referenceDistance)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:202: warning: argument 'rolloff' of command @param is not found in the argument list of Stream2D::setRollOff(float rollOff)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:202: warning: argument 'in' of command @param is not found in the argument list of Stream2D::setRollOff(float rollOff)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:202: warning: The following parameters of Stream2D::setRollOff(float rollOff) are not documented:
   parameter 'rollOff'
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:132: warning: argument 'in' of command @param is not found in the argument list of Stream2D::setVelocity(float xVelocity, float yVelocity)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:132: warning: argument 'in' of command @param is not found in the argument list of Stream2D::setVelocity(float xVelocity, float yVelocity)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:136: warning: argument 'velocity' of command @param is not found in the argument list of Stream2D::setVelocity(OpenALVector2D v)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:136: warning: argument 'in' of command @param is not found in the argument list of Stream2D::setVelocity(OpenALVector2D v)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:136: warning: The following parameters of Stream2D::setVelocity(OpenALVector2D v) are not documented:
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:135: warning: argument 'in' of command @param is not found in the argument list of Stream2D::setVelocity(float xVelocity, float yVelocity)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:135: warning: argument 'in' of command @param is not found in the argument list of Stream2D::setVelocity(float xVelocity, float yVelocity)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:139: warning: argument 'velocity' of command @param is not found in the argument list of Stream2D::setVelocity(OpenALVector2D v)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:139: warning: argument 'in' of command @param is not found in the argument list of Stream2D::setVelocity(OpenALVector2D v)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:139: warning: The following parameters of Stream2D::setVelocity(OpenALVector2D v) are not documented:
   parameter 'v'
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:31: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:31: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:172: warning: argument 'in' of command @param is not found in the argument list of Stream3D::setDirection(float xDirection, float yDirection, float zDirection)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:172: warning: argument 'in' of command @param is not found in the argument list of Stream3D::setDirection(float xDirection, float yDirection, float zDirection)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:172: warning: argument 'in' of command @param is not found in the argument list of Stream3D::setDirection(float xDirection, float yDirection, float zDirection)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:177: warning: argument 'in' of command @param is not found in the argument list of Stream3D::setDirection(OpenALVector3D direction)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:183: warning: argument 'in' of command @param is not found in the argument list of Stream3D::setInnerConeAngle(float angle)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:229: warning: argument 'in' of command @param is not found in the argument list of Stream3D::setMaxDistance(float maxDistance)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:254: warning: argument 'in' of command @param is not found in the argument list of Stream3D::setMaxVolume(float maxVolume)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:248: warning: argument 'in' of command @param is not found in the argument list of Stream3D::setMinVolume(float minVolume)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:189: warning: argument 'in' of command @param is not found in the argument list of Stream3D::setOuterConeAngle(float angle)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:192: warning: argument 'in' of command @param is not found in the argument list of Stream3D::setOuterConeGain(float gain)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:122: warning: argument 'in' of command @param is not found in the argument list of Stream3D::setPosition(float x, float y, float z)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:122: warning: argument 'in' of command @param is not found in the argument list of Stream3D::setPosition(float x, float y, float z)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:122: warning: argument 'in' of command @param is not found in the argument list of Stream3D::setPosition(float x, float y, float z)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:127: warning: argument 'in' of command @param is not found in the argument list of Stream3D::setPosition(OpenALVector3D v)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:223: warning: argument 'in' of command @param is not found in the argument list of Stream3D::setReferenceDistance(float referenceDistance)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:217: warning: argument 'rolloff' of command @param is not found in the argument list of Stream3D::setRollOff(float rollOff)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:217: warning: argument 'in' of command @param is not found in the argument list of Stream3D::setRollOff(float rollOff)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:217: warning: The following parameters of Stream3D::setRollOff(float rollOff) are not documented:
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:34: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:34: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:175: warning: argument 'in' of command @param is not found in the argument list of Stream3D::setDirection(float xDirection, float yDirection, float zDirection)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:175: warning: argument 'in' of command @param is not found in the argument list of Stream3D::setDirection(float xDirection, float yDirection, float zDirection)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:175: warning: argument 'in' of command @param is not found in the argument list of Stream3D::setDirection(float xDirection, float yDirection, float zDirection)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:180: warning: argument 'in' of command @param is not found in the argument list of Stream3D::setDirection(OpenALVector3D direction)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:186: warning: argument 'in' of command @param is not found in the argument list of Stream3D::setInnerConeAngle(float angle)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:232: warning: argument 'in' of command @param is not found in the argument list of Stream3D::setMaxDistance(float maxDistance)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:257: warning: argument 'in' of command @param is not found in the argument list of Stream3D::setMaxVolume(float maxVolume)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:251: warning: argument 'in' of command @param is not found in the argument list of Stream3D::setMinVolume(float minVolume)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:192: warning: argument 'in' of command @param is not found in the argument list of Stream3D::setOuterConeAngle(float angle)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:195: warning: argument 'in' of command @param is not found in the argument list of Stream3D::setOuterConeGain(float gain)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:125: warning: argument 'in' of command @param is not found in the argument list of Stream3D::setPosition(float x, float y, float z)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:125: warning: argument 'in' of command @param is not found in the argument list of Stream3D::setPosition(float x, float y, float z)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:125: warning: argument 'in' of command @param is not found in the argument list of Stream3D::setPosition(float x, float y, float z)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:130: warning: argument 'in' of command @param is not found in the argument list of Stream3D::setPosition(OpenALVector3D v)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:226: warning: argument 'in' of command @param is not found in the argument list of Stream3D::setReferenceDistance(float referenceDistance)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:220: warning: argument 'rolloff' of command @param is not found in the argument list of Stream3D::setRollOff(float rollOff)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:220: warning: argument 'in' of command @param is not found in the argument list of Stream3D::setRollOff(float rollOff)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:220: warning: The following parameters of Stream3D::setRollOff(float rollOff) are not documented:
   parameter 'rollOff'
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:142: warning: argument 'horizontal' of command @param is not found in the argument list of Stream3D::setVelocity(float x, float y, float z)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:142: warning: argument 'vertical' of command @param is not found in the argument list of Stream3D::setVelocity(float x, float y, float z)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:142: warning: argument 'depth' of command @param is not found in the argument list of Stream3D::setVelocity(float x, float y, float z)
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:142: warning: The following parameters of Stream3D::setVelocity(float x, float y, float z) are not documented:
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:145: warning: argument 'horizontal' of command @param is not found in the argument list of Stream3D::setVelocity(float x, float y, float z)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:145: warning: argument 'vertical' of command @param is not found in the argument list of Stream3D::setVelocity(float x, float y, float z)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:145: warning: argument 'depth' of command @param is not found in the argument list of Stream3D::setVelocity(float x, float y, float z)
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:145: warning: The following parameters of Stream3D::setVelocity(float x, float y, float z) are not documented:
   parameter 'x'
   parameter 'y'
   parameter 'z'
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:147: warning: argument 'in' of command @param is not found in the argument list of Stream3D::setVelocity(OpenALVector3D v)
-C:/myPrograms/OpenALWrapper/GameContent/AudioManager.h:40: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:30: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:150: warning: argument 'in' of command @param is not found in the argument list of Stream3D::setVelocity(OpenALVector3D v)
+C:/myPrograms/OpenALWrapper/GameContent/AudioManager.h:31: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:33: warning: Found unknown command `\detail'
 C:/myPrograms/OpenALWrapper/GameAudio/Capture/CaptureDevice.h:36: warning: Found unknown command `\detail'
 C:/myPrograms/OpenALWrapper/GameAudio/Music/Music.h:38: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameAudio/Utils/OpenALVector2D.h:16: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameAudio/Utils/OpenALVector3D.h:16: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Utils/OpenALVector2D.h:17: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Utils/OpenALVector3D.h:17: warning: Found unknown command `\detail'
 C:/myPrograms/OpenALWrapper/GameAudio/Sound/Sound.h:33: warning: Found unknown command `\detail'
 C:/myPrograms/OpenALWrapper/GameAudio/Sound/Sound2D.h:36: warning: Found unknown command `\detail'
 C:/myPrograms/OpenALWrapper/GameAudio/Sound/Sound3D.h:36: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameAudio/Sound/SoundBuffer.h:29: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameAudio/Source/Source.h:24: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream.h:30: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:31: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:31: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameContent/AudioManager.h:40: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:30: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Sound/SoundBuffer.h:31: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Source/Source.h:25: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream.h:32: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:34: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:34: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameContent/AudioManager.h:31: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/System/AudioSystem.h:33: warning: Found unknown command `\detail'
 C:/myPrograms/OpenALWrapper/GameAudio/Capture/CaptureDevice.h:36: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameAudio/Utils/OpenALVector2D.h:16: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameAudio/Utils/OpenALVector3D.h:16: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameAudio/Sound/SoundBuffer.h:29: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameAudio/Source/Source.h:24: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Utils/OpenALVector2D.h:17: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Utils/OpenALVector3D.h:17: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Sound/SoundBuffer.h:31: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Source/Source.h:25: warning: Found unknown command `\detail'
 C:/myPrograms/OpenALWrapper/GameAudio/Music/Music.h:38: warning: Found unknown command `\detail'
 C:/myPrograms/OpenALWrapper/GameAudio/Sound/Sound.h:33: warning: Found unknown command `\detail'
 C:/myPrograms/OpenALWrapper/GameAudio/Sound/Sound2D.h:36: warning: Found unknown command `\detail'
 C:/myPrograms/OpenALWrapper/GameAudio/Sound/Sound3D.h:36: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream.h:30: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:31: warning: Found unknown command `\detail'
-C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:31: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream.h:32: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream2D.h:34: warning: Found unknown command `\detail'
+C:/myPrograms/OpenALWrapper/GameAudio/Stream/Stream3D.h:34: warning: Found unknown command `\detail'

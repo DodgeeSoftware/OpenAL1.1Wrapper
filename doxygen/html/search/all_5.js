@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['gameaudio_2eh',['GameAudio.h',['../_game_audio_8h.html',1,'']]],
   ['getalcerrorstring',['getALCErrorString',['../namespace_utils.html#a1b87b8e178b3c08bbacaa62ecdb2a14d',1,'Utils']]],
   ['getalerrorstring',['getALErrorString',['../namespace_utils.html#a5e1f580ebf596ea3b1fecbe487738d76',1,'Utils']]],
   ['getaudiocapturedevice',['getAudioCaptureDevice',['../class_audio_system.html#ab53a4a6f6c60f9ea26bbfdf423d5b44e',1,'AudioSystem']]],
