@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('class_audio_system.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -151,9 +151,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:aa0d51465c5afa7bf835a52337e510b0b"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_system.html#aa0d51465c5afa7bf835a52337e510b0b">getAudioDevices</a> ()</td></tr>
 <tr class="memdesc:aa0d51465c5afa7bf835a52337e510b0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a list of Available Output Devices.  <a href="#aa0d51465c5afa7bf835a52337e510b0b">More...</a><br /></td></tr>
 <tr class="separator:aa0d51465c5afa7bf835a52337e510b0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14fe9f8c4e7c55ccac3b7fa555fb617d"><td class="memItemLeft" align="right" valign="top">virtual const ALCdevice *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_system.html#a14fe9f8c4e7c55ccac3b7fa555fb617d">getAudioDevice</a> () const </td></tr>
-<tr class="memdesc:a14fe9f8c4e7c55ccac3b7fa555fb617d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the AudioDevice.  <a href="#a14fe9f8c4e7c55ccac3b7fa555fb617d">More...</a><br /></td></tr>
-<tr class="separator:a14fe9f8c4e7c55ccac3b7fa555fb617d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade0ec91ff42394c8c7554ab2a11cfb76"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_system.html#ade0ec91ff42394c8c7554ab2a11cfb76">getVendor</a> ()</td></tr>
 <tr class="memdesc:ade0ec91ff42394c8c7554ab2a11cfb76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the OpenAL Driver Vendor.  <a href="#ade0ec91ff42394c8c7554ab2a11cfb76">More...</a><br /></td></tr>
 <tr class="separator:ade0ec91ff42394c8c7554ab2a11cfb76"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -210,74 +207,62 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:acf82a9b460263632d9f316dcd1ab0235"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_system.html#acf82a9b460263632d9f316dcd1ab0235">getDistanceModel</a> ()</td></tr>
 <tr class="memdesc:acf82a9b460263632d9f316dcd1ab0235"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Distance Model.  <a href="#acf82a9b460263632d9f316dcd1ab0235">More...</a><br /></td></tr>
 <tr class="separator:acf82a9b460263632d9f316dcd1ab0235"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86656082f7952fc1fb643e7d01f82eb5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86656082f7952fc1fb643e7d01f82eb5"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_system.html#a86656082f7952fc1fb643e7d01f82eb5">setDistanceModel</a> (int model)</td></tr>
-<tr class="memdesc:a86656082f7952fc1fb643e7d01f82eb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Distance Model. <br /></td></tr>
+<tr class="memitem:a86656082f7952fc1fb643e7d01f82eb5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_system.html#a86656082f7952fc1fb643e7d01f82eb5">setDistanceModel</a> (int model)</td></tr>
+<tr class="memdesc:a86656082f7952fc1fb643e7d01f82eb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Distance Model.  <a href="#a86656082f7952fc1fb643e7d01f82eb5">More...</a><br /></td></tr>
 <tr class="separator:a86656082f7952fc1fb643e7d01f82eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70e956eaf4e09f00be8ef5d8acf87f5f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a70e956eaf4e09f00be8ef5d8acf87f5f"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_system.html#a70e956eaf4e09f00be8ef5d8acf87f5f">isEnabled</a> (int feature)</td></tr>
-<tr class="memdesc:a70e956eaf4e09f00be8ef5d8acf87f5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is Context Capability Enabled. <br /></td></tr>
+<tr class="memitem:a70e956eaf4e09f00be8ef5d8acf87f5f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_system.html#a70e956eaf4e09f00be8ef5d8acf87f5f">isEnabled</a> (int feature)</td></tr>
+<tr class="memdesc:a70e956eaf4e09f00be8ef5d8acf87f5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is Context Capability Enabled.  <a href="#a70e956eaf4e09f00be8ef5d8acf87f5f">More...</a><br /></td></tr>
 <tr class="separator:a70e956eaf4e09f00be8ef5d8acf87f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a52463f1f5b50a3b648225c486c71b2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1a52463f1f5b50a3b648225c486c71b2"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_system.html#a1a52463f1f5b50a3b648225c486c71b2">enable</a> (int feature)</td></tr>
-<tr class="memdesc:a1a52463f1f5b50a3b648225c486c71b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable context capablility. <br /></td></tr>
+<tr class="memitem:a1a52463f1f5b50a3b648225c486c71b2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_system.html#a1a52463f1f5b50a3b648225c486c71b2">enable</a> (int feature)</td></tr>
+<tr class="memdesc:a1a52463f1f5b50a3b648225c486c71b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable context capablility.  <a href="#a1a52463f1f5b50a3b648225c486c71b2">More...</a><br /></td></tr>
 <tr class="separator:a1a52463f1f5b50a3b648225c486c71b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac50714b2f31f43927592252e65f2e6a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac50714b2f31f43927592252e65f2e6a1"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_system.html#ac50714b2f31f43927592252e65f2e6a1">disable</a> (int feature)</td></tr>
-<tr class="memdesc:ac50714b2f31f43927592252e65f2e6a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable context capablility. <br /></td></tr>
+<tr class="memitem:ac50714b2f31f43927592252e65f2e6a1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_system.html#ac50714b2f31f43927592252e65f2e6a1">disable</a> (int feature)</td></tr>
+<tr class="memdesc:ac50714b2f31f43927592252e65f2e6a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable context capablility.  <a href="#ac50714b2f31f43927592252e65f2e6a1">More...</a><br /></td></tr>
 <tr class="separator:ac50714b2f31f43927592252e65f2e6a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54fe36cc0616868df20a892dcf3999c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a54fe36cc0616868df20a892dcf3999c2"></a>
-virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_system.html#a54fe36cc0616868df20a892dcf3999c2">getMusicVolume</a> ()</td></tr>
-<tr class="memdesc:a54fe36cc0616868df20a892dcf3999c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get <a class="el" href="class_music.html" title="A Container for a Tracker Music File (XM, S3M, MOD, IT, and others supported by libxmp)  The Music Cl...">Music</a> Volume. <br /></td></tr>
+<tr class="memitem:a54fe36cc0616868df20a892dcf3999c2"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_system.html#a54fe36cc0616868df20a892dcf3999c2">getMusicVolume</a> ()</td></tr>
+<tr class="memdesc:a54fe36cc0616868df20a892dcf3999c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get <a class="el" href="class_music.html" title="A Container for a Tracker Music File (XM, S3M, MOD, IT, and others supported by libxmp)  The Music Cl...">Music</a> Volume.  <a href="#a54fe36cc0616868df20a892dcf3999c2">More...</a><br /></td></tr>
 <tr class="separator:a54fe36cc0616868df20a892dcf3999c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adeee85a8ada846d283ecff006d5c4966"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adeee85a8ada846d283ecff006d5c4966"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_system.html#adeee85a8ada846d283ecff006d5c4966">setMusicVolume</a> (float volume)</td></tr>
-<tr class="memdesc:adeee85a8ada846d283ecff006d5c4966"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <a class="el" href="class_music.html" title="A Container for a Tracker Music File (XM, S3M, MOD, IT, and others supported by libxmp)  The Music Cl...">Music</a> Volume. <br /></td></tr>
+<tr class="memitem:adeee85a8ada846d283ecff006d5c4966"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_system.html#adeee85a8ada846d283ecff006d5c4966">setMusicVolume</a> (float volume)</td></tr>
+<tr class="memdesc:adeee85a8ada846d283ecff006d5c4966"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <a class="el" href="class_music.html" title="A Container for a Tracker Music File (XM, S3M, MOD, IT, and others supported by libxmp)  The Music Cl...">Music</a> Volume.  <a href="#adeee85a8ada846d283ecff006d5c4966">More...</a><br /></td></tr>
 <tr class="separator:adeee85a8ada846d283ecff006d5c4966"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef3217c6002ad8092d449211f305bdeb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aef3217c6002ad8092d449211f305bdeb"></a>
-virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_system.html#aef3217c6002ad8092d449211f305bdeb">getSoundVolume</a> ()</td></tr>
-<tr class="memdesc:aef3217c6002ad8092d449211f305bdeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get <a class="el" href="class_sound.html" title="An playable instance of a SoundBuffer  Sources only come into existance when you call the play functi...">Sound</a> Volume. <br /></td></tr>
+<tr class="memitem:aef3217c6002ad8092d449211f305bdeb"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_system.html#aef3217c6002ad8092d449211f305bdeb">getSoundVolume</a> ()</td></tr>
+<tr class="memdesc:aef3217c6002ad8092d449211f305bdeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get <a class="el" href="class_sound.html" title="An playable instance of a SoundBuffer  Sources only come into existance when you call the play functi...">Sound</a> Volume.  <a href="#aef3217c6002ad8092d449211f305bdeb">More...</a><br /></td></tr>
 <tr class="separator:aef3217c6002ad8092d449211f305bdeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46b30477e926413196ab281fc1e9fbf9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a46b30477e926413196ab281fc1e9fbf9"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_system.html#a46b30477e926413196ab281fc1e9fbf9">setSoundVolume</a> (float volume)</td></tr>
-<tr class="memdesc:a46b30477e926413196ab281fc1e9fbf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <a class="el" href="class_sound.html" title="An playable instance of a SoundBuffer  Sources only come into existance when you call the play functi...">Sound</a> Volume. <br /></td></tr>
+<tr class="memitem:a46b30477e926413196ab281fc1e9fbf9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_system.html#a46b30477e926413196ab281fc1e9fbf9">setSoundVolume</a> (float volume)</td></tr>
+<tr class="memdesc:a46b30477e926413196ab281fc1e9fbf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <a class="el" href="class_sound.html" title="An playable instance of a SoundBuffer  Sources only come into existance when you call the play functi...">Sound</a> Volume.  <a href="#a46b30477e926413196ab281fc1e9fbf9">More...</a><br /></td></tr>
 <tr class="separator:a46b30477e926413196ab281fc1e9fbf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa96eaeef3357a8c0ab45eb0be8772727"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa96eaeef3357a8c0ab45eb0be8772727"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_system.html#aa96eaeef3357a8c0ab45eb0be8772727">isMute</a> ()</td></tr>
-<tr class="memdesc:aa96eaeef3357a8c0ab45eb0be8772727"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is Mute. <br /></td></tr>
+<tr class="memitem:aa96eaeef3357a8c0ab45eb0be8772727"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_system.html#aa96eaeef3357a8c0ab45eb0be8772727">isMute</a> ()</td></tr>
+<tr class="memdesc:aa96eaeef3357a8c0ab45eb0be8772727"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is Mute.  <a href="#aa96eaeef3357a8c0ab45eb0be8772727">More...</a><br /></td></tr>
 <tr class="separator:aa96eaeef3357a8c0ab45eb0be8772727"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acae3cf057e80fac1f4572e29898b0934"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acae3cf057e80fac1f4572e29898b0934"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_system.html#acae3cf057e80fac1f4572e29898b0934">setMute</a> (bool state)</td></tr>
-<tr class="memdesc:acae3cf057e80fac1f4572e29898b0934"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Mute Flag. <br /></td></tr>
+<tr class="memitem:acae3cf057e80fac1f4572e29898b0934"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_system.html#acae3cf057e80fac1f4572e29898b0934">setMute</a> (bool state)</td></tr>
+<tr class="memdesc:acae3cf057e80fac1f4572e29898b0934"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Mute Flag.  <a href="#acae3cf057e80fac1f4572e29898b0934">More...</a><br /></td></tr>
 <tr class="separator:acae3cf057e80fac1f4572e29898b0934"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac15dd37a02d43542980224f3c8f1ccee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac15dd37a02d43542980224f3c8f1ccee"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_system.html#ac15dd37a02d43542980224f3c8f1ccee">mute</a> ()</td></tr>
-<tr class="memdesc:ac15dd37a02d43542980224f3c8f1ccee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mute. <br /></td></tr>
+<tr class="memdesc:ac15dd37a02d43542980224f3c8f1ccee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mute the <a class="el" href="class_audio_system.html" title="A container around an OpenAL Device and Context  This class is the core of Audio in the wrapper...">AudioSystem</a>. <br /></td></tr>
 <tr class="separator:ac15dd37a02d43542980224f3c8f1ccee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aefe4686fcae187d064210074448dbcd7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aefe4686fcae187d064210074448dbcd7"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_system.html#aefe4686fcae187d064210074448dbcd7">unmute</a> ()</td></tr>
-<tr class="memdesc:aefe4686fcae187d064210074448dbcd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmute. <br /></td></tr>
+<tr class="memdesc:aefe4686fcae187d064210074448dbcd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmute the <a class="el" href="class_audio_system.html" title="A container around an OpenAL Device and Context  This class is the core of Audio in the wrapper...">AudioSystem</a>. <br /></td></tr>
 <tr class="separator:aefe4686fcae187d064210074448dbcd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecac03f1123d04ee78a161dbe5a799e9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aecac03f1123d04ee78a161dbe5a799e9"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_system.html#aecac03f1123d04ee78a161dbe5a799e9">isDefaultAudioCaptureDeviceAvailable</a> ()</td></tr>
-<tr class="memdesc:aecac03f1123d04ee78a161dbe5a799e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is Default Audio Capture Device Available. <br /></td></tr>
+<tr class="memitem:aecac03f1123d04ee78a161dbe5a799e9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_system.html#aecac03f1123d04ee78a161dbe5a799e9">isDefaultAudioCaptureDeviceAvailable</a> ()</td></tr>
+<tr class="memdesc:aecac03f1123d04ee78a161dbe5a799e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is Default Audio Capture Device Available.  <a href="#aecac03f1123d04ee78a161dbe5a799e9">More...</a><br /></td></tr>
 <tr class="separator:aecac03f1123d04ee78a161dbe5a799e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84cd7f168efaab54917804953ae1ecab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a84cd7f168efaab54917804953ae1ecab"></a>
-virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_system.html#a84cd7f168efaab54917804953ae1ecab">getDefaultAudioCaptureDeviceName</a> ()</td></tr>
-<tr class="memdesc:a84cd7f168efaab54917804953ae1ecab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Default Audio Capture Device Name. <br /></td></tr>
+<tr class="memitem:a84cd7f168efaab54917804953ae1ecab"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_system.html#a84cd7f168efaab54917804953ae1ecab">getDefaultAudioCaptureDeviceName</a> ()</td></tr>
+<tr class="memdesc:a84cd7f168efaab54917804953ae1ecab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Default Audio <a class="el" href="class_capture_device.html" title="A Container for a Single Audio Capture Device  The CaptureDevice Class is a container for a single ca...">CaptureDevice</a> Name.  <a href="#a84cd7f168efaab54917804953ae1ecab">More...</a><br /></td></tr>
 <tr class="separator:a84cd7f168efaab54917804953ae1ecab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0ebad7d9ebf07313546404b8eaee3a8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac0ebad7d9ebf07313546404b8eaee3a8"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_system.html#ac0ebad7d9ebf07313546404b8eaee3a8">isAudioCaptureDeviceAvailable</a> ()</td></tr>
-<tr class="memdesc:ac0ebad7d9ebf07313546404b8eaee3a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is Audio Capture Device Available. <br /></td></tr>
+<tr class="memitem:ac0ebad7d9ebf07313546404b8eaee3a8"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_system.html#ac0ebad7d9ebf07313546404b8eaee3a8">isAudioCaptureDeviceAvailable</a> ()</td></tr>
+<tr class="memdesc:ac0ebad7d9ebf07313546404b8eaee3a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is any Audio Capture Device Available.  <a href="#ac0ebad7d9ebf07313546404b8eaee3a8">More...</a><br /></td></tr>
 <tr class="separator:ac0ebad7d9ebf07313546404b8eaee3a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18571d33c38479f05f0e09d2ad927ce0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a18571d33c38479f05f0e09d2ad927ce0"></a>
-virtual std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_system.html#a18571d33c38479f05f0e09d2ad927ce0">getAudioCaptureDevices</a> ()</td></tr>
-<tr class="memdesc:a18571d33c38479f05f0e09d2ad927ce0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get A List of Available Audio Capture Devices. <br /></td></tr>
+<tr class="memitem:a18571d33c38479f05f0e09d2ad927ce0"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_system.html#a18571d33c38479f05f0e09d2ad927ce0">getAudioCaptureDevices</a> ()</td></tr>
+<tr class="memdesc:a18571d33c38479f05f0e09d2ad927ce0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get A List of Available Audio Capture Devices.  <a href="#a18571d33c38479f05f0e09d2ad927ce0">More...</a><br /></td></tr>
 <tr class="separator:a18571d33c38479f05f0e09d2ad927ce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab53a4a6f6c60f9ea26bbfdf423d5b44e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab53a4a6f6c60f9ea26bbfdf423d5b44e"></a>
-virtual <a class="el" href="class_capture_device.html">CaptureDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_system.html#ab53a4a6f6c60f9ea26bbfdf423d5b44e">getAudioCaptureDevice</a> (int id)</td></tr>
-<tr class="memdesc:ab53a4a6f6c60f9ea26bbfdf423d5b44e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Audio Capture Device by Number. <br /></td></tr>
+<tr class="memitem:ab53a4a6f6c60f9ea26bbfdf423d5b44e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_capture_device.html">CaptureDevice</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_system.html#ab53a4a6f6c60f9ea26bbfdf423d5b44e">getAudioCaptureDevice</a> (int id)</td></tr>
+<tr class="memdesc:ab53a4a6f6c60f9ea26bbfdf423d5b44e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Audio Capture Device by Number.  <a href="#ab53a4a6f6c60f9ea26bbfdf423d5b44e">More...</a><br /></td></tr>
 <tr class="separator:ab53a4a6f6c60f9ea26bbfdf423d5b44e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65e69cc7930c5f1bc3244ccddb72e59f"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_system.html#a65e69cc7930c5f1bc3244ccddb72e59f">getCaptureDeviceCount</a> ()</td></tr>
+<tr class="memdesc:a65e69cc7930c5f1bc3244ccddb72e59f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get CaptureDeviceCount.  <a href="#a65e69cc7930c5f1bc3244ccddb72e59f">More...</a><br /></td></tr>
+<tr class="separator:a65e69cc7930c5f1bc3244ccddb72e59f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -331,7 +316,7 @@ std::vector&lt; <a class="el" href="class_capture_device.html">CaptureDevice</a>
 
 </div>
 </div>
-<a class="anchor" id="a14fe9f8c4e7c55ccac3b7fa555fb617d"></a>
+<a class="anchor" id="ac50714b2f31f43927592252e65f2e6a1"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -339,21 +324,118 @@ std::vector&lt; <a class="el" href="class_capture_device.html">CaptureDevice</a>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual const ALCdevice* AudioSystem::getAudioDevice </td>
+          <td class="memname">void AudioSystem::disable </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>feature</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the AudioDevice. </p>
-<dl class="section return"><dt>Returns</dt><dd>the AudioDevice </dd></dl>
+<p>Disable context capablility. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">feature[in]</td><td>the feature we are enabling </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a1a52463f1f5b50a3b648225c486c71b2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AudioSystem::enable </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>feature</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enable context capablility. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">feature[in]</td><td>the feature we are enabling </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab53a4a6f6c60f9ea26bbfdf423d5b44e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_capture_device.html">CaptureDevice</a> * AudioSystem::getAudioCaptureDevice </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get Audio Capture Device by Number. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id[in]</td><td>a numberic ID associated with the <a class="el" href="class_capture_device.html" title="A Container for a Single Audio Capture Device  The CaptureDevice Class is a container for a single ca...">CaptureDevice</a> (0 being the first and default) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="class_capture_device.html" title="A Container for a Single Audio Capture Device  The CaptureDevice Class is a container for a single ca...">CaptureDevice</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a18571d33c38479f05f0e09d2ad927ce0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; AudioSystem::getAudioCaptureDevices </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get A List of Available Audio Capture Devices. </p>
+<dl class="section return"><dt>Returns</dt><dd>an stl vector where each element is the string name of an AudioDevice </dd></dl>
 
 </div>
 </div>
@@ -380,6 +462,58 @@ std::vector&lt; <a class="el" href="class_capture_device.html">CaptureDevice</a>
 
 <p>Get a list of Available Output Devices. </p>
 <dl class="section return"><dt>Returns</dt><dd>an stl::vector of strings each entry containing the name of a single Audio Device </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a65e69cc7930c5f1bc3244ccddb72e59f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int AudioSystem::getCaptureDeviceCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get CaptureDeviceCount. </p>
+<dl class="section return"><dt>Returns</dt><dd>the number of Capture Devices available </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a84cd7f168efaab54917804953ae1ecab"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string AudioSystem::getDefaultAudioCaptureDeviceName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get Default Audio <a class="el" href="class_capture_device.html" title="A Container for a Single Audio Capture Device  The CaptureDevice Class is a container for a single ca...">CaptureDevice</a> Name. </p>
+<dl class="section return"><dt>Returns</dt><dd>the name of the Default Audio <a class="el" href="class_capture_device.html" title="A Container for a Single Audio Capture Device  The CaptureDevice Class is a container for a single ca...">CaptureDevice</a> </dd></dl>
 
 </div>
 </div>
@@ -565,6 +699,32 @@ std::vector&lt; <a class="el" href="class_capture_device.html">CaptureDevice</a>
 
 </div>
 </div>
+<a class="anchor" id="a54fe36cc0616868df20a892dcf3999c2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float AudioSystem::getMusicVolume </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get <a class="el" href="class_music.html" title="A Container for a Tracker Music File (XM, S3M, MOD, IT, and others supported by libxmp)  The Music Cl...">Music</a> Volume. </p>
+<dl class="section return"><dt>Returns</dt><dd>the music volume in the range of 0.0f - 1.0f </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="acaf8eb80e09ecf5feee97063b5c2ad99"></a>
 <div class="memitem">
 <div class="memproto">
@@ -614,6 +774,32 @@ std::vector&lt; <a class="el" href="class_capture_device.html">CaptureDevice</a>
 
 <p>Get Renderer for OpenAL. </p>
 <dl class="section return"><dt>Returns</dt><dd>The OpenAL renderer </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aef3217c6002ad8092d449211f305bdeb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float AudioSystem::getSoundVolume </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get <a class="el" href="class_sound.html" title="An playable instance of a SoundBuffer  Sources only come into existance when you call the play functi...">Sound</a> Volume. </p>
+<dl class="section return"><dt>Returns</dt><dd>the sound volume in the range of 0.0f - 1.0f </dd></dl>
 
 </div>
 </div>
@@ -721,6 +907,32 @@ std::vector&lt; <a class="el" href="class_capture_device.html">CaptureDevice</a>
 
 </div>
 </div>
+<a class="anchor" id="ac0ebad7d9ebf07313546404b8eaee3a8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AudioSystem::isAudioCaptureDeviceAvailable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Is any Audio Capture Device Available. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if there is a audio capture device available otherwise false </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="aa3ba3878ad45fab4a6e1d9bf205148db"></a>
 <div class="memitem">
 <div class="memproto">
@@ -744,6 +956,32 @@ std::vector&lt; <a class="el" href="class_capture_device.html">CaptureDevice</a>
 
 <p>Is there an Audio Output Device Available *. </p>
 <dl class="section return"><dt>Returns</dt><dd>true if there is an Audio Deviec Available otherwise false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aecac03f1123d04ee78a161dbe5a799e9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AudioSystem::isDefaultAudioCaptureDeviceAvailable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Is Default Audio Capture Device Available. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if there is a default audio capture device available otherwise false </dd></dl>
 
 </div>
 </div>
@@ -773,6 +1011,38 @@ std::vector&lt; <a class="el" href="class_capture_device.html">CaptureDevice</a>
 
 </div>
 </div>
+<a class="anchor" id="a70e956eaf4e09f00be8ef5d8acf87f5f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AudioSystem::isEnabled </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>feature</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Is Context Capability Enabled. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">feature[in]</td><td>the feature we are querying </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="ab179fab45afea28a71d8c3daeb75426c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -797,6 +1067,64 @@ std::vector&lt; <a class="el" href="class_capture_device.html">CaptureDevice</a>
 
 <p>Is Extension Present? </p>
 <dl class="section return"><dt>Returns</dt><dd>true if an extension is present otherwise false </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa96eaeef3357a8c0ab45eb0be8772727"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AudioSystem::isMute </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Is Mute. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the <a class="el" href="class_audio_system.html" title="A container around an OpenAL Device and Context  This class is the core of Audio in the wrapper...">AudioSystem</a> is muted false otherwise </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a86656082f7952fc1fb643e7d01f82eb5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AudioSystem::setDistanceModel </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>model</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set Distance Model. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">model</td><td>the distane model to be used NOTE: I have been unable to find documentation </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -859,12 +1187,12 @@ std::vector&lt; <a class="el" href="class_capture_device.html">CaptureDevice</a>
 <p>Set Listener Direction. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">directionX</td><td>x part of the direction vector the listener is facing </td></tr>
-    <tr><td class="paramname">directiony</td><td>y part of the direction vector the listener is facing </td></tr>
-    <tr><td class="paramname">directiony</td><td>z part of the direction vector the listener is facing </td></tr>
-    <tr><td class="paramname">upX</td><td>the x part of the upward vector for the listener </td></tr>
-    <tr><td class="paramname">upY</td><td>the y part of the upward vector for the listener </td></tr>
-    <tr><td class="paramname">upZ</td><td>the z part of the upward vector for the listener </td></tr>
+    <tr><td class="paramname">directionX[in]</td><td>x part of the direction vector the listener is facing </td></tr>
+    <tr><td class="paramname">directionY[in]</td><td>y part of the direction vector the listener is facing </td></tr>
+    <tr><td class="paramname">directionZ[in]</td><td>z part of the direction vector the listener is facing </td></tr>
+    <tr><td class="paramname">upX[in]</td><td>the x part of the upward vector for the listener </td></tr>
+    <tr><td class="paramname">upY[in]</td><td>the y part of the upward vector for the listener </td></tr>
+    <tr><td class="paramname">upZ[in]</td><td>the z part of the upward vector for the listener </td></tr>
   </table>
   </dd>
 </dl>
@@ -906,8 +1234,8 @@ std::vector&lt; <a class="el" href="class_capture_device.html">CaptureDevice</a>
 <p>Set Listener 2D Position. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td>horizontal position </td></tr>
-    <tr><td class="paramname">y</td><td>vertical position </td></tr>
+    <tr><td class="paramname">x[in]</td><td>horizontal position </td></tr>
+    <tr><td class="paramname">y[in]</td><td>vertical position </td></tr>
   </table>
   </dd>
 </dl>
@@ -955,9 +1283,105 @@ std::vector&lt; <a class="el" href="class_capture_device.html">CaptureDevice</a>
 <p>Set Listener 3D Position. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td>horizontal position </td></tr>
-    <tr><td class="paramname">y</td><td>horizontal position </td></tr>
-    <tr><td class="paramname">z</td><td>vertical position </td></tr>
+    <tr><td class="paramname">x[in]</td><td>horizontal position </td></tr>
+    <tr><td class="paramname">y[in]</td><td>horizontal position </td></tr>
+    <tr><td class="paramname">z[in]</td><td>vertical position </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="adeee85a8ada846d283ecff006d5c4966"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AudioSystem::setMusicVolume </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>volume</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set <a class="el" href="class_music.html" title="A Container for a Tracker Music File (XM, S3M, MOD, IT, and others supported by libxmp)  The Music Cl...">Music</a> Volume. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">volume[in]</td><td>the volume in the range of 0.0f - 1.0f </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="acae3cf057e80fac1f4572e29898b0934"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AudioSystem::setMute </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set Mute Flag. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state[in]</td><td>true to mute the <a class="el" href="class_audio_system.html" title="A container around an OpenAL Device and Context  This class is the core of Audio in the wrapper...">AudioSystem</a> false otherwise </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a46b30477e926413196ab281fc1e9fbf9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AudioSystem::setSoundVolume </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>volume</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set <a class="el" href="class_sound.html" title="An playable instance of a SoundBuffer  Sources only come into existance when you call the play functi...">Sound</a> Volume. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">volume[in]</td><td>the sound volume in the range of 0.0f - 1.0f </td></tr>
   </table>
   </dd>
 </dl>
@@ -974,7 +1398,7 @@ std::vector&lt; <a class="el" href="class_capture_device.html">CaptureDevice</a>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_audio_system.html">AudioSystem</a></li>
-    <li class="footer">Generated on Thu Aug 25 2016 19:10:12 for OpenALWrapper by
+    <li class="footer">Generated on Fri Aug 26 2016 00:44:21 for OpenALWrapper by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

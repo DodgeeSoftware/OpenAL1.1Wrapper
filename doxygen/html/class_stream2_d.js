@@ -12,7 +12,7 @@ var class_stream2_d =
     [ "getMinVolume", "class_stream2_d.html#a9a44c01b8c1bc7bbcfc9358654b48823", null ],
     [ "getOuterConeAngle", "class_stream2_d.html#ab335e5fefb1aff8041c48c72269d9fa4", null ],
     [ "getPosition", "class_stream2_d.html#a8534fc9b0cf77ab071c19c48df2a23be", null ],
-    [ "getReferenceDistances", "class_stream2_d.html#a0e30eeefb695982fa7f4d703595ec7c4", null ],
+    [ "getReferenceDistance", "class_stream2_d.html#abb53d40b56ded1ac8675ca1f2ca0de9e", null ],
     [ "getRollOff", "class_stream2_d.html#a07404e8eeba5266ffda47398f4d773fa", null ],
     [ "getVelocity", "class_stream2_d.html#a30433073af33e50fd9f8e456dfdc5bfa", null ],
     [ "getX", "class_stream2_d.html#ac97d37983ca0461bf50f722e1b065a53", null ],

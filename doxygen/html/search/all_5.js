@@ -1,12 +1,14 @@
 var searchData=
 [
+  ['getalcerrorstring',['getALCErrorString',['../namespace_utils.html#a1b87b8e178b3c08bbacaa62ecdb2a14d',1,'Utils']]],
+  ['getalerrorstring',['getALErrorString',['../namespace_utils.html#a5e1f580ebf596ea3b1fecbe487738d76',1,'Utils']]],
   ['getaudiocapturedevice',['getAudioCaptureDevice',['../class_audio_system.html#ab53a4a6f6c60f9ea26bbfdf423d5b44e',1,'AudioSystem']]],
   ['getaudiocapturedevices',['getAudioCaptureDevices',['../class_audio_system.html#a18571d33c38479f05f0e09d2ad927ce0',1,'AudioSystem']]],
-  ['getaudiodevice',['getAudioDevice',['../class_audio_system.html#a14fe9f8c4e7c55ccac3b7fa555fb617d',1,'AudioSystem']]],
   ['getaudiodevices',['getAudioDevices',['../class_audio_system.html#aa0d51465c5afa7bf835a52337e510b0b',1,'AudioSystem']]],
   ['getbits',['getBits',['../class_sound_buffer.html#a9b078ed19e0d4f2afb9fa86c18718ff0',1,'SoundBuffer']]],
   ['getbufferid',['getBufferID',['../class_sound_buffer.html#aad54d3309b16dbdfb47cb3f407b9913d',1,'SoundBuffer']]],
   ['getcapturedevice',['getCaptureDevice',['../class_capture_device.html#a790277da5bfeb6ab7ad4ee661d6ad55e',1,'CaptureDevice']]],
+  ['getcapturedevicecount',['getCaptureDeviceCount',['../class_audio_system.html#a65e69cc7930c5f1bc3244ccddb72e59f',1,'AudioSystem']]],
   ['getchannels',['getChannels',['../class_stream.html#ac5720a9ba681ad561dfa747a257633ce',1,'Stream::getChannels()'],['../class_sound_buffer.html#a80e898322c50dd7b3ad47b69cf0bde6f',1,'SoundBuffer::getChannels()']]],
   ['getdefaultaudiocapturedevicename',['getDefaultAudioCaptureDeviceName',['../class_audio_system.html#a84cd7f168efaab54917804953ae1ecab',1,'AudioSystem']]],
   ['getdirection',['getDirection',['../class_sound3_d.html#a0d5e7d721ed251547b63f8d23dc69993',1,'Sound3D::getDirection()'],['../class_sound2_d.html#aaff09eea56f5d63782c7dc194f5ec8d3',1,'Sound2D::getDirection()'],['../class_stream2_d.html#ae4c04522514889a73910ef824e7af2a5',1,'Stream2D::getDirection()'],['../class_stream3_d.html#a1efb368ae061bb7d1d03b9a2e5769250',1,'Stream3D::getDirection()']]],
@@ -17,6 +19,7 @@ var searchData=
   ['getfrequency',['getFrequency',['../class_audio_system.html#af908f260317b2eb45b1dc2fc60c8cd15',1,'AudioSystem::getFrequency()'],['../class_sound_buffer.html#ad9883a695f6be42e124eaf8e30a73502',1,'SoundBuffer::getFrequency()']]],
   ['getid',['getID',['../class_capture_device.html#ab715244302691f4bd446729f41be752e',1,'CaptureDevice']]],
   ['getinnerconeangle',['getInnerConeAngle',['../class_sound3_d.html#a3a5fb760301dfd933458c86b95b60e74',1,'Sound3D::getInnerConeAngle()'],['../class_sound2_d.html#a99016b22d485ec05c4ecaea8b36d4cd2',1,'Sound2D::getInnerConeAngle()'],['../class_stream2_d.html#aea43b0ea227c9a81c0da17b0758b4538',1,'Stream2D::getInnerConeAngle()'],['../class_stream3_d.html#a7698c679dc8ae20ba06a506586452088',1,'Stream3D::getInnerConeAngle()']]],
+  ['getlibxmperrorstring',['getLibXMPErrorString',['../namespace_utils.html#a227c55cec054a8f909078198023f270f',1,'Utils']]],
   ['getlistenerx',['getListenerX',['../class_audio_system.html#a303ae2ac68d08e23edf922a2e599944a',1,'AudioSystem']]],
   ['getlistenery',['getListenerY',['../class_audio_system.html#ad1d4fd4608733d141ba384f86e502f66',1,'AudioSystem']]],
   ['getlistenerz',['getListenerZ',['../class_audio_system.html#adccbd42b563e7683880ecc36910eb975',1,'AudioSystem']]],
@@ -29,12 +32,12 @@ var searchData=
   ['getouterconeangle',['getOuterConeAngle',['../class_sound3_d.html#ae2a6bdd01bb5cbf81ff70524ca88b244',1,'Sound3D::getOuterConeAngle()'],['../class_sound2_d.html#acca7f58e56c6ae294d29a5ea345e7bd1',1,'Sound2D::getOuterConeAngle()'],['../class_stream2_d.html#ab335e5fefb1aff8041c48c72269d9fa4',1,'Stream2D::getOuterConeAngle()'],['../class_stream3_d.html#aa2f078eecb61ef8063b237fc0a2cd5f6',1,'Stream3D::getOuterConeAngle()']]],
   ['getpitch',['getPitch',['../class_source.html#a231c1ece3df5524c48e20e1ae474fd96',1,'Source']]],
   ['getposition',['getPosition',['../class_sound3_d.html#a1014b89042168524df088826191a2af2',1,'Sound3D::getPosition()'],['../class_sound2_d.html#a68c09b4d743580c4fcf1633d11bf2bb8',1,'Sound2D::getPosition()'],['../class_stream2_d.html#a8534fc9b0cf77ab071c19c48df2a23be',1,'Stream2D::getPosition()'],['../class_stream3_d.html#a8c64add41c3f668a633a2f1b814f7ac2',1,'Stream3D::getPosition()']]],
-  ['getreferencedistance',['getReferenceDistance',['../class_sound2_d.html#ad45b795d038c68ff6590c20ec27a0a25',1,'Sound2D']]],
-  ['getreferencedistances',['getReferenceDistances',['../class_stream2_d.html#a0e30eeefb695982fa7f4d703595ec7c4',1,'Stream2D::getReferenceDistances()'],['../class_stream3_d.html#ac03ecf483ae5df82dc04d45cce78b650',1,'Stream3D::getReferenceDistances()']]],
+  ['getreferencedistance',['getReferenceDistance',['../class_sound3_d.html#a2b1f223cbc0751831b75833dde9d443a',1,'Sound3D::getReferenceDistance()'],['../class_sound2_d.html#ad45b795d038c68ff6590c20ec27a0a25',1,'Sound2D::getReferenceDistance()'],['../class_stream2_d.html#abb53d40b56ded1ac8675ca1f2ca0de9e',1,'Stream2D::getReferenceDistance()'],['../class_stream3_d.html#acb2a4853e3177e482d48ecf9a2fedfd6',1,'Stream3D::getReferenceDistance()']]],
   ['getrefreshrate',['getRefreshRate',['../class_audio_system.html#acaf8eb80e09ecf5feee97063b5c2ad99',1,'AudioSystem']]],
   ['getrenderer',['getRenderer',['../class_audio_system.html#ae2810304af5fafb66920ea3163f5e91b',1,'AudioSystem']]],
   ['getrolloff',['getRollOff',['../class_sound3_d.html#a5165d61ea05e02165971b3b68fe9493e',1,'Sound3D::getRollOff()'],['../class_sound2_d.html#a648cfa4ca29842482a5da4f278c3b983',1,'Sound2D::getRollOff()'],['../class_stream2_d.html#a07404e8eeba5266ffda47398f4d773fa',1,'Stream2D::getRollOff()'],['../class_stream3_d.html#a80983a03be4d1bbad5fc2665de7b45a6',1,'Stream3D::getRollOff()']]],
   ['getsamplerate',['getSampleRate',['../class_stream.html#a9565e4d2468d3f0cba1ae2d6e1bce4c4',1,'Stream']]],
+  ['getsferrorstring',['getSFErrorString',['../namespace_utils.html#ac90502e580eb947b46a8a4eff4390329',1,'Utils']]],
   ['getsize',['getSize',['../class_sound_buffer.html#af6ad127b5ff6f4c50df0566a9a199b25',1,'SoundBuffer']]],
   ['getsoundbuffer',['getSoundBuffer',['../class_audio_manager.html#a7b530c6096e3c74bf5cbf803f3f6992e',1,'AudioManager::getSoundBuffer(std::string filename)'],['../class_audio_manager.html#a4d10ed3421d67d1134a6bea3c65d8d39',1,'AudioManager::getSoundBuffer(std::string filename, bool addToMap)'],['../class_sound.html#aeb967047107d3fde4b74530a70250616',1,'Sound::getSoundBuffer()']]],
   ['getsoundvolume',['getSoundVolume',['../class_audio_system.html#aef3217c6002ad8092d449211f305bdeb',1,'AudioSystem']]],
@@ -48,5 +51,6 @@ var searchData=
   ['gety',['getY',['../class_sound3_d.html#ad8f929f2e0a51494c4f920a9ff924a4b',1,'Sound3D::getY()'],['../class_sound2_d.html#ac0a51d3b26add600f4b7e855dbd1fdda',1,'Sound2D::getY()'],['../class_stream2_d.html#af210c1c2386e4ba59396396851d02652',1,'Stream2D::getY()'],['../class_stream3_d.html#a696c692d8e9c7455c390e733ceeade7e',1,'Stream3D::getY()'],['../class_open_a_l_vector2_d.html#a469fcaf207742e6e0c294643f9a320a2',1,'OpenALVector2D::getY()'],['../class_open_a_l_vector3_d.html#a01d2e632471e75a62d1efbfe11da1d2e',1,'OpenALVector3D::getY()']]],
   ['getyvelocity',['getYVelocity',['../class_sound3_d.html#aa17a537a5e3db860a5e74bddf7056762',1,'Sound3D::getYVelocity()'],['../class_sound2_d.html#aab1a0c34ce47085bc031b929ab6b45f4',1,'Sound2D::getYVelocity()'],['../class_stream2_d.html#a8b0bb30dd850fd68e97cb917a2853bea',1,'Stream2D::getYVelocity()'],['../class_stream3_d.html#a4d5b179f07a9d1b6ec1c7054c30ca1f3',1,'Stream3D::getYVelocity()']]],
   ['getz',['getZ',['../class_sound3_d.html#a3429e315cc0c961cdc606d82bf3b723a',1,'Sound3D::getZ()'],['../class_stream3_d.html#aa6ae8020ee0857295da2071a3ccd2edf',1,'Stream3D::getZ()'],['../class_open_a_l_vector3_d.html#a4842ff99cfe264bdd0ac31411ccbc45c',1,'OpenALVector3D::getZ()']]],
-  ['getzvelocity',['getZVelocity',['../class_sound3_d.html#aafecce947706cef00d33a710a34f0508',1,'Sound3D::getZVelocity()'],['../class_stream3_d.html#a370efa015f3b2441fb8216de02ef3884',1,'Stream3D::getZVelocity()']]]
+  ['getzvelocity',['getZVelocity',['../class_sound3_d.html#aafecce947706cef00d33a710a34f0508',1,'Sound3D::getZVelocity()'],['../class_stream3_d.html#a370efa015f3b2441fb8216de02ef3884',1,'Stream3D::getZVelocity()']]],
+  ['gameaudio_20_28openalwrapper_29',['GameAudio (OpenALWrapper)',['../index.html',1,'']]]
 ];

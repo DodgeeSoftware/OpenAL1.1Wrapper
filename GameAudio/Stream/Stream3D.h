@@ -1,9 +1,12 @@
-// ********************************
-// * COMPANY: Dodgee Software     *
-// * AUTHOR: Shem Taylor          *
-// * Written 2016 Dodgee Software *
-// * GPLv3                        *
-// ********************************
+/**
+  * @file   Stream3D.h
+  * @Author Sergeant Neipo (sergeant.neipo@gmail.com)
+  * @date   August, 2016
+  * @brief  Stream3D provides the ability to load and buffer
+  * audio files in real-time so that an entire file
+  * need not be loaded. This massively decreases load time.
+  * This implementation supports playback in 3D space
+*/
 
 #ifndef STREAM3D_H
 #define STREAM3D_H
@@ -89,15 +92,15 @@ class Stream3D : public Stream
     // * GENERAL FUNCTIONS *
     // *********************
     public:
-        //! Play
+        /** @brief Play **/
         virtual void play();
-        //! Start
+        /** @brief Start **/
         virtual void start();
-        //! Stop
+        /** @brief Stop **/
         virtual void stop();
-        //! Clear
+        /** @brief Clear **/
         virtual void clear();
-        //! Free
+        /** @brief Free **/
         virtual void free();
 
     protected:
@@ -107,29 +110,45 @@ class Stream3D : public Stream
     // * TRANSFORM STUFF *
     // *******************
     public:
-        //! Get X
+        /** @brief Get X
+          * @return X Position **/
         virtual float getX();
-        //! Get Y
+        /** @brief Get Y
+          * @return Y Position **/
         virtual float getY();
-        //! Get Z
+        /** @brief Get Z
+          * @return Z Position **/
         virtual float getZ();
-        //! Get Position
+        /** @brief Get Position
+          * @return Position as an OpenALVector3D **/
         virtual OpenALVector3D getPosition();
-        //! Set Position
+        /** @brief Set Position
+          * @param x[in] horizontal position
+          * @param y[in] vertical position
+          * @param z[in] depth position **/
         virtual void setPosition(float x, float y, float z);
-        //! Set Position
+        /** @brief Set Position
+          * @param v[in] the position as an OpenALVector **/
         virtual void setPosition(OpenALVector3D v);
-        //! Get X Velocity
+        /** @brief Get X Velocity
+          * @return horizontal velocity **/
         virtual float getXVelocity();
-        //! Get Y Velocity
+        /** @brief Get Y Velocity
+          * @return vertical velocity **/
         virtual float getYVelocity();
-        //! Get Z Velocity
+        /** @brief Get Z Velocity
+          * @return depth velocity **/
         virtual float getZVelocity();
-        //! Get Velocity
+        /** @brief Get Velocity
+          * @return the velocity as an OpenALVector3D **/
         virtual OpenALVector3D getVelocity();
-        //! Set Velocity
+        /** @brief Set Velocity
+          * @param horizontal part of the velocity vector
+          * @param vertical part of the velocity vector
+          * @param depth part of the velocity vector **/
         virtual void setVelocity(float x, float y, float z);
-        //! Set Velocity
+        /** @brief Set Velocity
+          * @param v[in] velocity vector as an OpenALVector3D **/
         virtual void setVelocity(OpenALVector3D v);
 
     protected:
@@ -150,21 +169,31 @@ class Stream3D : public Stream
     // * DIRECTION, CONE *
     // *******************
     public:
-        //! Get Direction
+        /** @brief Get Direction
+          * @return Directional Vector as an OpenALVector3D **/
         virtual OpenALVector3D getDirection();
-        //! Set Direction
+        /** @brief Set Direction
+          * @param xDirection[in] horizontal part of the direction vector
+          * @param yDirection[in] vertical part of the direction vector
+          * @param zDirection[in] depth part of the direction vector **/
         virtual void setDirection(float xDirection, float yDirection, float zDirection);
-        //! Set Direction
+        /** @brief Set Direction
+          * @param direction[in] direction vector as an OpenALVector3D **/
         virtual void setDirection(OpenALVector3D direction);
-        //! Get Inner Cone Angle
+        /** @brief Get Inner Cone Angle
+          * @return Inner Cone Angle **/ // TODO: Note sure if this is in radians or degrees
         virtual float getInnerConeAngle();
-        //! Set Inner Cone Angle
+        /** @brief Set Inner Cone Angle
+          * @param angle[in] angle of the inner code **/ // TODO: Note sure if this is in radians or degrees
         virtual void setInnerConeAngle(float angle);
-        //! Get Outer Cone Angle
+        /** @brief Get Outer Cone Angle
+          * @return OuterConeAngle **/ // TODO: Note sure if this is in radians or degrees
         virtual float getOuterConeAngle();
-        //! Set Outer Cone Angle
+        /** @brief Set Outer Cone Angle
+          * @param angle[in] Outer Cone Angle **/ // TODO: Note sure if this is in radians or degrees
         virtual void setOuterConeAngle(float angle);
-        //! Set Outer Cone Gain
+        /** @brief Set Outer Cone Gain
+          * @param gain[in] OuterConeGain **/
         virtual void setOuterConeGain(float gain);
 
     protected:
@@ -185,17 +214,23 @@ class Stream3D : public Stream
     // * ATTENUATION *
     // ***************
     public:
-        //! Get RollOff
+        /** @brief Get RollOff
+          * @return rollOff **/
         virtual float getRollOff();
-        //! Set RollOff
+        /** @brief Set RollOff
+          * @param rolloff[in] the Roll off to use **/ // TODO: better comment me from openal documentation
         virtual void setRollOff(float rollOff);
-        //! Get Reference Distances
-        virtual float getReferenceDistances();
-        //! Set Reference Distances
+        /** @brief Get Reference Distances
+          * @return reference distance */ // TODO: better comment me from openal documentation
+        virtual float getReferenceDistance();
+        /** @brief Set Reference Distances
+          * @param referenceDistance[in] reference distance to use **/ // TODO: better comment me from openal documentation
         virtual void setReferenceDistance(float referenceDistance);
-        //! Get Max Distance
+        /** @brief Get Max Distance
+          * @return maxDistance **/ // TODO: better comment me from openal documentation
         virtual float getMaxDistance();
-        //! Set Max Distance
+        /** @brief Set Max Distance
+          * @param maxDistance[in] **/ // TODO: better comment me from openal documentation
         virtual void setMaxDistance(float maxDistance);
 
     protected:
@@ -210,13 +245,17 @@ class Stream3D : public Stream
     // * MIN AND MAX VOLUME *
     // **********************
     public:
-        //! Get Min Volume (works on positional sources only)
+        /** @brief Get Min Volume
+          * @return minVolume **/
         virtual float getMinVolume();
-        //! Set Min Volume (works on positional sources only)
+        /** @brief Set Min Volume
+          * @param minVolume[in] the minimum volume **/ // TODO: better comment me from openal documentation
         virtual void setMinVolume(float minVolume);
-        //! Get Max Volume (works on positional sources only)
+        /** @brief Get Max Volume
+          * @return maxVolume **/
         virtual float getMaxVolume();
-        //! Set Max Volume (works on positional sources only)
+        /** @brief Set Max Volume
+          * @param maxVolume[in] maxVolume **/ // TODO: better comment me from openal documentation
         virtual void setMaxVolume(float maxVolume);
 
     protected:

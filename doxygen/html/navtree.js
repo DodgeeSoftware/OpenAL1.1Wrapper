@@ -1,8 +1,22 @@
 var NAVTREE =
 [
   [ "OpenALWrapper", "index.html", [
+    [ "GameAudio (OpenALWrapper)", "index.html", [
+      [ "Introduction", "index.html#intro_sec", null ],
+      [ "Installation", "index.html#install_sec", [
+        [ "Step 1: Dependencies", "index.html#step1", null ],
+        [ "Step 2: Search Paths", "index.html#step2", null ],
+        [ "Step 3: Use", "index.html#step3", null ]
+      ] ],
+      [ "Warning", "index.html#Warning", null ],
+      [ "Credits", "index.html#Credits", null ]
+    ] ],
     [ "Namespaces", null, [
-      [ "Namespace List", "namespaces.html", "namespaces" ]
+      [ "Namespace List", "namespaces.html", "namespaces" ],
+      [ "Namespace Members", "namespacemembers.html", [
+        [ "All", "namespacemembers.html", null ],
+        [ "Functions", "namespacemembers_func.html", null ]
+      ] ]
     ] ],
     [ "Classes", null, [
       [ "Class List", "annotated.html", "annotated" ],
@@ -22,7 +36,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_audio_manager_8h.html",
-"class_sound3_d.html#a0d5e7d721ed251547b63f8d23dc69993",
+"class_sound3_d.html#a0f4011b8e8631c54b5ae59c1713b3b78",
 "functions_func.html"
 ];
 

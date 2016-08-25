@@ -1,9 +1,12 @@
-// ********************************
-// * COMPANY: Dodgee Software     *
-// * AUTHOR: Shem Taylor          *
-// * Written 2016 Dodgee Software *
-// * GPLv3                        *
-// ********************************
+/**
+  * @file   main.cpp
+  * @Author Sergeant Neipo (sergeant.neipo@gmail.com)
+  * @date   August, 2016
+  * @brief  main.cpp runs our unit tests
+  * and forms as an easy to follow fully documented
+  * tutorial as to the use of each part of
+  * the GameAudio(OpenALWrapper)
+*/
 
 // C++ Includes
 #include <iostream>

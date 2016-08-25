@@ -1,9 +1,10 @@
-// ********************************
-// * COMPANY: Dodgee Software     *
-// * AUTHOR: Shem Taylor          *
-// * Written 2016 Dodgee Software *
-// * GPLv3                        *
-// ********************************
+/**
+  * @file   LibXMPUtils.h
+  * @Author Sergeant Neipo (sergeant.neipo@gmail.com)
+  * @date   August, 2016
+  * @brief  LibXMPUtils is a utility class providing
+  * adhoc functions that help us deal with the libXMP library
+*/
 
 #ifndef LIBXMPUTILS_H
 #define LIBXMPUTILS_H
@@ -11,6 +12,9 @@
 // XMP Includes
 #include <xmp.h>
 
+/** Utils is a name space
+    for our AudioWrapper
+    Utilities **/
 namespace Utils
 {
     //! Convert an AL Error Enumeration into a readable String

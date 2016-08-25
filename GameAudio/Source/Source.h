@@ -1,9 +1,10 @@
-// ********************************
-// * COMPANY: Dodgee Software     *
-// * AUTHOR: Shem Taylor          *
-// * Written 2016 Dodgee Software *
-// * GPLv3                        *
-// ********************************
+/**
+  * @file   Source.h
+  * @Author Sergeant Neipo (sergeant.neipo@gmail.com)
+  * @date   August, 2016
+  * @brief  Source is a small container around an OpenAL Source
+  * and forms the base class for other clases which emitt audio
+*/
 
 #ifndef SOURCE_H
 #define SOURCE_H
@@ -70,49 +71,62 @@ class Source
     // * GENERAL FUNCTIONS *
     // *********************
     public:
-        //! Play
+        /** @brief Play **/
         virtual void play();
-        //! Update
+        /** @brief Update
+          * @param dTime[in] the difference between the last frame
+          * and this one **/
         virtual void update(float dTime);
-        //! Start
+        /** @brief Start **/
         virtual void start();
-        //! Stop
+        /** @brief Stop **/
         virtual void stop();
-        //! Pause
+        /** @brief Pause **/
         virtual void pause();
-        //! Resume
+        /** @brief Resume **/
         virtual void resume();
-        //! Clear
+        /** @brief Clear **/
         virtual void clear();
-        //! Free
+        /** @brief Free **/
         virtual void free();
 
     public:
-        //! Is the Source Playing
+        /** @brief Is the Source Playing
+          * @return true if Source is currently playing otherwise false **/
         virtual bool isPlaying() ;
-        //! Is Paused
+        /** @brief Is Paused
+          * @return true if the Source is paused **/
         virtual bool isPaused();
-        //! Set Paused
+        /** @brief Set Paused
+          * @param state[in] true to pause false to resume **/
         virtual void setPaused(bool state);
-        //! Get Volume
+        /** @brief Get Volume
+          * @return volume **/
         virtual int getVolume();
-        //! Set Volume
+        /** @brief Set Volume
+          * @param volumep[in] the volume in range 0 - 255 */
         virtual void setVolume(int volume);
-        //! Is Mute
+        /** @brief Is Mute
+          * @return true if is muted false otherwise **/
         virtual bool isMute();
-        //! Set Mute Flag
+        /** @brief Set Mute Flag
+          * @param state[in] true to mute false to unmute **/
         virtual void setMute(bool state);
-        //! Mute
+        /** @brief Mute **/
         virtual void mute();
-        //! Unmute
+        /** @brief unmute **/
         virtual void unmute();
-        //! Is Looping
+        /** @brief Is Looping
+          * @return true if is looping false otherwise **/
         virtual bool isLooping();
-        //! Set Loop Mode
+        /** @brief Set Loop Mode
+          * @param state[in] true to loop false to play o nce **/
         virtual void setLooping(bool mode);
-        //! Get Pitch
+        /** @brief Get Pitch
+          * @return pitch **/
         virtual float getPitch();
-        //! Set Pitch
+        /** @brief Set Pitch
+          * @param pitch[in] pitch **/
         virtual void setPitch(float pitch);
 
     protected:

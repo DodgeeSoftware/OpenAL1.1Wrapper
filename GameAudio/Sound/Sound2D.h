@@ -1,9 +1,9 @@
-// ********************************
-// * COMPANY: Dodgee Software     *
-// * AUTHOR: Shem Taylor          *
-// * Written 2016 Dodgee Software *
-// * GPLv3                        *
-// ********************************
+/**
+  * @file   Sound2D.h
+  * @Author Sergeant Neipo (sergeant.neipo@gmail.com)
+  * @date   August, 2016
+  * @brief  Sound uses a SoundBuffer and a Source to play 2D positional audio
+*/
 
 #ifndef SOUND2D_H
 #define SOUND2D_H
@@ -88,15 +88,15 @@ class Sound2D : public Sound
     // * GENERAL FUNCTIONS *
     // *********************
     public:
-        //! Play
+        /** @brief Play **/
         virtual void play();
-        //! Start
+        /** @brief Start **/
         virtual void start();
-        //! Stop
+        /** @brief Stop **/
         virtual void stop();
-        //! Clear
+        /** @brief Clear **/
         virtual void clear();
-        //! Free
+        /** @brief Free **/
         virtual void free();
 
     protected:
@@ -106,25 +106,37 @@ class Sound2D : public Sound
     // * TRANSFORM STUFF *
     // *******************
     public:
-        //! Get X
+        /** @brief Get X
+          * @return X Position **/
         virtual float getX();
-        //! Get Y
+        /** @brief Get Y
+          * @return Y Position **/
         virtual float getY();
-        //! Get Position
+        /** @brief Get Position
+          * @return the Position as an OpenALVector2D **/
         virtual OpenALVector2D getPosition();
-        //! Set Position
+        /** @brief Set Position
+          * @param x[in] horizontal position
+          * @param y[in] vertical position **/
         virtual void setPosition(float x, float y);
-        //! Set Position
+        /** @brief Set Position
+          * @param v[in] Set the Position using an OpenALVector2D **/
         virtual void setPosition(OpenALVector2D v);
-        //! Get X Velocity
+        /** @brief Get X Velocity
+          * @return horizontal velocity **/
         virtual float getXVelocity();
-        //! Get Y Velocity
+        /** @brief Get Y Velocity
+          * @return vertical velocity **/
         virtual float getYVelocity();
-        //! Get Velocity
+        /** @brief Get Velocity
+          * @return Velocity as an OpenALVector2D **/
         virtual OpenALVector2D getVelocity();
-        //! Set Velocity
+        /** @brief Set Velocity
+          * @param xVelocity[in] horizontal velocity
+          * @param yVelocity[in] vertical velocity **/
         virtual void setVelocity(float xVelocity, float yVelocity);
-        //! Set Velocity
+        /** @brief Set Velocity
+          * @param velocity[in] Set Velocity using an OpenALVector2D **/
         virtual void setVelocity(OpenALVector2D velocity);
 
     protected:
@@ -138,24 +150,33 @@ class Sound2D : public Sound
         float yVelocity;
 
     // *******************
-    // * DIRECTION, CONE *
+    // * DIRECTION, CONE * // TODO: better comment me from openal documentation
     // *******************
     public:
-        //! Get Direction
+        /** @brief Get Direction
+          * @return Direction as an OpenALVector2D **/
         virtual OpenALVector2D getDirection();
-        //! Set Direction
+        /** @brief Set Direction
+          * @param xDirection[in] horizontal part of the direction
+          * @param yDirection[in] vertical part of the direction **/
         virtual void setDirection(float xDirection, float yDirection);
-        //! Set Direction
+        /** @brief Set Direction
+            @param direction[in] direction as an OpenAlVector2D **/
         virtual void setDirection(OpenALVector2D direction);
-        //! Get Inner Cone Angle
+        /** @brief Get Inner Cone Angle
+          * @return Inner Cone Angle **/ // TODO: Note sure if this is in radians or degrees
         virtual float getInnerConeAngle();
-        //! Set Inner Cone Angle
+        /** @brief Set Inner Cone Angle
+          * @param angle[in] angle of the inner code **/ // TODO: Note sure if this is in radians or degrees
         virtual void setInnerConeAngle(float angle);
-        //! Get Outer Cone Angle
+        /** @brief Get Outer Cone Angle
+          * @return OuterConeAngle **/ // TODO: Note sure if this is in radians or degrees
         virtual float getOuterConeAngle();
-        //! Set Outer Cone Angle
+        /** @brief Set Outer Cone Angle
+          * @param angle[in] Outer Cone Angle **/ // TODO: Note sure if this is in radians or degrees
         virtual void setOuterConeAngle(float angle);
-        //! Set Outer Cone Gain
+        /** @brief Set Outer Cone Gain
+          * @param gain[in] OuterConeGain **/
         virtual void setOuterConeGain(float gain);
 
     protected:
@@ -174,17 +195,23 @@ class Sound2D : public Sound
     // * ATTENUATION *
     // ***************
     public:
-        //! Get RollOff
-        virtual float getRollOff();
-        //! Set RollOff
+        /** @brief Get RollOff
+          * @return rollOff **/
+        virtual float getRollOff(); // TODO: better comment me from openal documentation
+        /** @brief Set RollOff
+          * @param rolloff[in] the Roll off to use **/ // TODO: better comment me from openal documentation
         virtual void setRollOff(float rollOff);
-        //! Get Reference Distances
+        /** @brief Get Reference Distances
+          * @return reference distance */ // TODO: better comment me from openal documentation
         virtual float getReferenceDistance();
-        //! Set Reference Distances
+        /** @brief Set Reference Distances
+          * @param referenceDistance[in] reference distance to use **/ // TODO: better comment me from openal documentation
         virtual void setReferenceDistance(float referenceDistance);
-        //! Get Max Distance
+        /** @brief Get Max Distance
+          * @return maxDistance **/ // TODO: better comment me from openal documentation
         virtual float getMaxDistance();
-        //! Set Max Distance
+        /** @brief Set Max Distance
+          * @param maxDistance[in] **/ // TODO: better comment me from openal documentation
         virtual void setMaxDistance(float maxDistance);
 
     protected:
@@ -199,13 +226,17 @@ class Sound2D : public Sound
     // * MIN AND MAX VOLUME *
     // **********************
     public:
-        //! Get Min Volume (works on positional sources only)
+        /** @brief Get Min Volume
+          * @return minVolume **/
         virtual float getMinVolume();
-        //! Set Min Volume (works on positional sources only)
+        /** @brief Set Min Volume
+          * @param minVolume[in] the minimum volume **/ // TODO: better comment me from openal documentation
         virtual void setMinVolume(float minVolume);
-        //! Get Max Volume (works on positional sources only)
+        /** @brief Get Max Volume
+          * @return maxVolume **/
         virtual float getMaxVolume();
-        //! Set Max Volume (works on positional sources only)
+        /** @brief Set Max Volume
+          * @param maxVolume[in] maxVolume **/ // TODO: better comment me from openal documentation
         virtual void setMaxVolume(float maxVolume);
 
     protected:

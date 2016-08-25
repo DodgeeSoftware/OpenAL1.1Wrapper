@@ -340,6 +340,12 @@ void Sound3D::setRollOff(float rollOff)
     alSourcef(this->source, AL_ROLLOFF_FACTOR, this->rollOff);
 }
 
+float Sound3D::getReferenceDistance()
+{
+    // return referenceDistance
+    return this->referenceDistance;
+}
+
 void Sound3D::setReferenceDistance(float referenceDistance)
 {
     // Set Reference Distance

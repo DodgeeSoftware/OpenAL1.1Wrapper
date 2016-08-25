@@ -1,9 +1,12 @@
-// ********************************
-// * COMPANY: Dodgee Software     *
-// * AUTHOR: Shem Taylor          *
-// * Written 2016 Dodgee Software *
-// * GPLv3                        *
-// ********************************
+/**
+  * @file   AudioSystem.h
+  * @Author Sergeant Neipo (sergeant.neipo@gmail.com)
+  * @date   August, 2016
+  * @brief  AudioSystem is a simple wrapper around the OpenAL AudioDevice
+  * and the OpenAL AudioDevice context and provides basic services like
+  * indexing Recording devices, makie quieries about extensions, setting
+  * the global music/sound volume and setting the listener position
+*/
 
 #ifndef AUDIOSYSTEM_H
 #define AUDIOSYSTEM_H
@@ -92,13 +95,6 @@ class AudioSystem
           * @return an stl::vector of strings each entry containing
           * the name of a single Audio Device **/
         virtual std::vector<std::string> getAudioDevices();
-
-    public:
-        /* TODO: We need to wrap up the ALCDevice, that way there are no difficulties
-            binding this to script */
-        /** @brief Get the AudioDevice
-          * @return the AudioDevice **/
-        virtual const ALCdevice* getAudioDevice() const { return this->pAudioDevice; }
 
     protected:
         // Pointer to the OpenAL AudioDevice
@@ -218,21 +214,21 @@ class AudioSystem
           * @return listener Z **/
         virtual float getListenerZ();
         /** @brief Set Listener 2D Position
-          * @param x horizontal position
-          * @param y vertical position **/
+          * @param x[in] horizontal position
+          * @param y[in] vertical position **/
         virtual void setListenerPosition(float x, float y);
         /** @brief Set Listener 3D Position
-          * @param x horizontal position
-          * @param y horizontal position
-          * @param z vertical position **/
+          * @param x[in] horizontal position
+          * @param y[in] horizontal position
+          * @param z[in] vertical position **/
         virtual void setListenerPosition(float x, float y, float z);
         /** @brief Set Listener Direction
-          * @param directionX x part of the direction vector the listener is facing
-          * @param directiony y part of the direction vector the listener is facing
-          * @param directiony z part of the direction vector the listener is facing
-          * @param upX the x part of the upward vector for the listener
-          * @param upY the y part of the upward vector for the listener
-          * @param upZ the z part of the upward vector for the listener **/
+          * @param directionX[in] x part of the direction vector the listener is facing
+          * @param directionY[in] y part of the direction vector the listener is facing
+          * @param directionZ[in] z part of the direction vector the listener is facing
+          * @param upX[in] the x part of the upward vector for the listener
+          * @param upY[in] the y part of the upward vector for the listener
+          * @param upZ[in] the z part of the upward vector for the listener **/
         virtual void setListenerDirection(float directionX, float directionY, float directionZ, float upX, float upY, float upZ);
 
     protected:
@@ -248,7 +244,7 @@ class AudioSystem
           * that explains this**/
         virtual int getDistanceModel();
         /** @brief Set Distance Model
-          * @param model the distane model to be used
+          * @param[in] model the distane model to be used
           * NOTE: I have been unable to find documentation **/
         virtual void setDistanceModel(int model);
 
@@ -259,13 +255,13 @@ class AudioSystem
         context capabilities */
     public:
         /** @brief Is Context Capability Enabled
-          * @param feature the feature we are querying **/
+          * @param feature[in] the feature we are querying **/
         virtual bool isEnabled(int feature);
         /** @brief Enable context capablility
-          * @param feature the feature we are enabling **/
+          * @param feature[in] the feature we are enabling **/
         virtual void enable(int feature);
         /** @brief Disable context capablility
-          * @param feature the feature we are enabling **/
+          * @param feature[in] the feature we are enabling **/
         virtual void disable(int feature);
 
     protected:
@@ -283,19 +279,19 @@ class AudioSystem
             @return the music volume in the range of 0.0f - 1.0f **/
         virtual float getMusicVolume();
         /** @brief Set Music Volume
-          * @param volume the volume in the range of 0.0f - 1.0f **/
+          * @param volume[in] the volume in the range of 0.0f - 1.0f **/
         virtual void setMusicVolume(float volume);
         /** @brief Get Sound Volume
           * @return the sound volume in the range of 0.0f - 1.0f **/
         virtual float getSoundVolume();
         /** @brief Set Sound Volume
-          * @param volume the sound volume in the range of 0.0f - 1.0f **/
+          * @param volume[in] the sound volume in the range of 0.0f - 1.0f **/
         virtual void setSoundVolume(float volume);
         /** @brief Is Mute
           * @return true if the AudioSystem is muted false otherwise **/
         virtual bool isMute();
         /** @brief Set Mute Flag
-          * @param state true to mute the AudioSystem false otherwise **/
+          * @param state[in] true to mute the AudioSystem false otherwise **/
         virtual void setMute(bool state);
         /** @brief Mute the AudioSystem **/
         virtual void mute();
@@ -323,7 +319,7 @@ class AudioSystem
           * of an AudioDevice **/
         virtual std::vector<std::string> getAudioCaptureDevices();
         /** @brief Get Audio Capture Device by Number
-          * @param id a numbericID associated with the CaptureDevice (0 being the first and default)
+          * @param id[in] a numberic ID associated with the CaptureDevice (0 being the first and default)
           * @return A CaptureDevice **/
         virtual CaptureDevice* getAudioCaptureDevice(int id);
         /** @brief Get CaptureDeviceCount

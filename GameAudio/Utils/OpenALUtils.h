@@ -1,9 +1,10 @@
-// ********************************
-// * COMPANY: Dodgee Software     *
-// * AUTHOR: Shem Taylor          *
-// * Written 2016 Dodgee Software *
-// * GPLv3                        *
-// ********************************
+/**
+  * @file   OpenALUtils.h
+  * @Author Sergeant Neipo (sergeant.neipo@gmail.com)
+  * @date   August, 2016
+  * @brief  OpenALUtils is a utility class providing
+  * adhoc functions that help us deal with the OpenAL library
+*/
 
 #ifndef OPENALUTILS_H
 #define OPENALUTILS_H
@@ -15,6 +16,9 @@
 #include <al.h>
 #include <alc.h>
 
+/** Utils is a name space
+    for our AudioWrapper
+    Utilities **/
 namespace Utils
 {
     //! Convert an AL Error Enumeration into a readable String

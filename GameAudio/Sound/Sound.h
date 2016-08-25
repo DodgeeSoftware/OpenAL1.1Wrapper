@@ -1,9 +1,9 @@
-// ********************************
-// * COMPANY: Dodgee Software     *
-// * AUTHOR: Shem Taylor          *
-// * Written 2016 Dodgee Software *
-// * GPLv3                        *
-// ********************************
+/**
+  * @file   Sound.h
+  * @Author Sergeant Neipo (sergeant.neipo@gmail.com)
+  * @date   August, 2016
+  * @brief  Sound uses a SoundBuffer and a Source to play audio
+*/
 
 #ifndef SOUND_H
 #define SOUND_H
@@ -68,21 +68,23 @@ class Sound : public Source
     // * GENERAL *
     // ***********
     public:
-        //! Play
+        /** @brief Play **/
         virtual void play();
-        //! Update
+        /** @brief Update
+          * @param dTime[in] time difference between the last
+          * frame and this one **/
         virtual void update(float dTime);
-        //! Start
+        /** @brief Start **/
         virtual void start();
-        //! Stop
+        /** @brief Stop **/
         virtual void stop();
-        //! Pause
+        /** @brief Pause **/
         virtual void pause();
-        //! Resume
+        /** @brief Resume **/
         virtual void resume();
-        //! Clear
+        /** @brief Clear **/
         virtual void clear();
-        //! Free
+        /** @brief Free **/
         virtual void free();
 
     protected:
@@ -92,13 +94,16 @@ class Sound : public Source
     // * NAME *
     // ********
     public:
-        //! Get Name
+        /** @brief Get Name
+          * @return name of this sound **/
         virtual std::string getName() { return this->name; }
-        //! Set Name
+        /** @brief Set Name
+          * @param name[in] the name to call this sound **/
         virtual void setName(std::string name) { this->name = name; }
-        //! Is Named
+        /** @brief Is Named
+          * @return true if the sound is named otherwise false **/
         virtual bool isNamed() { return (this->name.size() > 0); }
-        //! Clear Name
+        /** @brief Clear Name **/
         virtual void clearName() { this->name.clear(); }
 
     protected:
@@ -109,9 +114,11 @@ class Sound : public Source
     // * SOUND BUFFER *
     // ****************
     public:
-        //! Get the SoundBuffer
+        /** @brief Get the SoundBuffer
+          * @return The SoundBuffer for this Sound **/
         virtual const SoundBuffer* getSoundBuffer() const { return this->pSoundBuffer; }
-        //! Set the SoundBuffer
+        /** @brief Set the SoundBuffer
+          * @param pSoundBuffer[in] The SoundBuffer this Sound will use **/
         virtual void setSoundBuffer(SoundBuffer* pSoundBuffer)
         {
             // Keep a local reference to our SoundBuffer

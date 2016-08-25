@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('class_audio_manager.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -195,7 +195,7 @@ std::map&lt; std::string, <a class="el" href="class_sound_buffer.html">SoundBuff
 <p>The convertBoolToString method converts a bool to a string. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">value</td><td>The value we want to convert to string </td></tr>
+    <tr><td class="paramname">value[in]</td><td>The value we want to convert to string </td></tr>
   </table>
   </dd>
 </dl>
@@ -228,7 +228,7 @@ std::map&lt; std::string, <a class="el" href="class_sound_buffer.html">SoundBuff
 <p>The convertStringToBool method converts a string to a bool. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">value</td><td>The value we want to convert to a bool. (not case sensitive) </td></tr>
+    <tr><td class="paramname">value[in]</td><td>The value we want to convert to a bool. (not case sensitive) </td></tr>
   </table>
   </dd>
 </dl>
@@ -261,7 +261,7 @@ std::map&lt; std::string, <a class="el" href="class_sound_buffer.html">SoundBuff
 <p>The GetRelativePath function extracts the name of a file and discards path information. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filename</td><td>The filename that we wish to discard the path from </td></tr>
+    <tr><td class="paramname">filename[in]</td><td>The filename that we wish to discard the path from </td></tr>
   </table>
   </dd>
 </dl>
@@ -294,7 +294,7 @@ std::map&lt; std::string, <a class="el" href="class_sound_buffer.html">SoundBuff
 <p>The Get <a class="el" href="class_sound_buffer.html" title="A container around an OpenAL AudioBuffer  AudioBuffers are PCM Data and this wrapper uses libsndfile ...">SoundBuffer</a> function uses a hashtable to associate a filename with an instance of a <a class="el" href="class_sound_buffer.html" title="A container around an OpenAL AudioBuffer  AudioBuffers are PCM Data and this wrapper uses libsndfile ...">SoundBuffer</a>. If a <a class="el" href="class_sound_buffer.html" title="A container around an OpenAL AudioBuffer  AudioBuffers are PCM Data and this wrapper uses libsndfile ...">SoundBuffer</a> isn't associated with a key value, the function will load the a <a class="el" href="class_sound_buffer.html" title="A container around an OpenAL AudioBuffer  AudioBuffers are PCM Data and this wrapper uses libsndfile ...">SoundBuffer</a> from file and associate it with that filename. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filename</td><td>The path to an audio file (WAV, OGG, SGI, DEC, AU, SND, AIFF, AIFC, RAW, IFF, SVX, VOC, W64, MAT4, MAT5, PVF, XI, HTK, CAF, SD2, FLAC) </td></tr>
+    <tr><td class="paramname">filename[in]</td><td>The path to an audio file (WAV, OGG, SGI, DEC, AU, SND, AIFF, AIFC, RAW, IFF, SVX, VOC, W64, MAT4, MAT5, PVF, XI, HTK, CAF, SD2, FLAC) </td></tr>
   </table>
   </dd>
 </dl>
@@ -337,8 +337,8 @@ std::map&lt; std::string, <a class="el" href="class_sound_buffer.html">SoundBuff
 <p>The Get <a class="el" href="class_sound_buffer.html" title="A container around an OpenAL AudioBuffer  AudioBuffers are PCM Data and this wrapper uses libsndfile ...">SoundBuffer</a> function uses a hashtable to associate a filename with an instance of a <a class="el" href="class_sound_buffer.html" title="A container around an OpenAL AudioBuffer  AudioBuffers are PCM Data and this wrapper uses libsndfile ...">SoundBuffer</a>. If a <a class="el" href="class_sound_buffer.html" title="A container around an OpenAL AudioBuffer  AudioBuffers are PCM Data and this wrapper uses libsndfile ...">SoundBuffer</a> isn't associated with a key value, the function will load the a <a class="el" href="class_sound_buffer.html" title="A container around an OpenAL AudioBuffer  AudioBuffers are PCM Data and this wrapper uses libsndfile ...">SoundBuffer</a> from file and associate it with that filename. This variation allows us to load a <a class="el" href="class_sound_buffer.html" title="A container around an OpenAL AudioBuffer  AudioBuffers are PCM Data and this wrapper uses libsndfile ...">SoundBuffer</a> without adding it to the hashtable. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filename</td><td>The path to an audio file (WAV, OGG, SGI, DEC, AU, SND, AIFF, AIFC, RAW, IFF, SVX, VOC, W64, MAT4, MAT5, PVF, XI, HTK, CAF, SD2, FLAC) </td></tr>
-    <tr><td class="paramname">addToMap</td><td>A flag which allows a <a class="el" href="class_sound_buffer.html" title="A container around an OpenAL AudioBuffer  AudioBuffers are PCM Data and this wrapper uses libsndfile ...">SoundBuffer</a> to be loaded but not managed by the <a class="el" href="class_audio_manager.html" title="A simple class for loading and keeping track of Sound files  The AudioManager loads SoundBuffer Objec...">AudioManager</a> (i.e. not associated with this filename) </td></tr>
+    <tr><td class="paramname">filename[in]</td><td>The path to an audio file (WAV, OGG, SGI, DEC, AU, SND, AIFF, AIFC, RAW, IFF, SVX, VOC, W64, MAT4, MAT5, PVF, XI, HTK, CAF, SD2, FLAC) </td></tr>
+    <tr><td class="paramname">addToMap[in]</td><td>A flag which allows a <a class="el" href="class_sound_buffer.html" title="A container around an OpenAL AudioBuffer  AudioBuffers are PCM Data and this wrapper uses libsndfile ...">SoundBuffer</a> to be loaded but not managed by the <a class="el" href="class_audio_manager.html" title="A simple class for loading and keeping track of Sound files  The AudioManager loads SoundBuffer Objec...">AudioManager</a> (i.e. not associated with this filename) </td></tr>
   </table>
   </dd>
 </dl>
@@ -371,7 +371,7 @@ std::map&lt; std::string, <a class="el" href="class_sound_buffer.html">SoundBuff
 <p>The toLowerCase function converts a string to lower case. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">text</td><td>The String we want to make lower case </td></tr>
+    <tr><td class="paramname">text[in]</td><td>The String we want to make lower case </td></tr>
   </table>
   </dd>
 </dl>
@@ -404,7 +404,7 @@ std::map&lt; std::string, <a class="el" href="class_sound_buffer.html">SoundBuff
 <p>The toUpperCase function cconverts a string to upper case. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">text</td><td>The String we want to make upper case </td></tr>
+    <tr><td class="paramname">text[in]</td><td>The String we want to make upper case </td></tr>
   </table>
   </dd>
 </dl>
@@ -422,7 +422,7 @@ std::map&lt; std::string, <a class="el" href="class_sound_buffer.html">SoundBuff
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_audio_manager.html">AudioManager</a></li>
-    <li class="footer">Generated on Thu Aug 25 2016 19:10:12 for OpenALWrapper by
+    <li class="footer">Generated on Fri Aug 26 2016 00:44:21 for OpenALWrapper by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

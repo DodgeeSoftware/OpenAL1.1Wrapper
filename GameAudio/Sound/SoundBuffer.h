@@ -1,9 +1,11 @@
-// ********************************
-// * COMPANY: Dodgee Software     *
-// * AUTHOR: Shem Taylor          *
-// * Written 2016 Dodgee Software *
-// * GPLv3                        *
-// ********************************
+/**
+  * @file   SoundBuffer.h
+  * @Author Sergeant Neipo (sergeant.neipo@gmail.com)
+  * @date   August, 2016
+  * @brief  SoundBuffer is a small container around an OpenAL Audio buffer
+  * used by Sound, Sound2D and Sound3D to create playable instances
+  * of loaded audio buffers
+*/
 
 #ifndef SOUNDBUFFER_H
 #define SOUNDBUFFER_H
@@ -85,9 +87,11 @@ class SoundBuffer
     // * FILENAME FUNCTIONS *
     // **********************
     public:
-        //! Get filename
+        /** @brief Get filename
+          * @return The filename of this SoundBuffer **/
         virtual std::string getFilename() { return this->filename.c_str(); }
-        //! Set filename
+        /** @brief Set filename
+          * @param filename[in[ The Filename for this SoundBuffer **/
         virtual void setFilename(std::string filename) { this->filename = filename; }
 
     protected:
@@ -98,27 +102,37 @@ class SoundBuffer
     // * BUFFER *
     // **********
     public:
-        //! Get Frequency
+        /** @brief Get Frequency
+          * @return The Frequency of this SoundBuffer **/
         virtual int getFrequency() { return this->frequency; }
-        //! Set Frequecy
+        /** @brief Set Frequecy
+          * @param frequency[in] The Frequenec of this SoundBuffer **/
         virtual void setFrequency(int frequency) { this->frequency = frequency; }
-        //! Size of the Buffer in Bytes
+        /** @brief Size of the Buffer in Bytes
+          * @return The size, in bytes, of the SoundBuffer **/
         virtual int getSize() { return this->size; }
-        //! Set Size of the Buffer in Bytes
+        /** @brief Set Size of the Buffer in Bytes
+          * @param size[in[ the size of the Buffer in bytes **/
         virtual void setSize(int size) { this->size = size; }
-        //! Get Channels
+        /** @brief Get Channels
+          * @return number of channels (1 for mono and 2 for stereo) **/
         virtual int getChannels() { return this->channels; }
-        //! Set Channels
+        /** @brief Set Channels
+          * @param channels[in] number of channels (1 for mono 2 for stereo) **/
         virtual void setChannels(int channels) { this->channels = channels; }
-        //! Get Bits
+        /** @brief Get Bits
+          * @return bits **/ // TODO: I want some documentation on this
         virtual int getBits() { return this->bits; }
-        //! Set Bits
+        /** @brief Set Bits
+          * @param bits[in] bits **/ // TODO: I want some documentation on this
         virtual void setBits(int bits) { this->bits = bits; }
 
     public:
-        //! Get BufferID
+        /** @brief Get BufferID
+          * @return Buffer ID **/
         virtual const ALuint getBufferID() const { return this->bufferID; }
-        //! Set BufferID
+        /** @brief Set BufferID
+          * @param BufferID **/
         virtual void setBufferID(ALuint bufferID) { this->bufferID = bufferID; }
 
     protected:

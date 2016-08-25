@@ -1,9 +1,11 @@
-// ********************************
-// * COMPANY: Dodgee Software     *
-// * AUTHOR: Shem Taylor          *
-// * Written 2016 Dodgee Software *
-// * GPLv3                        *
-// ********************************
+/**
+  * @file   Stream.h
+  * @Author Sergeant Neipo (sergeant.neipo@gmail.com)
+  * @date   August, 2016
+  * @brief  Stream provides the ability to load and buffer
+  * audio files in real-time so that an entire file
+  * need not be loaded. This massively decreases load time
+*/
 
 #ifndef STREAM_H
 #define STREAM_H
@@ -71,25 +73,29 @@ class Stream : public Source
     // * GENERAL *
     // ***********
     public:
-        //! Load Stream
+        /** @brief Load Stream
+          * @param filename[in] filename of the Sound to loade
+          * @return true on success false on failure **/
         virtual bool load(std::string filename);
-        //! Play
+        /** @brief Play **/
         virtual void play();
-        //! Stop
+        /** @brief Stop **/
         virtual void stop();
-        //! Pause
+        /** @brief Pause **/
         virtual void pause();
-        //! Resume
+        /** @brief Resume **/
         virtual void resume();
-        //! update Stream
+        /** @brief update Stream
+          * @param dTime[in] difference between last frame and this one **/
         virtual void update(float dTime);
-        //! Clear
+        /** @brief Clear **/
         virtual void clear();
-        //! Free
+        /** @brief Free **/
         virtual void free();
 
     protected:
-        //! Grab the next chunk of data and push it into buffer
+        /** @brief Grab the next chunk of data and push it into buffer
+          * @param buffer[in] buffer to push data into **/
         virtual bool stream(int buffer);
 
     protected:
@@ -106,9 +112,11 @@ class Stream : public Source
         looping when a stream comes to an end we stop/play
         it again */
     public:
-        //! Is Looping
+        /** @brief Is Looping
+          * @return true if is looping otherwise false **/
         virtual bool isLooping();
-        //! Set Loop Mode
+        /** @brief Set Loop Mode
+          * @param mode[in] true to make the Stream loop, false to play once **/
         virtual void setLooping(bool mode);
 
     protected:
@@ -118,7 +126,8 @@ class Stream : public Source
     // * CHANNELS *
     // ************
     public:
-        //! Get Channels
+        /** @brief Get Channels
+          * @return number of channels (1 for mono 2 for stereo) **/
         virtual int getChannels();
 
     protected:
@@ -129,7 +138,8 @@ class Stream : public Source
     // * SAMPLERATE *
     // **************
     public:
-        //! Get SampleRate
+        /** @brief Get SampleRate
+          * @return sampleRate in htz (22050 or 44100) **/
         virtual int getSampleRate();
 
     protected:
@@ -140,7 +150,8 @@ class Stream : public Source
     // * FILENAME FUNCTIONS *
     // **********************
     public:
-        //! Get filename
+        /** @brief Get filename
+          * @return filename the stream is playing **/
         virtual std::string getFilename() { return this->filename.c_str(); }
 
     protected:

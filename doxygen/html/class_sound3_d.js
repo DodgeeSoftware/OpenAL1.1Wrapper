@@ -12,6 +12,7 @@ var class_sound3_d =
     [ "getMinVolume", "class_sound3_d.html#a4d1fd0bb1403c30f8882473416d433e9", null ],
     [ "getOuterConeAngle", "class_sound3_d.html#ae2a6bdd01bb5cbf81ff70524ca88b244", null ],
     [ "getPosition", "class_sound3_d.html#a1014b89042168524df088826191a2af2", null ],
+    [ "getReferenceDistance", "class_sound3_d.html#a2b1f223cbc0751831b75833dde9d443a", null ],
     [ "getRollOff", "class_sound3_d.html#a5165d61ea05e02165971b3b68fe9493e", null ],
     [ "getVelocity", "class_sound3_d.html#a70b67d34b12736b6b49922a2a8d22183", null ],
     [ "getX", "class_sound3_d.html#a9e0b2ab4177549979f911eb011fa183c", null ],

@@ -62,37 +62,37 @@ bool Music::load(void* pBuffer, long size)
     return true;
 }
 
-bool Music::load(FILE* pFile, long size)
-{
-    // Send a message to the console
-    std::cout << "bool Music::load(FILE* " << (long)pFile << ", long " << size  << ")" << std::endl;
-    // Variable to track status
-    int result = 0;
-    // Try and load a module from memory
-    if ((result = xmp_load_module_from_file(this->context, pFile, size)) < 0)
-    {
-        // Send a message to the console
-        std::cout << "ERROR: Failed to load music module file " << filename << std::endl;
-        std::cout << "ERROR: Failed to load music module file: " << filename << " " << Utils::getLibXMPErrorString(result) <<std::endl;
-        // Failure
-        return false;
-    }
-    // Send a message to the console
-    std::cout << "NOTICE: Successfully opened tracker file: " << filename << std::endl;
-    // Set local filename
-    this->filename = filename;
-    // Grab Module information
-    xmp_get_module_info(this->context, &(this->moduleInfo));
-    // SEND SOME INFORMATION ABOUT THIS MODULE TO THE CONSOLE
-    std::cout << "NAME: " << this->moduleInfo.mod->name << " TYPE: " << this->moduleInfo.mod->type << std::endl;
-    std::cout << "BPM: " << this->moduleInfo.mod->bpm << " CHANNELS: " << this->moduleInfo.mod->chn << std::endl;
-    std::cout << "INSTRUMENTS: " << this->moduleInfo.mod->ins << " LENGTH: " << this->moduleInfo.mod->len << std::endl;
-    // Send a message to the console
-    std::cout << "bool Music::load(FILE* " << (long)pFile << ", long " << size  << ") success" << std::endl;
-
-    // Failure
-    return false;
-}
+//bool Music::load(FILE* pFile, long size)
+//{
+//    // Send a message to the console
+//    std::cout << "bool Music::load(FILE* " << (long)pFile << ", long " << size  << ")" << std::endl;
+//    // Variable to track status
+//    int result = 0;
+//    // Try and load a module from memory
+//    if ((result = xmp_load_module_from_file(this->context, pFile, size)) < 0)
+//    {
+//        // Send a message to the console
+//        std::cout << "ERROR: Failed to load music module file " << filename << std::endl;
+//        std::cout << "ERROR: Failed to load music module file: " << filename << " " << Utils::getLibXMPErrorString(result) <<std::endl;
+//        // Failure
+//        return false;
+//    }
+//    // Send a message to the console
+//    std::cout << "NOTICE: Successfully opened tracker file: " << filename << std::endl;
+//    // Set local filename
+//    this->filename = filename;
+//    // Grab Module information
+//    xmp_get_module_info(this->context, &(this->moduleInfo));
+//    // SEND SOME INFORMATION ABOUT THIS MODULE TO THE CONSOLE
+//    std::cout << "NAME: " << this->moduleInfo.mod->name << " TYPE: " << this->moduleInfo.mod->type << std::endl;
+//    std::cout << "BPM: " << this->moduleInfo.mod->bpm << " CHANNELS: " << this->moduleInfo.mod->chn << std::endl;
+//    std::cout << "INSTRUMENTS: " << this->moduleInfo.mod->ins << " LENGTH: " << this->moduleInfo.mod->len << std::endl;
+//    // Send a message to the console
+//    std::cout << "bool Music::load(FILE* " << (long)pFile << ", long " << size  << ") success" << std::endl;
+//
+//    // Failure
+//    return false;
+//}
 
 void Music::play()
 {

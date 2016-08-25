@@ -1,9 +1,10 @@
-// ********************************
-// * COMPANY: Dodgee Software     *
-// * AUTHOR: Shem Taylor          *
-// * Written 2016 Dodgee Software *
-// * GPLv3                        *
-// ********************************
+/**
+  * @file   OpenALVector3D.h
+  * @Author Sergeant Neipo (sergeant.neipo@gmail.com)
+  * @date   August, 2016
+  * @brief  OpenALVector3D is a utility class providing
+  * support for 3D mathematical vectors
+*/
 
 #ifndef OPENALVECTOR3D_H
 #define OPENALVECTOR3D_H

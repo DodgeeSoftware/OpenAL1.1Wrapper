@@ -477,6 +477,12 @@ CaptureDevice* AudioSystem::getAudioCaptureDevice(int id)
     return this->captureDevices.at(id);
 }
 
+int AudioSystem::getCaptureDeviceCount()
+{
+    // Return the Number of CaptureDevices
+    return this->captureDevices.size();
+}
+
 //void AudioSystem::bindToLua(lua_State* pLuaState)
 //{
 //    // TODO: implement me

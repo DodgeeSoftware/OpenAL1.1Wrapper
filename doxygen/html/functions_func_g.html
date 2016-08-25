@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -139,9 +139,6 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 <li>getAudioCaptureDevices()
 : <a class="el" href="class_audio_system.html#a18571d33c38479f05f0e09d2ad927ce0">AudioSystem</a>
 </li>
-<li>getAudioDevice()
-: <a class="el" href="class_audio_system.html#a14fe9f8c4e7c55ccac3b7fa555fb617d">AudioSystem</a>
-</li>
 <li>getAudioDevices()
 : <a class="el" href="class_audio_system.html#aa0d51465c5afa7bf835a52337e510b0b">AudioSystem</a>
 </li>
@@ -153,6 +150,9 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 </li>
 <li>getCaptureDevice()
 : <a class="el" href="class_capture_device.html#a790277da5bfeb6ab7ad4ee661d6ad55e">CaptureDevice</a>
+</li>
+<li>getCaptureDeviceCount()
+: <a class="el" href="class_audio_system.html#a65e69cc7930c5f1bc3244ccddb72e59f">AudioSystem</a>
 </li>
 <li>getChannels()
 : <a class="el" href="class_sound_buffer.html#a80e898322c50dd7b3ad47b69cf0bde6f">SoundBuffer</a>
@@ -248,10 +248,9 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 </li>
 <li>getReferenceDistance()
 : <a class="el" href="class_sound2_d.html#ad45b795d038c68ff6590c20ec27a0a25">Sound2D</a>
-</li>
-<li>getReferenceDistances()
-: <a class="el" href="class_stream2_d.html#a0e30eeefb695982fa7f4d703595ec7c4">Stream2D</a>
-, <a class="el" href="class_stream3_d.html#ac03ecf483ae5df82dc04d45cce78b650">Stream3D</a>
+, <a class="el" href="class_sound3_d.html#a2b1f223cbc0751831b75833dde9d443a">Sound3D</a>
+, <a class="el" href="class_stream2_d.html#abb53d40b56ded1ac8675ca1f2ca0de9e">Stream2D</a>
+, <a class="el" href="class_stream3_d.html#acb2a4853e3177e482d48ecf9a2fedfd6">Stream3D</a>
 </li>
 <li>getRefreshRate()
 : <a class="el" href="class_audio_system.html#acaf8eb80e09ecf5feee97063b5c2ad99">AudioSystem</a>
@@ -339,7 +338,7 @@ $(document).ready(function(){initNavTree('functions_func_g.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Aug 25 2016 19:10:12 for OpenALWrapper by
+    <li class="footer">Generated on Fri Aug 26 2016 00:44:21 for OpenALWrapper by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -1,9 +1,9 @@
-// ********************************
-// * COMPANY: Dodgee Software     *
-// * AUTHOR: Shem Taylor          *
-// * Written 2016 Dodgee Software *
-// * GPLv3                        *
-// ********************************
+/**
+  * @file   CaptureDevice.h
+  * @Author Sergeant Neipo (sergeant.neipo@gmail.com)
+  * @date   August, 2016
+  * @brief  A CaptureDevice is a container for an AudioRecorder
+*/
 
 #ifndef CAPTUREDEVICE_H
 #define CAPTUREDEVICE_H
@@ -31,7 +31,6 @@
 #include "Utils/OpenALVector3D.h"
 #include "Sound/SoundBuffer.h"
 
-
 /** @class CaptureDevice
   * @brief A Container for a Single Audio Capture Device
   * @detail The CaptureDevice Class is a container for
@@ -45,8 +44,11 @@ class CaptureDevice
         //! Constructor
         CaptureDevice()
         {
+            // Capture Device
             this->pCaptureDevice = 0;
+            // Name
             this->name.clear();
+            // ID
             this->id = 0;
         }
         //! Destructor
@@ -73,18 +75,21 @@ class CaptureDevice
         /**  @brief Open Capture Device
           *  @param[in] frequency The frequency in hertz to sample audio
           *  @param[in] format The format of the sample (i.e. AL_FORMAT_STEREO16 or AL_FORMAT_MONO16 etc)
-          *  @return true on success / false on failure
-        **/
+          *  @return true on success / false on failure **/
         virtual bool open(int frequency, int format, int bufferSize);
-        //! Close Capture Device
+        /** @brief Close Capture Device **/
         virtual void close();
-        //! Start
+        /** @brief Start **/
         virtual void start();
-        //! Stop
+        /** @brief Stop **/
         virtual void stop();
-        //! Capture Samples
+        /** @brief Capture Samples
+          * @param pBuffer[in] is a pointer to a buffer you made to contain the output of recording
+          * @param samples[in] is the number of samples in the buffer
+          * NOTE: stereo counts as 1 sample despite data for left and right but
+          * your buffer needs to take into account both left and right data **/
         virtual void captureSamples(void* pBuffer, int samples);
-        //! Get Capture Device
+        /** @brief Get Capture Device **/
         virtual ALCdevice* getCaptureDevice() { return this->pCaptureDevice; }
 
     protected:
@@ -95,13 +100,16 @@ class CaptureDevice
     // * NAME *
     // ********
     public:
-        //! Get Name
+        /** @brief Get Name
+          * @return The name of this CaptureDevice **/
         virtual std::string getName() { return this->name; }
-        //! Set Name
+        /** @brief Set Name
+          * @param name[in] The name for the device**/
         virtual void setName(std::string name) { this->name = name; }
-        //! Is Named
+        /** @brief Is Named
+          * @return true if the device is named otherwise false **/
         virtual bool isNamed() { return (this->name.size() > 0); }
-        //! Clear Name
+        /** @brief Clear Name **/
         virtual void clearName() { this->name.clear(); }
 
     protected:
@@ -112,9 +120,11 @@ class CaptureDevice
     // * ID *
     // ******
     public:
-        //! Get the ID
+        /** @brief Get the ID
+          * @return The CaptureDevice's ID **/
         virtual int getID() { return this->id; }
-        //! Get the ID
+        /** @brief Set the ID
+          * @param id[in] Set CaptureDevice's ID **/
         virtual void setID(int id) { this->id = id; }
 
     protected:

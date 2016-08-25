@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>OpenALWrapper: Main Page</title>
+<title>OpenALWrapper: GameAudio (OpenALWrapper)</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,7 +85,7 @@ $(document).ready(function(){initNavTree('index.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -96,15 +96,35 @@ $(document).ready(function(){initNavTree('index.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">OpenALWrapper Documentation</div>  </div>
+<div class="title">GameAudio (OpenALWrapper) </div>  </div>
 </div><!--header-->
 <div class="contents">
-</div><!-- contents -->
+<div class="textblock"><h1><a class="anchor" id="intro_sec"></a>
+Introduction</h1>
+<p>The GameAudio OpenALWrapper is an easy to use c++ wrapper around core features of OpenAL. The <a class="el" href="class_capture_device.html" title="A Container for a Single Audio Capture Device  The CaptureDevice Class is a container for a single ca...">CaptureDevice</a> class is a wrapper around a recoring device. The <a class="el" href="class_music.html" title="A Container for a Tracker Music File (XM, S3M, MOD, IT, and others supported by libxmp)  The Music Cl...">Music</a> class is a wrapper around a streaming tracker file. A <a class="el" href="class_sound_buffer.html" title="A container around an OpenAL AudioBuffer  AudioBuffers are PCM Data and this wrapper uses libsndfile ...">SoundBuffer</a> is an OpenAL Buffer for Audio that has been loaded (usually wav or ogg NOT MP3) The <a class="el" href="class_sound.html" title="An playable instance of a SoundBuffer  Sources only come into existance when you call the play functi...">Sound</a> Class is a playable instance of a <a class="el" href="class_sound.html" title="An playable instance of a SoundBuffer  Sources only come into existance when you call the play functi...">Sound</a> Buffer. The <a class="el" href="class_sound2_d.html" title="An playable instance of a SoundBuffer with 2D Spacial functions  Sources only come into existance whe...">Sound2D</a> Class is a positional instance of a <a class="el" href="class_sound_buffer.html" title="A container around an OpenAL AudioBuffer  AudioBuffers are PCM Data and this wrapper uses libsndfile ...">SoundBuffer</a>. The <a class="el" href="class_sound3_d.html" title="An playable instance of a SoundBuffer with 3D Spacial functions  Sources only come into existance whe...">Sound3D</a> Class is a potisitional instance of a <a class="el" href="class_sound_buffer.html" title="A container around an OpenAL AudioBuffer  AudioBuffers are PCM Data and this wrapper uses libsndfile ...">SoundBuffer</a>. The <a class="el" href="class_stream.html" title="A container around an OpenAL Source and a FileStream  This class will open a file stream and read it ...">Stream</a> Class Allows you to load sound into buffers from a file as you go rather than loading an entire audio file in one go. The <a class="el" href="class_stream2_d.html" title="A container around an OpenAL Source with positin functions and a FileStream  This class will open a f...">Stream2D</a> and <a class="el" href="class_stream3_d.html" title="A container around an OpenAL Source with positin functions and a FileStream  This class will open a f...">Stream3D</a> classes are positional counterparts to the <a class="el" href="class_stream.html" title="A container around an OpenAL Source and a FileStream  This class will open a file stream and read it ...">Stream</a> Class. The <a class="el" href="class_source.html" title="A container around an OpenAL Source  The Source Class is a wrapper around a single OpenAL source and ...">Source</a> Class is a base for many of our SoundEmitting classes and wraps up functions relating to an OpenAL <a class="el" href="class_source.html" title="A container around an OpenAL Source  The Source Class is a wrapper around a single OpenAL source and ...">Source</a>. The <a class="el" href="class_audio_system.html" title="A container around an OpenAL Device and Context  This class is the core of Audio in the wrapper...">AudioSystem</a> Class is a simply container for functions that relate to the AudioDevice and allows you to query it's features, frequency volume and mute status as well as grab handles to recoring devices. And finally the <a class="el" href="class_audio_manager.html" title="A simple class for loading and keeping track of Sound files  The AudioManager loads SoundBuffer Objec...">AudioManager</a> class which is responsible for loading instancable SoundBuffers</p>
+<h1><a class="anchor" id="install_sec"></a>
+Installation</h1>
+<h2><a class="anchor" id="step1"></a>
+Step 1: Dependencies</h2>
+<p>This project is dependant on OpenAL, LibSND and LibXMP so you must link to them. The CBP file for this project uses global variables to find these libraries on your disk so make sure you add them to CodeBlocks (or simply add your search paths and pragma preprocessors if using visual studio). You can obtain binaries for these libraries at <a href="https://www.openal.org/">https://www.openal.org/</a> <a href="http://www.mega-nerd.com/libsndfile/">http://www.mega-nerd.com/libsndfile/</a> <a href="http://xmp.sourceforge.net/">http://xmp.sourceforge.net/</a></p>
+<h2><a class="anchor" id="step2"></a>
+Step 2: Search Paths</h2>
+<p>You will need to add search paths to the folders where the headers and implementation files are to your project. Paths such as "GameAudio" "GameAudio\CaptureDevice" "GameAudio\System" etc because I don't prefix includes in this library with the locations of these headers (this may be changed later)</p>
+<h2><a class="anchor" id="step3"></a>
+Step 3: Use</h2>
+<p>Take a look at main.cpp that comes with this OpenAL Wrapper and see unit tests to learn how all the components work</p>
+<h1><a class="anchor" id="Warning"></a>
+Warning</h1>
+<p>OpenAL only supports 16-32-64 channels playing simultaniously and this varies depending on if sources are mono and stereo and depends upon the driver in use. This library behing this wrapper may not meet your needs. It is perfectly useful for very small projects. But for larger more commerically oriented projects I recomment you look into FMOD (<a href="http://www.fmod.org/">http://www.fmod.org/</a>) or any other library that supports virtual mixing - which OpenAL does not.</p>
+<h1><a class="anchor" id="Credits"></a>
+Credits</h1>
+<p>Wrapper was developed by Sergeant Neipo of Dodgee Software 2016 Project is release under GPLv3 </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Aug 25 2016 19:10:12 for OpenALWrapper by
+    <li class="footer">Generated on Fri Aug 26 2016 00:44:21 for OpenALWrapper by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

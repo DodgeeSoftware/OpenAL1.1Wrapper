@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('_audio_manager_8h_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -132,71 +132,71 @@ $(document).ready(function(){initNavTree('_audio_manager_8h_source.html','');});
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;LibXMPUtils.h&quot;</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;SoundBuffer.h&quot;</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_audio_manager.html">   44</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_audio_manager.html">AudioManager</a></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// ****************************</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">// * CONSTRUCTOR / DESTRUCTOR *</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">// ****************************</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_audio_manager.html#ae59d8605c1d706e7bab47d4e8f900d09">   51</a></span>&#160;        <a class="code" href="class_audio_manager.html#ae59d8605c1d706e7bab47d4e8f900d09">AudioManager</a>()</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="comment">// Clear SoundBufferMap</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            this-&gt;soundBufferMap.clear();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        }</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_audio_manager.html#a4ea9712c0a402e46b90426e5f440635e">   57</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_audio_manager.html#a4ea9712c0a402e46b90426e5f440635e">~AudioManager</a>() {}</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_audio_manager.html#a8464f439d12f046ed26cee0a7e378525">   61</a></span>&#160;        <a class="code" href="class_audio_manager.html#a8464f439d12f046ed26cee0a7e378525">AudioManager</a>(<a class="code" href="class_audio_manager.html">AudioManager</a>&amp; other) {}</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// ************************</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// * OVERLOADED OPERATORS *</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// ************************</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="comment">// Members and methods</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="comment">// Members and methods</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">// **************************</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">// * SOUND BUFFER FUNCTIONS *</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">// **************************</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_sound_buffer.html">SoundBuffer</a>* <a class="code" href="class_audio_manager.html#a7b530c6096e3c74bf5cbf803f3f6992e">getSoundBuffer</a>(std::string filename);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_sound_buffer.html">SoundBuffer</a>* <a class="code" href="class_audio_manager.html#a7b530c6096e3c74bf5cbf803f3f6992e">getSoundBuffer</a>(std::string filename, <span class="keywordtype">bool</span> addToMap);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_audio_manager.html#ab3de7a0675c0fc80f05262f5d3ef2880">clear</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_audio_manager.html">   43</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_audio_manager.html">AudioManager</a></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">// ****************************</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// * CONSTRUCTOR / DESTRUCTOR *</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">// ****************************</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_audio_manager.html#ae59d8605c1d706e7bab47d4e8f900d09">   50</a></span>&#160;        <a class="code" href="class_audio_manager.html#ae59d8605c1d706e7bab47d4e8f900d09">AudioManager</a>()</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="comment">// Clear SoundBufferMap</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            this-&gt;soundBufferMap.clear();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        }</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_audio_manager.html#a4ea9712c0a402e46b90426e5f440635e">   56</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_audio_manager.html#a4ea9712c0a402e46b90426e5f440635e">~AudioManager</a>() {}</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_audio_manager.html#a8464f439d12f046ed26cee0a7e378525">   60</a></span>&#160;        <a class="code" href="class_audio_manager.html#a8464f439d12f046ed26cee0a7e378525">AudioManager</a>(<a class="code" href="class_audio_manager.html">AudioManager</a>&amp; other) {}</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// ************************</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// * OVERLOADED OPERATORS *</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// ************************</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="comment">// Members and methods</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="comment">// Members and methods</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">// **************************</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">// * SOUND BUFFER FUNCTIONS *</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">// **************************</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_sound_buffer.html">SoundBuffer</a>* <a class="code" href="class_audio_manager.html#a7b530c6096e3c74bf5cbf803f3f6992e">getSoundBuffer</a>(std::string filename);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_sound_buffer.html">SoundBuffer</a>* <a class="code" href="class_audio_manager.html#a7b530c6096e3c74bf5cbf803f3f6992e">getSoundBuffer</a>(std::string filename, <span class="keywordtype">bool</span> addToMap);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_audio_manager.html#ab3de7a0675c0fc80f05262f5d3ef2880">clear</a>();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="comment">// Map for our SoundBuffers</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        std::map&lt;std::string, SoundBuffer*&gt; soundBufferMap;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="comment">// Map for our SoundBuffers</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        std::map&lt;std::string, SoundBuffer*&gt; soundBufferMap;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="comment">// *********************</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="comment">// * UTILITY FUNCTIONS *</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="comment">// *********************</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="comment">// Methods and members</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keyword">virtual</span> std::string <a class="code" href="class_audio_manager.html#aa6e599cf1cdd0a4da1c31367fa5b839d">getLocalPath</a>(std::string filename);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keyword">virtual</span> std::string <a class="code" href="class_audio_manager.html#a5d00e5cdb885c62a8bb891eded0785c9">toUpperCase</a>(std::string text);</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keyword">virtual</span> std::string <a class="code" href="class_audio_manager.html#ab86329dfcc797fa3671127622da1a17a">toLowerCase</a>(std::string text);</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keyword">virtual</span> std::string <a class="code" href="class_audio_manager.html#a4eaad9b78387d074164b933edaf67d38">convertBoolToString</a>(<span class="keywordtype">bool</span> value);</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_audio_manager.html#a1dd5c82e8db49986e38c7a5d5501dcf3">convertStringToBool</a>(std::string value);</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="comment">// Methods and Members</span></div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;};</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="preprocessor">#endif // AUDIOMANAGER_H</span></div>
-<div class="ttc" id="class_audio_manager_html"><div class="ttname"><a href="class_audio_manager.html">AudioManager</a></div><div class="ttdoc">A simple class for loading and keeping track of Sound files  The AudioManager loads SoundBuffer Objec...</div><div class="ttdef"><b>Definition:</b> AudioManager.h:44</div></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="comment">// *********************</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">// * UTILITY FUNCTIONS *</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="comment">// *********************</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="comment">// Methods and members</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keyword">virtual</span> std::string <a class="code" href="class_audio_manager.html#aa6e599cf1cdd0a4da1c31367fa5b839d">getLocalPath</a>(std::string filename);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keyword">virtual</span> std::string <a class="code" href="class_audio_manager.html#a5d00e5cdb885c62a8bb891eded0785c9">toUpperCase</a>(std::string text);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keyword">virtual</span> std::string <a class="code" href="class_audio_manager.html#ab86329dfcc797fa3671127622da1a17a">toLowerCase</a>(std::string text);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keyword">virtual</span> std::string <a class="code" href="class_audio_manager.html#a4eaad9b78387d074164b933edaf67d38">convertBoolToString</a>(<span class="keywordtype">bool</span> value);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_audio_manager.html#a1dd5c82e8db49986e38c7a5d5501dcf3">convertStringToBool</a>(std::string value);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="comment">// Methods and Members</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;};</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#endif // AUDIOMANAGER_H</span></div>
+<div class="ttc" id="class_audio_manager_html"><div class="ttname"><a href="class_audio_manager.html">AudioManager</a></div><div class="ttdoc">A simple class for loading and keeping track of Sound files  The AudioManager loads SoundBuffer Objec...</div><div class="ttdef"><b>Definition:</b> AudioManager.h:43</div></div>
 <div class="ttc" id="class_audio_manager_html_ab3de7a0675c0fc80f05262f5d3ef2880"><div class="ttname"><a href="class_audio_manager.html#ab3de7a0675c0fc80f05262f5d3ef2880">AudioManager::clear</a></div><div class="ttdeci">virtual void clear()</div><div class="ttdoc">The Clear function will clean up all the memory associated with our SoundBuffers and also empty our h...</div><div class="ttdef"><b>Definition:</b> AudioManager.cpp:106</div></div>
 <div class="ttc" id="class_audio_manager_html_a1dd5c82e8db49986e38c7a5d5501dcf3"><div class="ttname"><a href="class_audio_manager.html#a1dd5c82e8db49986e38c7a5d5501dcf3">AudioManager::convertStringToBool</a></div><div class="ttdeci">virtual bool convertStringToBool(std::string value)</div><div class="ttdoc">The convertStringToBool method converts a string to a bool. </div><div class="ttdef"><b>Definition:</b> AudioManager.cpp:169</div></div>
 <div class="ttc" id="class_audio_manager_html_a4eaad9b78387d074164b933edaf67d38"><div class="ttname"><a href="class_audio_manager.html#a4eaad9b78387d074164b933edaf67d38">AudioManager::convertBoolToString</a></div><div class="ttdeci">virtual std::string convertBoolToString(bool value)</div><div class="ttdoc">The convertBoolToString method converts a bool to a string. </div><div class="ttdef"><b>Definition:</b> AudioManager.cpp:163</div></div>
-<div class="ttc" id="class_audio_manager_html_ae59d8605c1d706e7bab47d4e8f900d09"><div class="ttname"><a href="class_audio_manager.html#ae59d8605c1d706e7bab47d4e8f900d09">AudioManager::AudioManager</a></div><div class="ttdeci">AudioManager()</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> AudioManager.h:51</div></div>
-<div class="ttc" id="class_audio_manager_html_a4ea9712c0a402e46b90426e5f440635e"><div class="ttname"><a href="class_audio_manager.html#a4ea9712c0a402e46b90426e5f440635e">AudioManager::~AudioManager</a></div><div class="ttdeci">virtual ~AudioManager()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> AudioManager.h:57</div></div>
+<div class="ttc" id="class_audio_manager_html_ae59d8605c1d706e7bab47d4e8f900d09"><div class="ttname"><a href="class_audio_manager.html#ae59d8605c1d706e7bab47d4e8f900d09">AudioManager::AudioManager</a></div><div class="ttdeci">AudioManager()</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> AudioManager.h:50</div></div>
+<div class="ttc" id="class_audio_manager_html_a4ea9712c0a402e46b90426e5f440635e"><div class="ttname"><a href="class_audio_manager.html#a4ea9712c0a402e46b90426e5f440635e">AudioManager::~AudioManager</a></div><div class="ttdeci">virtual ~AudioManager()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> AudioManager.h:56</div></div>
 <div class="ttc" id="class_audio_manager_html_aa6e599cf1cdd0a4da1c31367fa5b839d"><div class="ttname"><a href="class_audio_manager.html#aa6e599cf1cdd0a4da1c31367fa5b839d">AudioManager::getLocalPath</a></div><div class="ttdeci">virtual std::string getLocalPath(std::string filename)</div><div class="ttdoc">The GetRelativePath function extracts the name of a file and discards path information. </div><div class="ttdef"><b>Definition:</b> AudioManager.cpp:124</div></div>
-<div class="ttc" id="class_audio_manager_html_a8464f439d12f046ed26cee0a7e378525"><div class="ttname"><a href="class_audio_manager.html#a8464f439d12f046ed26cee0a7e378525">AudioManager::AudioManager</a></div><div class="ttdeci">AudioManager(AudioManager &amp;other)</div><div class="ttdoc">Copy Constructor. </div><div class="ttdef"><b>Definition:</b> AudioManager.h:61</div></div>
+<div class="ttc" id="class_audio_manager_html_a8464f439d12f046ed26cee0a7e378525"><div class="ttname"><a href="class_audio_manager.html#a8464f439d12f046ed26cee0a7e378525">AudioManager::AudioManager</a></div><div class="ttdeci">AudioManager(AudioManager &amp;other)</div><div class="ttdoc">Copy Constructor. </div><div class="ttdef"><b>Definition:</b> AudioManager.h:60</div></div>
 <div class="ttc" id="class_audio_manager_html_a5d00e5cdb885c62a8bb891eded0785c9"><div class="ttname"><a href="class_audio_manager.html#a5d00e5cdb885c62a8bb891eded0785c9">AudioManager::toUpperCase</a></div><div class="ttdeci">virtual std::string toUpperCase(std::string text)</div><div class="ttdoc">The toUpperCase function cconverts a string to upper case. </div><div class="ttdef"><b>Definition:</b> AudioManager.cpp:141</div></div>
 <div class="ttc" id="class_audio_manager_html_a7b530c6096e3c74bf5cbf803f3f6992e"><div class="ttname"><a href="class_audio_manager.html#a7b530c6096e3c74bf5cbf803f3f6992e">AudioManager::getSoundBuffer</a></div><div class="ttdeci">virtual SoundBuffer * getSoundBuffer(std::string filename)</div><div class="ttdoc">The Get SoundBuffer function uses a hashtable to associate a filename with an instance of a SoundBuff...</div><div class="ttdef"><b>Definition:</b> AudioManager.cpp:3</div></div>
 <div class="ttc" id="class_audio_manager_html_ab86329dfcc797fa3671127622da1a17a"><div class="ttname"><a href="class_audio_manager.html#ab86329dfcc797fa3671127622da1a17a">AudioManager::toLowerCase</a></div><div class="ttdeci">virtual std::string toLowerCase(std::string text)</div><div class="ttdoc">The toLowerCase function converts a string to lower case. </div><div class="ttdef"><b>Definition:</b> AudioManager.cpp:152</div></div>
@@ -207,7 +207,7 @@ $(document).ready(function(){initNavTree('_audio_manager_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_6741aa8f6f6a35c80b81a808222b5ce0.html">GameContent</a></li><li class="navelem"><a class="el" href="_audio_manager_8h.html">AudioManager.h</a></li>
-    <li class="footer">Generated on Thu Aug 25 2016 19:10:12 for OpenALWrapper by
+    <li class="footer">Generated on Fri Aug 26 2016 00:44:21 for OpenALWrapper by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

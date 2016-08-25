@@ -279,7 +279,7 @@ void Stream2D::setRollOff(float rollOff)
     alSourcef(this->source, AL_ROLLOFF_FACTOR, this->rollOff);
 }
 
-float Stream2D::getReferenceDistances()
+float Stream2D::getReferenceDistance()
 {
     // Return reference Distance
     return this->referenceDistance;

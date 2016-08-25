@@ -7,7 +7,6 @@ var class_music =
     [ "getFilename", "class_music.html#afa2e926a78e4ba2ce98c1ac22e3f1f68", null ],
     [ "load", "class_music.html#a304084c1462e1bce1a262bd8a51be3ae", null ],
     [ "load", "class_music.html#aaf080d517e66617d64a02ef12ad1d3cd", null ],
-    [ "load", "class_music.html#aed4139f6a5adc688381b97e01f58fbdf", null ],
     [ "operator=", "class_music.html#afe7cb9cd411fa0adf4d47647329f831c", null ],
     [ "pause", "class_music.html#a10e5537400b6f018a8c86085751a90cb", null ],
     [ "play", "class_music.html#a54b941f6f7634d7f99b473c78fe6e4da", null ],

@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('class_music.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -130,37 +130,26 @@ Public Member Functions</h2></td></tr>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_music.html#a4fc768f16c3b46e0e4e5b8e1e1491697">~Music</a> ()</td></tr>
 <tr class="memdesc:a4fc768f16c3b46e0e4e5b8e1e1491697"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
 <tr class="separator:a4fc768f16c3b46e0e4e5b8e1e1491697"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a304084c1462e1bce1a262bd8a51be3ae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a304084c1462e1bce1a262bd8a51be3ae"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_music.html#a304084c1462e1bce1a262bd8a51be3ae">load</a> (std::string filename)</td></tr>
-<tr class="memdesc:a304084c1462e1bce1a262bd8a51be3ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load from File. <br /></td></tr>
+<tr class="memitem:a304084c1462e1bce1a262bd8a51be3ae"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_music.html#a304084c1462e1bce1a262bd8a51be3ae">load</a> (std::string filename)</td></tr>
+<tr class="memdesc:a304084c1462e1bce1a262bd8a51be3ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load from File.  <a href="#a304084c1462e1bce1a262bd8a51be3ae">More...</a><br /></td></tr>
 <tr class="separator:a304084c1462e1bce1a262bd8a51be3ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf080d517e66617d64a02ef12ad1d3cd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaf080d517e66617d64a02ef12ad1d3cd"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_music.html#aaf080d517e66617d64a02ef12ad1d3cd">load</a> (void *pBuffer, long size)</td></tr>
-<tr class="memdesc:aaf080d517e66617d64a02ef12ad1d3cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load from Buffer. <br /></td></tr>
+<tr class="memitem:aaf080d517e66617d64a02ef12ad1d3cd"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_music.html#aaf080d517e66617d64a02ef12ad1d3cd">load</a> (void *pBuffer, long size)</td></tr>
+<tr class="memdesc:aaf080d517e66617d64a02ef12ad1d3cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load from Buffer.  <a href="#aaf080d517e66617d64a02ef12ad1d3cd">More...</a><br /></td></tr>
 <tr class="separator:aaf080d517e66617d64a02ef12ad1d3cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed4139f6a5adc688381b97e01f58fbdf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed4139f6a5adc688381b97e01f58fbdf"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_music.html#aed4139f6a5adc688381b97e01f58fbdf">load</a> (FILE *pFile, long size)</td></tr>
-<tr class="memdesc:aed4139f6a5adc688381b97e01f58fbdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load from FILE Object. <br /></td></tr>
-<tr class="separator:aed4139f6a5adc688381b97e01f58fbdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54b941f6f7634d7f99b473c78fe6e4da"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a54b941f6f7634d7f99b473c78fe6e4da"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_music.html#a54b941f6f7634d7f99b473c78fe6e4da">play</a> ()</td></tr>
-<tr class="memdesc:a54b941f6f7634d7f99b473c78fe6e4da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Play. <br /></td></tr>
+<tr class="memitem:a54b941f6f7634d7f99b473c78fe6e4da"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_music.html#a54b941f6f7634d7f99b473c78fe6e4da">play</a> ()</td></tr>
+<tr class="memdesc:a54b941f6f7634d7f99b473c78fe6e4da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load from FILE Object.  <a href="#a54b941f6f7634d7f99b473c78fe6e4da">More...</a><br /></td></tr>
 <tr class="separator:a54b941f6f7634d7f99b473c78fe6e4da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a451bd2517377bfb04fe7600f5e891d6c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a451bd2517377bfb04fe7600f5e891d6c"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_music.html#a451bd2517377bfb04fe7600f5e891d6c">play</a> (std::string filename)</td></tr>
-<tr class="memdesc:a451bd2517377bfb04fe7600f5e891d6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Play. <br /></td></tr>
+<tr class="memitem:a451bd2517377bfb04fe7600f5e891d6c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_music.html#a451bd2517377bfb04fe7600f5e891d6c">play</a> (std::string filename)</td></tr>
+<tr class="memdesc:a451bd2517377bfb04fe7600f5e891d6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Play.  <a href="#a451bd2517377bfb04fe7600f5e891d6c">More...</a><br /></td></tr>
 <tr class="separator:a451bd2517377bfb04fe7600f5e891d6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad68acf36aa5a2e5beb7fb6965e544519"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad68acf36aa5a2e5beb7fb6965e544519"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_music.html#ad68acf36aa5a2e5beb7fb6965e544519">seek</a> (int time)</td></tr>
-<tr class="memdesc:ad68acf36aa5a2e5beb7fb6965e544519"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seek. <br /></td></tr>
+<tr class="memitem:ad68acf36aa5a2e5beb7fb6965e544519"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_music.html#ad68acf36aa5a2e5beb7fb6965e544519">seek</a> (int time)</td></tr>
+<tr class="memdesc:ad68acf36aa5a2e5beb7fb6965e544519"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seek.  <a href="#ad68acf36aa5a2e5beb7fb6965e544519">More...</a><br /></td></tr>
 <tr class="separator:ad68acf36aa5a2e5beb7fb6965e544519"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22b4c2836b068af3be3dbbdcf7fbadd8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a22b4c2836b068af3be3dbbdcf7fbadd8"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_music.html#a22b4c2836b068af3be3dbbdcf7fbadd8">setPosition</a> (int pos)</td></tr>
-<tr class="memdesc:a22b4c2836b068af3be3dbbdcf7fbadd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Position. <br /></td></tr>
+<tr class="memitem:a22b4c2836b068af3be3dbbdcf7fbadd8"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_music.html#a22b4c2836b068af3be3dbbdcf7fbadd8">setPosition</a> (int pos)</td></tr>
+<tr class="memdesc:a22b4c2836b068af3be3dbbdcf7fbadd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Position.  <a href="#a22b4c2836b068af3be3dbbdcf7fbadd8">More...</a><br /></td></tr>
 <tr class="separator:a22b4c2836b068af3be3dbbdcf7fbadd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6a9c5de6f95a1ef01f7518d14d9229a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae6a9c5de6f95a1ef01f7518d14d9229a"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_music.html#ae6a9c5de6f95a1ef01f7518d14d9229a">update</a> (float dTime)</td></tr>
-<tr class="memdesc:ae6a9c5de6f95a1ef01f7518d14d9229a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update. <br /></td></tr>
+<tr class="memitem:ae6a9c5de6f95a1ef01f7518d14d9229a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_music.html#ae6a9c5de6f95a1ef01f7518d14d9229a">update</a> (float dTime)</td></tr>
+<tr class="memdesc:ae6a9c5de6f95a1ef01f7518d14d9229a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update.  <a href="#ae6a9c5de6f95a1ef01f7518d14d9229a">More...</a><br /></td></tr>
 <tr class="separator:ae6a9c5de6f95a1ef01f7518d14d9229a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2c731ba47c7953adf4feafb3212d34d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac2c731ba47c7953adf4feafb3212d34d"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_music.html#ac2c731ba47c7953adf4feafb3212d34d">start</a> ()</td></tr>
@@ -186,9 +175,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_music.html#a2eb3b24fd1153c7b2be6feb58bf1c4e7">free</a> ()</td></tr>
 <tr class="memdesc:a2eb3b24fd1153c7b2be6feb58bf1c4e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free. <br /></td></tr>
 <tr class="separator:a2eb3b24fd1153c7b2be6feb58bf1c4e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa2e926a78e4ba2ce98c1ac22e3f1f68"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afa2e926a78e4ba2ce98c1ac22e3f1f68"></a>
-virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_music.html#afa2e926a78e4ba2ce98c1ac22e3f1f68">getFilename</a> ()</td></tr>
-<tr class="memdesc:afa2e926a78e4ba2ce98c1ac22e3f1f68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get filename. <br /></td></tr>
+<tr class="memitem:afa2e926a78e4ba2ce98c1ac22e3f1f68"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_music.html#afa2e926a78e4ba2ce98c1ac22e3f1f68">getFilename</a> ()</td></tr>
+<tr class="memdesc:afa2e926a78e4ba2ce98c1ac22e3f1f68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get filename.  <a href="#afa2e926a78e4ba2ce98c1ac22e3f1f68">More...</a><br /></td></tr>
 <tr class="separator:afa2e926a78e4ba2ce98c1ac22e3f1f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_source"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_source')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_source.html">Source</a></td></tr>
 <tr class="memitem:a660c0a4b8b8f8402568bef86f2cb2fbb inherit pub_methods_class_source"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a660c0a4b8b8f8402568bef86f2cb2fbb"></a>
@@ -199,33 +187,26 @@ virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class=
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_source.html#ad78297e3d514281fedd1d727e80bf158">~Source</a> ()</td></tr>
 <tr class="memdesc:ad78297e3d514281fedd1d727e80bf158 inherit pub_methods_class_source"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
 <tr class="separator:ad78297e3d514281fedd1d727e80bf158 inherit pub_methods_class_source"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd1dd9595ee66c7d82b425bbbada37e4 inherit pub_methods_class_source"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd1dd9595ee66c7d82b425bbbada37e4"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_source.html#afd1dd9595ee66c7d82b425bbbada37e4">isPlaying</a> ()</td></tr>
-<tr class="memdesc:afd1dd9595ee66c7d82b425bbbada37e4 inherit pub_methods_class_source"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the <a class="el" href="class_source.html" title="A container around an OpenAL Source  The Source Class is a wrapper around a single OpenAL source and ...">Source</a> Playing. <br /></td></tr>
+<tr class="memitem:afd1dd9595ee66c7d82b425bbbada37e4 inherit pub_methods_class_source"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_source.html#afd1dd9595ee66c7d82b425bbbada37e4">isPlaying</a> ()</td></tr>
+<tr class="memdesc:afd1dd9595ee66c7d82b425bbbada37e4 inherit pub_methods_class_source"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the <a class="el" href="class_source.html" title="A container around an OpenAL Source  The Source Class is a wrapper around a single OpenAL source and ...">Source</a> Playing.  <a href="#afd1dd9595ee66c7d82b425bbbada37e4">More...</a><br /></td></tr>
 <tr class="separator:afd1dd9595ee66c7d82b425bbbada37e4 inherit pub_methods_class_source"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8dec58218467c1e141237b152fcc2bf inherit pub_methods_class_source"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af8dec58218467c1e141237b152fcc2bf"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_source.html#af8dec58218467c1e141237b152fcc2bf">isPaused</a> ()</td></tr>
-<tr class="memdesc:af8dec58218467c1e141237b152fcc2bf inherit pub_methods_class_source"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is Paused. <br /></td></tr>
+<tr class="memitem:af8dec58218467c1e141237b152fcc2bf inherit pub_methods_class_source"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_source.html#af8dec58218467c1e141237b152fcc2bf">isPaused</a> ()</td></tr>
+<tr class="memdesc:af8dec58218467c1e141237b152fcc2bf inherit pub_methods_class_source"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is Paused.  <a href="#af8dec58218467c1e141237b152fcc2bf">More...</a><br /></td></tr>
 <tr class="separator:af8dec58218467c1e141237b152fcc2bf inherit pub_methods_class_source"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44ba8efca246d56e2c1f3deb932641bd inherit pub_methods_class_source"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a44ba8efca246d56e2c1f3deb932641bd"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_source.html#a44ba8efca246d56e2c1f3deb932641bd">setPaused</a> (bool state)</td></tr>
-<tr class="memdesc:a44ba8efca246d56e2c1f3deb932641bd inherit pub_methods_class_source"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Paused. <br /></td></tr>
+<tr class="memitem:a44ba8efca246d56e2c1f3deb932641bd inherit pub_methods_class_source"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_source.html#a44ba8efca246d56e2c1f3deb932641bd">setPaused</a> (bool state)</td></tr>
+<tr class="memdesc:a44ba8efca246d56e2c1f3deb932641bd inherit pub_methods_class_source"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Paused.  <a href="#a44ba8efca246d56e2c1f3deb932641bd">More...</a><br /></td></tr>
 <tr class="separator:a44ba8efca246d56e2c1f3deb932641bd inherit pub_methods_class_source"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fd2d2d22ccf552c3c4047c756feb5fa inherit pub_methods_class_source"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0fd2d2d22ccf552c3c4047c756feb5fa"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_source.html#a0fd2d2d22ccf552c3c4047c756feb5fa">getVolume</a> ()</td></tr>
-<tr class="memdesc:a0fd2d2d22ccf552c3c4047c756feb5fa inherit pub_methods_class_source"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Volume. <br /></td></tr>
+<tr class="memitem:a0fd2d2d22ccf552c3c4047c756feb5fa inherit pub_methods_class_source"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_source.html#a0fd2d2d22ccf552c3c4047c756feb5fa">getVolume</a> ()</td></tr>
+<tr class="memdesc:a0fd2d2d22ccf552c3c4047c756feb5fa inherit pub_methods_class_source"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Volume.  <a href="#a0fd2d2d22ccf552c3c4047c756feb5fa">More...</a><br /></td></tr>
 <tr class="separator:a0fd2d2d22ccf552c3c4047c756feb5fa inherit pub_methods_class_source"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fe7ed13ac0629df1a3dc1f05606014d inherit pub_methods_class_source"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9fe7ed13ac0629df1a3dc1f05606014d"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_source.html#a9fe7ed13ac0629df1a3dc1f05606014d">setVolume</a> (int volume)</td></tr>
-<tr class="memdesc:a9fe7ed13ac0629df1a3dc1f05606014d inherit pub_methods_class_source"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Volume. <br /></td></tr>
+<tr class="memitem:a9fe7ed13ac0629df1a3dc1f05606014d inherit pub_methods_class_source"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_source.html#a9fe7ed13ac0629df1a3dc1f05606014d">setVolume</a> (int volume)</td></tr>
+<tr class="memdesc:a9fe7ed13ac0629df1a3dc1f05606014d inherit pub_methods_class_source"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Volume.  <a href="#a9fe7ed13ac0629df1a3dc1f05606014d">More...</a><br /></td></tr>
 <tr class="separator:a9fe7ed13ac0629df1a3dc1f05606014d inherit pub_methods_class_source"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf7ccb4f97a18db9b608e647cb4fb874 inherit pub_methods_class_source"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acf7ccb4f97a18db9b608e647cb4fb874"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_source.html#acf7ccb4f97a18db9b608e647cb4fb874">isMute</a> ()</td></tr>
-<tr class="memdesc:acf7ccb4f97a18db9b608e647cb4fb874 inherit pub_methods_class_source"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is Mute. <br /></td></tr>
+<tr class="memitem:acf7ccb4f97a18db9b608e647cb4fb874 inherit pub_methods_class_source"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_source.html#acf7ccb4f97a18db9b608e647cb4fb874">isMute</a> ()</td></tr>
+<tr class="memdesc:acf7ccb4f97a18db9b608e647cb4fb874 inherit pub_methods_class_source"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is Mute.  <a href="#acf7ccb4f97a18db9b608e647cb4fb874">More...</a><br /></td></tr>
 <tr class="separator:acf7ccb4f97a18db9b608e647cb4fb874 inherit pub_methods_class_source"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adba2d612781b96a6c222caf27e237131 inherit pub_methods_class_source"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adba2d612781b96a6c222caf27e237131"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_source.html#adba2d612781b96a6c222caf27e237131">setMute</a> (bool state)</td></tr>
-<tr class="memdesc:adba2d612781b96a6c222caf27e237131 inherit pub_methods_class_source"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Mute Flag. <br /></td></tr>
+<tr class="memitem:adba2d612781b96a6c222caf27e237131 inherit pub_methods_class_source"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_source.html#adba2d612781b96a6c222caf27e237131">setMute</a> (bool state)</td></tr>
+<tr class="memdesc:adba2d612781b96a6c222caf27e237131 inherit pub_methods_class_source"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Mute Flag.  <a href="#adba2d612781b96a6c222caf27e237131">More...</a><br /></td></tr>
 <tr class="separator:adba2d612781b96a6c222caf27e237131 inherit pub_methods_class_source"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17a03cc984302cbcf214ca641a12ea33 inherit pub_methods_class_source"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a17a03cc984302cbcf214ca641a12ea33"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_source.html#a17a03cc984302cbcf214ca641a12ea33">mute</a> ()</td></tr>
@@ -233,23 +214,19 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="separator:a17a03cc984302cbcf214ca641a12ea33 inherit pub_methods_class_source"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a853d4c578f3c8b359b3e057d2386fcbc inherit pub_methods_class_source"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a853d4c578f3c8b359b3e057d2386fcbc"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_source.html#a853d4c578f3c8b359b3e057d2386fcbc">unmute</a> ()</td></tr>
-<tr class="memdesc:a853d4c578f3c8b359b3e057d2386fcbc inherit pub_methods_class_source"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmute. <br /></td></tr>
+<tr class="memdesc:a853d4c578f3c8b359b3e057d2386fcbc inherit pub_methods_class_source"><td class="mdescLeft">&#160;</td><td class="mdescRight">unmute <br /></td></tr>
 <tr class="separator:a853d4c578f3c8b359b3e057d2386fcbc inherit pub_methods_class_source"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5c65727aff2eea95b8bbb532655f6ac inherit pub_methods_class_source"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac5c65727aff2eea95b8bbb532655f6ac"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_source.html#ac5c65727aff2eea95b8bbb532655f6ac">isLooping</a> ()</td></tr>
-<tr class="memdesc:ac5c65727aff2eea95b8bbb532655f6ac inherit pub_methods_class_source"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is Looping. <br /></td></tr>
+<tr class="memitem:ac5c65727aff2eea95b8bbb532655f6ac inherit pub_methods_class_source"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_source.html#ac5c65727aff2eea95b8bbb532655f6ac">isLooping</a> ()</td></tr>
+<tr class="memdesc:ac5c65727aff2eea95b8bbb532655f6ac inherit pub_methods_class_source"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is Looping.  <a href="#ac5c65727aff2eea95b8bbb532655f6ac">More...</a><br /></td></tr>
 <tr class="separator:ac5c65727aff2eea95b8bbb532655f6ac inherit pub_methods_class_source"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e109f35d716c26b0dd834ee500d0293 inherit pub_methods_class_source"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e109f35d716c26b0dd834ee500d0293"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_source.html#a1e109f35d716c26b0dd834ee500d0293">setLooping</a> (bool mode)</td></tr>
-<tr class="memdesc:a1e109f35d716c26b0dd834ee500d0293 inherit pub_methods_class_source"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Loop Mode. <br /></td></tr>
+<tr class="memitem:a1e109f35d716c26b0dd834ee500d0293 inherit pub_methods_class_source"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_source.html#a1e109f35d716c26b0dd834ee500d0293">setLooping</a> (bool mode)</td></tr>
+<tr class="memdesc:a1e109f35d716c26b0dd834ee500d0293 inherit pub_methods_class_source"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Loop Mode.  <a href="#a1e109f35d716c26b0dd834ee500d0293">More...</a><br /></td></tr>
 <tr class="separator:a1e109f35d716c26b0dd834ee500d0293 inherit pub_methods_class_source"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a231c1ece3df5524c48e20e1ae474fd96 inherit pub_methods_class_source"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a231c1ece3df5524c48e20e1ae474fd96"></a>
-virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_source.html#a231c1ece3df5524c48e20e1ae474fd96">getPitch</a> ()</td></tr>
-<tr class="memdesc:a231c1ece3df5524c48e20e1ae474fd96 inherit pub_methods_class_source"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Pitch. <br /></td></tr>
+<tr class="memitem:a231c1ece3df5524c48e20e1ae474fd96 inherit pub_methods_class_source"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_source.html#a231c1ece3df5524c48e20e1ae474fd96">getPitch</a> ()</td></tr>
+<tr class="memdesc:a231c1ece3df5524c48e20e1ae474fd96 inherit pub_methods_class_source"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Pitch.  <a href="#a231c1ece3df5524c48e20e1ae474fd96">More...</a><br /></td></tr>
 <tr class="separator:a231c1ece3df5524c48e20e1ae474fd96 inherit pub_methods_class_source"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a270a70a7f1c2ee8e1a1fd1cb2dd3376d inherit pub_methods_class_source"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a270a70a7f1c2ee8e1a1fd1cb2dd3376d"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_source.html#a270a70a7f1c2ee8e1a1fd1cb2dd3376d">setPitch</a> (float pitch)</td></tr>
-<tr class="memdesc:a270a70a7f1c2ee8e1a1fd1cb2dd3376d inherit pub_methods_class_source"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Pitch. <br /></td></tr>
+<tr class="memitem:a270a70a7f1c2ee8e1a1fd1cb2dd3376d inherit pub_methods_class_source"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_source.html#a270a70a7f1c2ee8e1a1fd1cb2dd3376d">setPitch</a> (float pitch)</td></tr>
+<tr class="memdesc:a270a70a7f1c2ee8e1a1fd1cb2dd3376d inherit pub_methods_class_source"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Pitch.  <a href="#a270a70a7f1c2ee8e1a1fd1cb2dd3376d">More...</a><br /></td></tr>
 <tr class="separator:a270a70a7f1c2ee8e1a1fd1cb2dd3376d inherit pub_methods_class_source"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
@@ -303,7 +280,275 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>pitch</b></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A Container for a Tracker <a class="el" href="class_music.html" title="A Container for a Tracker Music File (XM, S3M, MOD, IT, and others supported by libxmp)  The Music Cl...">Music</a> File (XM, S3M, MOD, IT, and others supported by libxmp)  The <a class="el" href="class_music.html" title="A Container for a Tracker Music File (XM, S3M, MOD, IT, and others supported by libxmp)  The Music Cl...">Music</a> Class is a small container for playing instances of tracker files. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="afa2e926a78e4ba2ce98c1ac22e3f1f68"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string Music::getFilename </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get filename. </p>
+<dl class="section return"><dt>Returns</dt><dd>the filename </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a304084c1462e1bce1a262bd8a51be3ae"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Music::load </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Load from File. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename[in]</td><td>the path of the tracker music file to load </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true on success and false on failure </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aaf080d517e66617d64a02ef12ad1d3cd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Music::load </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Load from Buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pBuffer[in]</td><td>A pointer to a space on the heap full of a cached tracker file </td></tr>
+    <tr><td class="paramname">size[in]</td><td>The size of the data to read from the heap in bytes </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a54b941f6f7634d7f99b473c78fe6e4da"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Music::play </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Load from FILE Object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pFile[in]</td><td>pointer to a cstyle file </td></tr>
+    <tr><td class="paramname">size[in]</td><td>Play </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="class_source.html#a9bc9f5a53fbd280036de2507391f66cf">Source</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a451bd2517377bfb04fe7600f5e891d6c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Music::play </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Play. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true on success, false on failure </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad68acf36aa5a2e5beb7fb6965e544519"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Music::seek </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>time</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Seek. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">time[in]</td><td>time to seek to </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a22b4c2836b068af3be3dbbdcf7fbadd8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Music::setPosition </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set Position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos[in]</td><td>sample position to seek to </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae6a9c5de6f95a1ef01f7518d14d9229a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Music::update </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>dTime</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Update. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dTime[in]</td><td>dTime is the difference between the last frame and this frame </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="class_source.html#a082c41038b2e3afd5aad3362a0c53d64">Source</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_music_8h_source.html">Music.h</a></li>
 <li>Music.cpp</li>
 </ul>
@@ -313,7 +558,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>pitch</b></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_music.html">Music</a></li>
-    <li class="footer">Generated on Thu Aug 25 2016 19:10:12 for OpenALWrapper by
+    <li class="footer">Generated on Fri Aug 26 2016 00:44:21 for OpenALWrapper by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

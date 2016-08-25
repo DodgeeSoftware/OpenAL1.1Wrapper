@@ -1,9 +1,9 @@
-// ********************************
-// * COMPANY: Dodgee Software     *
-// * AUTHOR: Shem Taylor          *
-// * Written 2016 Dodgee Software *
-// * GPLv3                        *
-// ********************************
+/**
+  * @file   Music.h
+  * @Author Sergeant Neipo (sergeant.neipo@gmail.com)
+  * @date   August, 2016
+  * @brief  Music streams a tracker file (xm, s3m, it, mod) from disk
+*/
 
 #ifndef MUSIC_H
 #define MUSIC_H
@@ -46,24 +46,10 @@ class Music : public Source
         //! Constructor
         Music()
         {
-//            // Default source value
-//            this->source = -1;
             // Make our context
             this->context = xmp_create_context();
             // Filename
             this->filename.clear();
-//            // Playing Flag
-//            this->playingFlag = false;
-//            // Pause Flag
-//            this->pauseFlag = false;
-//            // Mute Flag
-//            this->muteFlag = false;
-//            // Loop Flag
-//            this->loopFlag = true;
-//            // Volume
-//            this->volume = 1.0f;
-//            // Pitch
-//            this->pitch = 1.0f;
         }
         //! Destructor
         virtual ~Music()
@@ -88,33 +74,46 @@ class Music : public Source
     // * GENERAL FUNCTIONS *
     // *********************
     public:
-        //! Load from File
+        /** @brief Load from File
+          * @param filename[in] the path of the tracker music file
+          * to load
+          * @return true on success and false on failure **/
         virtual bool load(std::string filename);
-        //! Load from Buffer
+        /** @brief Load from Buffer
+          * @param pBuffer[in] A pointer to a space on the heap full of a cached tracker file
+          * @param size[in] The size of the data to read from the heap in bytes **/
         virtual bool load(void* pBuffer, long size);
-        //! Load from FILE Object
-        virtual bool load(FILE* pFile, long size);
-        //! Play
+        // /** @brief Load from FILE Object
+        //   * @param pFile[in] pointer to a cstyle file
+        //   * @param size[in] **/
+        // virtual bool load(FILE* pFile, long size);
+        /** @brief Play **/
         virtual void play();
-        //! Play
+        /** @brief Play
+          * @param filename
+          * @return true on success, false on failure **/
         virtual bool play(std::string filename);
-        //! Seek
+        /** @brief Seek
+          * @param time[in] time to seek to **/
         virtual int seek(int time);
-        //! Set Position
+        /** @brief Set Position
+          * @param pos[in] sample position to seek to **/
         virtual int setPosition(int pos);
-        //! Update
+        /** @brief Update
+          * @param dTime[in] dTime is the difference between
+          * the last frame and this frame **/
         virtual void update(float dTime);
-        //! Start
+        /** @brief Start **/
         virtual void start();
-        //! Stop
+        /** @brief Stop **/
         virtual void stop();
-        //! Pause
+        /** @brief Pause **/
         virtual void pause();
-        //! Resume
+        /** @brief Resume **/
         virtual void resume();
-        //! Clear
+        /** @brief Clear **/
         virtual void clear();
-        //! Free
+        /** @brief Free **/
         virtual void free();
 
     protected:
@@ -129,7 +128,8 @@ class Music : public Source
     // * FILENAME FUNCTIONS *
     // **********************
     public:
-        //! Get filename
+        /** @brief Get filename
+          * @return the filename **/
         virtual std::string getFilename() { return this->filename.c_str(); }
 
     protected:

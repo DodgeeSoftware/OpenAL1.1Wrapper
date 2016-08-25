@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('_capture_device_8h_source.html','');})
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -136,105 +136,107 @@ $(document).ready(function(){initNavTree('_capture_device_8h_source.html','');})
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;Utils/OpenALVector3D.h&quot;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;Sound/SoundBuffer.h&quot;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_capture_device.html">   39</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_capture_device.html">CaptureDevice</a></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">// *****************************</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">// * CONSTRUCTORS / DESTRUCTOR *</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">// *****************************</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_capture_device.html#a7435d6a935f992dcae1dac1185adf7cb">   46</a></span>&#160;        <a class="code" href="class_capture_device.html#a7435d6a935f992dcae1dac1185adf7cb">CaptureDevice</a>()</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        {</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_capture_device.html">   38</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_capture_device.html">CaptureDevice</a></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">// *****************************</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">// * CONSTRUCTORS / DESTRUCTOR *</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">// *****************************</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_capture_device.html#a7435d6a935f992dcae1dac1185adf7cb">   45</a></span>&#160;        <a class="code" href="class_capture_device.html#a7435d6a935f992dcae1dac1185adf7cb">CaptureDevice</a>()</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="comment">// Capture Device</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            this-&gt;pCaptureDevice = 0;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            this-&gt;name.clear();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            this-&gt;<span class="keywordtype">id</span> = 0;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        }</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_capture_device.html#a9d43c11030e12d84e2169054f590cc5f">   53</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_capture_device.html#a9d43c11030e12d84e2169054f590cc5f">~CaptureDevice</a>() {}</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_capture_device.html#a34a1c32c51d1f4d47182a2ca16adcf08">   57</a></span>&#160;        <a class="code" href="class_capture_device.html#a34a1c32c51d1f4d47182a2ca16adcf08">CaptureDevice</a>(<a class="code" href="class_capture_device.html">CaptureDevice</a>&amp; captureDevice) {}</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// ************************</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">// * OVERLOADED OPERATORS *</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="comment">// Name</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            this-&gt;name.clear();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="comment">// ID</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            this-&gt;<span class="keywordtype">id</span> = 0;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_capture_device.html#a9d43c11030e12d84e2169054f590cc5f">   55</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_capture_device.html#a9d43c11030e12d84e2169054f590cc5f">~CaptureDevice</a>() {}</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_capture_device.html#a34a1c32c51d1f4d47182a2ca16adcf08">   59</a></span>&#160;        <a class="code" href="class_capture_device.html#a34a1c32c51d1f4d47182a2ca16adcf08">CaptureDevice</a>(<a class="code" href="class_capture_device.html">CaptureDevice</a>&amp; captureDevice) {}</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// ************************</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="comment">// No functions</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="class_capture_device.html#a43c00678a6ac086158fdd2978fb46133">   67</a></span>&#160;        <a class="code" href="class_capture_device.html">CaptureDevice</a>&amp; <a class="code" href="class_capture_device.html#a43c00678a6ac086158fdd2978fb46133">operator=</a>(<span class="keyword">const</span> <a class="code" href="class_capture_device.html">CaptureDevice</a>&amp; other) { <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">// *********************</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">// * GENERAL FUNCTIONS *</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// * OVERLOADED OPERATORS *</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// ************************</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="comment">// No functions</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="class_capture_device.html#a43c00678a6ac086158fdd2978fb46133">   69</a></span>&#160;        <a class="code" href="class_capture_device.html">CaptureDevice</a>&amp; <a class="code" href="class_capture_device.html#a43c00678a6ac086158fdd2978fb46133">operator=</a>(<span class="keyword">const</span> <a class="code" href="class_capture_device.html">CaptureDevice</a>&amp; other) { <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">// *********************</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_capture_device.html#a630dd67e1a59fe5371a20db0ab448d82">open</a>(<span class="keywordtype">int</span> frequency, <span class="keywordtype">int</span> format, <span class="keywordtype">int</span> bufferSize);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_capture_device.html#a3c18da89bc9b77842d766de156d33b4d">close</a>();</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_capture_device.html#a4c782b607af5745a28782322d9e6a9e3">start</a>();</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_capture_device.html#a3a8ab10fd1de4ff14443c5ae7377e183">stop</a>();</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_capture_device.html#a905156595df5ff94c953510bfe525b9b">captureSamples</a>(<span class="keywordtype">void</span>* pBuffer, <span class="keywordtype">int</span> samples);</div>
-<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="class_capture_device.html#a790277da5bfeb6ab7ad4ee661d6ad55e">   88</a></span>&#160;        <span class="keyword">virtual</span> ALCdevice* <a class="code" href="class_capture_device.html#a790277da5bfeb6ab7ad4ee661d6ad55e">getCaptureDevice</a>() { <span class="keywordflow">return</span> this-&gt;pCaptureDevice; }</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="comment">// Capture Device</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        ALCdevice* pCaptureDevice;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">// ********</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="comment">// * NAME *</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="comment">// ********</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="class_capture_device.html#a005da884e6b370ac1018438b5c66d722">   99</a></span>&#160;        <span class="keyword">virtual</span> std::string <a class="code" href="class_capture_device.html#a005da884e6b370ac1018438b5c66d722">getName</a>() { <span class="keywordflow">return</span> this-&gt;name; }</div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="class_capture_device.html#aabe004c558072d95f2ab7b22fde925a8">  101</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_capture_device.html#aabe004c558072d95f2ab7b22fde925a8">setName</a>(std::string name) { this-&gt;name = name; }</div>
-<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="class_capture_device.html#a7685fbf17210d7eb2ecf807748bd86bc">  103</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_capture_device.html#a7685fbf17210d7eb2ecf807748bd86bc">isNamed</a>() { <span class="keywordflow">return</span> (this-&gt;name.size() &gt; 0); }</div>
-<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="class_capture_device.html#a4a32bdec5f46b0522c1e51c48bf440fb">  105</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_capture_device.html#a4a32bdec5f46b0522c1e51c48bf440fb">clearName</a>() { this-&gt;name.clear(); }</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="comment">// unique name</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        std::string name;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="comment">// ******</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="comment">// * ID *</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="comment">// ******</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="class_capture_device.html#ab715244302691f4bd446729f41be752e">  116</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_capture_device.html#ab715244302691f4bd446729f41be752e">getID</a>() { <span class="keywordflow">return</span> this-&gt;id; }</div>
-<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="class_capture_device.html#a1a647f232ccbbad7f48d3e3775cd6b58">  118</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_capture_device.html#a1a647f232ccbbad7f48d3e3775cd6b58">setID</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>) { this-&gt;<span class="keywordtype">id</span> = id; }</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="comment">// ID</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordtype">int</span> id;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment">//    // ****************</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment">//    // * LUA BINDINGS *</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="comment">//    // ****************</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment">//    public:</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="comment">//        //! Bind this class to a lua state</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="comment">//        static void bindToLua(lua_State* pLuaState);</span></div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;};</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#endif // CAPTUREDEVICE_H</span></div>
-<div class="ttc" id="class_capture_device_html_a7685fbf17210d7eb2ecf807748bd86bc"><div class="ttname"><a href="class_capture_device.html#a7685fbf17210d7eb2ecf807748bd86bc">CaptureDevice::isNamed</a></div><div class="ttdeci">virtual bool isNamed()</div><div class="ttdoc">Is Named. </div><div class="ttdef"><b>Definition:</b> CaptureDevice.h:103</div></div>
-<div class="ttc" id="class_capture_device_html_a005da884e6b370ac1018438b5c66d722"><div class="ttname"><a href="class_capture_device.html#a005da884e6b370ac1018438b5c66d722">CaptureDevice::getName</a></div><div class="ttdeci">virtual std::string getName()</div><div class="ttdoc">Get Name. </div><div class="ttdef"><b>Definition:</b> CaptureDevice.h:99</div></div>
-<div class="ttc" id="class_capture_device_html_a7435d6a935f992dcae1dac1185adf7cb"><div class="ttname"><a href="class_capture_device.html#a7435d6a935f992dcae1dac1185adf7cb">CaptureDevice::CaptureDevice</a></div><div class="ttdeci">CaptureDevice()</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> CaptureDevice.h:46</div></div>
-<div class="ttc" id="class_capture_device_html_a4a32bdec5f46b0522c1e51c48bf440fb"><div class="ttname"><a href="class_capture_device.html#a4a32bdec5f46b0522c1e51c48bf440fb">CaptureDevice::clearName</a></div><div class="ttdeci">virtual void clearName()</div><div class="ttdoc">Clear Name. </div><div class="ttdef"><b>Definition:</b> CaptureDevice.h:105</div></div>
-<div class="ttc" id="class_capture_device_html_a34a1c32c51d1f4d47182a2ca16adcf08"><div class="ttname"><a href="class_capture_device.html#a34a1c32c51d1f4d47182a2ca16adcf08">CaptureDevice::CaptureDevice</a></div><div class="ttdeci">CaptureDevice(CaptureDevice &amp;captureDevice)</div><div class="ttdoc">Copy Constructor. </div><div class="ttdef"><b>Definition:</b> CaptureDevice.h:57</div></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">// * GENERAL FUNCTIONS *</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">// *********************</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_capture_device.html#a630dd67e1a59fe5371a20db0ab448d82">open</a>(<span class="keywordtype">int</span> frequency, <span class="keywordtype">int</span> format, <span class="keywordtype">int</span> bufferSize);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_capture_device.html#a3c18da89bc9b77842d766de156d33b4d">close</a>();</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_capture_device.html#a4c782b607af5745a28782322d9e6a9e3">start</a>();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_capture_device.html#a3a8ab10fd1de4ff14443c5ae7377e183">stop</a>();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_capture_device.html#a905156595df5ff94c953510bfe525b9b">captureSamples</a>(<span class="keywordtype">void</span>* pBuffer, <span class="keywordtype">int</span> samples);</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="class_capture_device.html#a790277da5bfeb6ab7ad4ee661d6ad55e">   93</a></span>&#160;        <span class="keyword">virtual</span> ALCdevice* <a class="code" href="class_capture_device.html#a790277da5bfeb6ab7ad4ee661d6ad55e">getCaptureDevice</a>() { <span class="keywordflow">return</span> this-&gt;pCaptureDevice; }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="comment">// Capture Device</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        ALCdevice* pCaptureDevice;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">// ********</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="comment">// * NAME *</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="comment">// ********</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="class_capture_device.html#a005da884e6b370ac1018438b5c66d722">  105</a></span>&#160;        <span class="keyword">virtual</span> std::string <a class="code" href="class_capture_device.html#a005da884e6b370ac1018438b5c66d722">getName</a>() { <span class="keywordflow">return</span> this-&gt;name; }</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="class_capture_device.html#aabe004c558072d95f2ab7b22fde925a8">  108</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_capture_device.html#aabe004c558072d95f2ab7b22fde925a8">setName</a>(std::string name) { this-&gt;name = name; }</div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="class_capture_device.html#a7685fbf17210d7eb2ecf807748bd86bc">  111</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_capture_device.html#a7685fbf17210d7eb2ecf807748bd86bc">isNamed</a>() { <span class="keywordflow">return</span> (this-&gt;name.size() &gt; 0); }</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="class_capture_device.html#a4a32bdec5f46b0522c1e51c48bf440fb">  113</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_capture_device.html#a4a32bdec5f46b0522c1e51c48bf440fb">clearName</a>() { this-&gt;name.clear(); }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="comment">// unique name</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        std::string name;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="comment">// ******</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="comment">// * ID *</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="comment">// ******</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="class_capture_device.html#ab715244302691f4bd446729f41be752e">  125</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_capture_device.html#ab715244302691f4bd446729f41be752e">getID</a>() { <span class="keywordflow">return</span> this-&gt;id; }</div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="class_capture_device.html#a1a647f232ccbbad7f48d3e3775cd6b58">  128</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_capture_device.html#a1a647f232ccbbad7f48d3e3775cd6b58">setID</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>) { this-&gt;<span class="keywordtype">id</span> = id; }</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="comment">// ID</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordtype">int</span> id;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="comment">//    // ****************</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="comment">//    // * LUA BINDINGS *</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="comment">//    // ****************</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="comment">//    public:</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="comment">//        //! Bind this class to a lua state</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="comment">//        static void bindToLua(lua_State* pLuaState);</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;};</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="preprocessor">#endif // CAPTUREDEVICE_H</span></div>
+<div class="ttc" id="class_capture_device_html_a7685fbf17210d7eb2ecf807748bd86bc"><div class="ttname"><a href="class_capture_device.html#a7685fbf17210d7eb2ecf807748bd86bc">CaptureDevice::isNamed</a></div><div class="ttdeci">virtual bool isNamed()</div><div class="ttdoc">Is Named. </div><div class="ttdef"><b>Definition:</b> CaptureDevice.h:111</div></div>
+<div class="ttc" id="class_capture_device_html_a005da884e6b370ac1018438b5c66d722"><div class="ttname"><a href="class_capture_device.html#a005da884e6b370ac1018438b5c66d722">CaptureDevice::getName</a></div><div class="ttdeci">virtual std::string getName()</div><div class="ttdoc">Get Name. </div><div class="ttdef"><b>Definition:</b> CaptureDevice.h:105</div></div>
+<div class="ttc" id="class_capture_device_html_a7435d6a935f992dcae1dac1185adf7cb"><div class="ttname"><a href="class_capture_device.html#a7435d6a935f992dcae1dac1185adf7cb">CaptureDevice::CaptureDevice</a></div><div class="ttdeci">CaptureDevice()</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> CaptureDevice.h:45</div></div>
+<div class="ttc" id="class_capture_device_html_a4a32bdec5f46b0522c1e51c48bf440fb"><div class="ttname"><a href="class_capture_device.html#a4a32bdec5f46b0522c1e51c48bf440fb">CaptureDevice::clearName</a></div><div class="ttdeci">virtual void clearName()</div><div class="ttdoc">Clear Name. </div><div class="ttdef"><b>Definition:</b> CaptureDevice.h:113</div></div>
+<div class="ttc" id="class_capture_device_html_a34a1c32c51d1f4d47182a2ca16adcf08"><div class="ttname"><a href="class_capture_device.html#a34a1c32c51d1f4d47182a2ca16adcf08">CaptureDevice::CaptureDevice</a></div><div class="ttdeci">CaptureDevice(CaptureDevice &amp;captureDevice)</div><div class="ttdoc">Copy Constructor. </div><div class="ttdef"><b>Definition:</b> CaptureDevice.h:59</div></div>
 <div class="ttc" id="class_capture_device_html_a905156595df5ff94c953510bfe525b9b"><div class="ttname"><a href="class_capture_device.html#a905156595df5ff94c953510bfe525b9b">CaptureDevice::captureSamples</a></div><div class="ttdeci">virtual void captureSamples(void *pBuffer, int samples)</div><div class="ttdoc">Capture Samples. </div><div class="ttdef"><b>Definition:</b> CaptureDevice.cpp:49</div></div>
-<div class="ttc" id="class_capture_device_html"><div class="ttname"><a href="class_capture_device.html">CaptureDevice</a></div><div class="ttdoc">A Container for a Single Audio Capture Device  The CaptureDevice Class is a container for a single ca...</div><div class="ttdef"><b>Definition:</b> CaptureDevice.h:39</div></div>
+<div class="ttc" id="class_capture_device_html"><div class="ttname"><a href="class_capture_device.html">CaptureDevice</a></div><div class="ttdoc">A Container for a Single Audio Capture Device  The CaptureDevice Class is a container for a single ca...</div><div class="ttdef"><b>Definition:</b> CaptureDevice.h:38</div></div>
 <div class="ttc" id="class_capture_device_html_a4c782b607af5745a28782322d9e6a9e3"><div class="ttname"><a href="class_capture_device.html#a4c782b607af5745a28782322d9e6a9e3">CaptureDevice::start</a></div><div class="ttdeci">virtual void start()</div><div class="ttdoc">Start. </div><div class="ttdef"><b>Definition:</b> CaptureDevice.cpp:31</div></div>
-<div class="ttc" id="class_capture_device_html_a1a647f232ccbbad7f48d3e3775cd6b58"><div class="ttname"><a href="class_capture_device.html#a1a647f232ccbbad7f48d3e3775cd6b58">CaptureDevice::setID</a></div><div class="ttdeci">virtual void setID(int id)</div><div class="ttdoc">Get the ID. </div><div class="ttdef"><b>Definition:</b> CaptureDevice.h:118</div></div>
-<div class="ttc" id="class_capture_device_html_a43c00678a6ac086158fdd2978fb46133"><div class="ttname"><a href="class_capture_device.html#a43c00678a6ac086158fdd2978fb46133">CaptureDevice::operator=</a></div><div class="ttdeci">CaptureDevice &amp; operator=(const CaptureDevice &amp;other)</div><div class="ttdoc">CaptureDevice Assignment operator. </div><div class="ttdef"><b>Definition:</b> CaptureDevice.h:67</div></div>
-<div class="ttc" id="class_capture_device_html_ab715244302691f4bd446729f41be752e"><div class="ttname"><a href="class_capture_device.html#ab715244302691f4bd446729f41be752e">CaptureDevice::getID</a></div><div class="ttdeci">virtual int getID()</div><div class="ttdoc">Get the ID. </div><div class="ttdef"><b>Definition:</b> CaptureDevice.h:116</div></div>
+<div class="ttc" id="class_capture_device_html_a1a647f232ccbbad7f48d3e3775cd6b58"><div class="ttname"><a href="class_capture_device.html#a1a647f232ccbbad7f48d3e3775cd6b58">CaptureDevice::setID</a></div><div class="ttdeci">virtual void setID(int id)</div><div class="ttdoc">Set the ID. </div><div class="ttdef"><b>Definition:</b> CaptureDevice.h:128</div></div>
+<div class="ttc" id="class_capture_device_html_a43c00678a6ac086158fdd2978fb46133"><div class="ttname"><a href="class_capture_device.html#a43c00678a6ac086158fdd2978fb46133">CaptureDevice::operator=</a></div><div class="ttdeci">CaptureDevice &amp; operator=(const CaptureDevice &amp;other)</div><div class="ttdoc">CaptureDevice Assignment operator. </div><div class="ttdef"><b>Definition:</b> CaptureDevice.h:69</div></div>
+<div class="ttc" id="class_capture_device_html_ab715244302691f4bd446729f41be752e"><div class="ttname"><a href="class_capture_device.html#ab715244302691f4bd446729f41be752e">CaptureDevice::getID</a></div><div class="ttdeci">virtual int getID()</div><div class="ttdoc">Get the ID. </div><div class="ttdef"><b>Definition:</b> CaptureDevice.h:125</div></div>
 <div class="ttc" id="class_capture_device_html_a3c18da89bc9b77842d766de156d33b4d"><div class="ttname"><a href="class_capture_device.html#a3c18da89bc9b77842d766de156d33b4d">CaptureDevice::close</a></div><div class="ttdeci">virtual void close()</div><div class="ttdoc">Close Capture Device. </div><div class="ttdef"><b>Definition:</b> CaptureDevice.cpp:19</div></div>
-<div class="ttc" id="class_capture_device_html_a9d43c11030e12d84e2169054f590cc5f"><div class="ttname"><a href="class_capture_device.html#a9d43c11030e12d84e2169054f590cc5f">CaptureDevice::~CaptureDevice</a></div><div class="ttdeci">virtual ~CaptureDevice()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> CaptureDevice.h:53</div></div>
+<div class="ttc" id="class_capture_device_html_a9d43c11030e12d84e2169054f590cc5f"><div class="ttname"><a href="class_capture_device.html#a9d43c11030e12d84e2169054f590cc5f">CaptureDevice::~CaptureDevice</a></div><div class="ttdeci">virtual ~CaptureDevice()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> CaptureDevice.h:55</div></div>
 <div class="ttc" id="class_capture_device_html_a3a8ab10fd1de4ff14443c5ae7377e183"><div class="ttname"><a href="class_capture_device.html#a3a8ab10fd1de4ff14443c5ae7377e183">CaptureDevice::stop</a></div><div class="ttdeci">virtual void stop()</div><div class="ttdoc">Stop. </div><div class="ttdef"><b>Definition:</b> CaptureDevice.cpp:40</div></div>
-<div class="ttc" id="class_capture_device_html_aabe004c558072d95f2ab7b22fde925a8"><div class="ttname"><a href="class_capture_device.html#aabe004c558072d95f2ab7b22fde925a8">CaptureDevice::setName</a></div><div class="ttdeci">virtual void setName(std::string name)</div><div class="ttdoc">Set Name. </div><div class="ttdef"><b>Definition:</b> CaptureDevice.h:101</div></div>
+<div class="ttc" id="class_capture_device_html_aabe004c558072d95f2ab7b22fde925a8"><div class="ttname"><a href="class_capture_device.html#aabe004c558072d95f2ab7b22fde925a8">CaptureDevice::setName</a></div><div class="ttdeci">virtual void setName(std::string name)</div><div class="ttdoc">Set Name. </div><div class="ttdef"><b>Definition:</b> CaptureDevice.h:108</div></div>
 <div class="ttc" id="class_capture_device_html_a630dd67e1a59fe5371a20db0ab448d82"><div class="ttname"><a href="class_capture_device.html#a630dd67e1a59fe5371a20db0ab448d82">CaptureDevice::open</a></div><div class="ttdeci">virtual bool open(int frequency, int format, int bufferSize)</div><div class="ttdoc">Open Capture Device. </div><div class="ttdef"><b>Definition:</b> CaptureDevice.cpp:3</div></div>
-<div class="ttc" id="class_capture_device_html_a790277da5bfeb6ab7ad4ee661d6ad55e"><div class="ttname"><a href="class_capture_device.html#a790277da5bfeb6ab7ad4ee661d6ad55e">CaptureDevice::getCaptureDevice</a></div><div class="ttdeci">virtual ALCdevice * getCaptureDevice()</div><div class="ttdoc">Get Capture Device. </div><div class="ttdef"><b>Definition:</b> CaptureDevice.h:88</div></div>
+<div class="ttc" id="class_capture_device_html_a790277da5bfeb6ab7ad4ee661d6ad55e"><div class="ttname"><a href="class_capture_device.html#a790277da5bfeb6ab7ad4ee661d6ad55e">CaptureDevice::getCaptureDevice</a></div><div class="ttdeci">virtual ALCdevice * getCaptureDevice()</div><div class="ttdoc">Get Capture Device. </div><div class="ttdef"><b>Definition:</b> CaptureDevice.h:93</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_7033345717a97ecf1203e65fc25e6a8e.html">GameAudio</a></li><li class="navelem"><a class="el" href="dir_29473dadc891f967dc2a5d4eb9ff972b.html">Capture</a></li><li class="navelem"><b>CaptureDevice.h</b></li>
-    <li class="footer">Generated on Thu Aug 25 2016 19:10:12 for OpenALWrapper by
+    <li class="footer">Generated on Fri Aug 26 2016 00:44:21 for OpenALWrapper by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

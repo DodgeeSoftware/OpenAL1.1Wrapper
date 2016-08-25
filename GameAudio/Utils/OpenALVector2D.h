@@ -1,9 +1,10 @@
-// ********************************
-// * COMPANY: Dodgee Software     *
-// * AUTHOR: Shem Taylor          *
-// * Written 2016 Dodgee Software *
-// * GPLv3                        *
-// ********************************
+/**
+  * @file   OpenALVector2D.h
+  * @Author Sergeant Neipo (sergeant.neipo@gmail.com)
+  * @date   August, 2016
+  * @brief  OpenALVector2D is a utility class providing
+  * support for 2D mathematical vectors
+*/
 
 #ifndef OPENALVECTOR2D_H
 #define OPENALVECTOR2D_H
