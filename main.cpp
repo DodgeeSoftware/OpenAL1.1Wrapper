@@ -59,26 +59,26 @@ int main(int argc, char* argv[])
         return -1;
     }
 
-    //// Run Sound Unit Test
-    //soundUnitTest();
+    // Run Sound Unit Test
+    soundUnitTest();
 
-    //// Run Sound2D Unit Test
-    //sound2DUnitTest();
+    // Run Sound2D Unit Test
+    sound2DUnitTest();
 
-    //// Run Sound3D Unit Test
-    //sound3DUnitTest();
+    // Run Sound3D Unit Test
+    sound3DUnitTest();
 
-    //// Run Stream Unit Test
-    //streamUnitTest();
+    // Run Stream Unit Test
+    streamUnitTest();
 
-    //// Run Stream2D Unit Test
-    //stream2DUnitTest(); // TODO: Not working yet fix it
+    // Run Stream2D Unit Test
+    stream2DUnitTest();
 
     // Run Stream3D Unit Test
-    //stream3DUnitTest(); // TODO: Not working yet fix it
+    stream3DUnitTest();
 
-    //// Run Music Unit Test
-    //musicUnitTest();
+    // Run Music Unit Test
+    musicUnitTest();
 
     //// Run Capture Test
     //captureTest();
@@ -118,8 +118,10 @@ void soundUnitTest()
     sound.setLooping(true);
     // Play Sound
     sound.play();
+    // Send a mesaage to the console
+    std::cout << "Press Space to Stop this Unit Test" << std::endl;
     // Psuedo Main Loop
-    while (true)
+    while(true)
     {
         // Update Sound
         sound.update(1.0f / 60.0f);
@@ -129,6 +131,15 @@ void soundUnitTest()
             // Break from our loop
             break;
         }
+        // If a key was pressed
+        if (kbhit() == true)
+        {
+            // Grab the Keypressed
+            char ch = getch();
+            // If key was space then break
+            if (ch == 32)
+                break;
+         }
     }
     // Stop the Sound
     sound.stop();
@@ -136,6 +147,8 @@ void soundUnitTest()
     sound.clear();
     // Free the Sound
     sound.free();
+    // Clear the AudioManager
+    audioManager.clear();
     // Send a message to the console
     std::cout << "TEST COMPLETE" << std::endl;
 }
@@ -180,6 +193,8 @@ void sound2DUnitTest()
     audioSystem.setListenerPosition(0.0f, 0.0f);
     // unit test variable to control sound movement
     float theta = 0.0f;
+    // Send a mesaage to the console
+    std::cout << "Press Space to Stop this Unit Test" << std::endl;
     // Psuedo Main Loop
     while (true)
     {
@@ -188,7 +203,7 @@ void sound2DUnitTest()
         // Set the Sound's position
         sound2D.setPosition(cos(theta) * 100, 0.0f);
         // Send a message to the console
-        std::cout << cos(theta) * 100 << std::endl;
+        //std::cout << cos(theta) * 100 << std::endl;
         // Update the Sound2D
         sound2D.update(1.0f / 60.0f);
         // When Sound2D is finished (impossible when looping)
@@ -197,6 +212,15 @@ void sound2DUnitTest()
             // Break from our loop
             break;
         }
+        // If a key was pressed
+        if (kbhit() == true)
+        {
+            // Grab the Keypressed
+            char ch = getch();
+            // If key was space then break
+            if (ch == 32)
+                break;
+         }
     }
     // Stop the Sound2D
     sound2D.stop();
@@ -204,6 +228,8 @@ void sound2DUnitTest()
     sound2D.clear();
     // Free the Sound2D
     sound2D.free();
+    // Clear the AudioManager
+    audioManager.clear();
     // Send a message to the console
     std::cout << "TEST COMPLETE" << std::endl;
 }
@@ -248,6 +274,8 @@ void sound3DUnitTest()
     //sound2D.setMaxDistance(100);
     // unit test variable to control sound movement
     float theta = 0.0f;
+    // Send a mesaage to the console
+    std::cout << "Press Space to Stop this Unit Test" << std::endl;
     // Psuedo Main Loop
     while (true)
     {
@@ -256,7 +284,7 @@ void sound3DUnitTest()
         // Set the Sound's position
         sound3D.setPosition(cos(theta) * 100.0f, 0.0f, sin(theta) * 100.0f);
         // Send a message to the console
-        std::cout << cos(theta) * 100.0f << ", 0.0f, " << sin(theta) * 100.0f << std::endl;
+        //std::cout << cos(theta) * 100.0f << ", 0.0f, " << sin(theta) * 100.0f << std::endl;
         // Update the Sound3D
         sound3D.update(1.0f / 60.0f);
         // When Sound3D is finished (impossible when looping)
@@ -265,6 +293,15 @@ void sound3DUnitTest()
             // Break from our loop
             break;
         }
+        // If a key was pressed
+        if (kbhit() == true)
+        {
+            // Grab the Keypressed
+            char ch = getch();
+            // If key was space then break
+            if (ch == 32)
+                break;
+         }
     }
     // Stop Sound3D
     sound3D.stop();
@@ -272,6 +309,8 @@ void sound3DUnitTest()
     sound3D.clear();
     // Free Sound3D
     sound3D.free();
+    // Clear the AudioManager
+    audioManager.clear();
     // Send a message to the console
     std::cout << "TEST COMPLETE" << std::endl;
 }
@@ -297,6 +336,8 @@ void streamUnitTest()
     stream.play();
     // Set Sound Volume
     audioSystem.setSoundVolume(1.0f);
+    // Send a mesaage to the console
+    std::cout << "Press Space to Stop this Unit Test" << std::endl;
     // Psuedo Main Loop
     while (true)
     {
@@ -308,6 +349,15 @@ void streamUnitTest()
             // Break from our loop
             break;
         }
+        // If a key was pressed
+        if (kbhit() == true)
+        {
+            // Grab the Keypressed
+            char ch = getch();
+            // If key was space then break
+            if (ch == 32)
+                break;
+         }
     }
     // Stop Stream
     stream.stop();
@@ -356,6 +406,8 @@ void stream2DUnitTest()
     float theta = 0.0f;
     //// Set Sound Volume
     //audioSystem.setSoundVolume(1.0f);
+    // Send a mesaage to the console
+    std::cout << "Press Space to Stop this Unit Test" << std::endl;
     // Psuedo Main Loop
     while (true)
     {
@@ -373,6 +425,15 @@ void stream2DUnitTest()
             // Break from our loop
             break;
         }
+        // If a key was pressed
+        if (kbhit() == true)
+        {
+            // Grab the Keypressed
+            char ch = getch();
+            // If key was space then break
+            if (ch == 32)
+                break;
+         }
     }
     // Stop Stream2D
     stream2D.stop();
@@ -420,15 +481,17 @@ void stream3DUnitTest()
     float theta = 0.0f;
     // Set Sound Volume
     audioSystem.setSoundVolume(1.0f);
+    // Send a mesaage to the console
+    std::cout << "Press Space to Stop this Unit Test" << std::endl;
     // Psuedo Main Loop
-    while (true)
+    while(true)
     {
         // Interpolate theta
         theta = theta + 0.00005f;
         // Set the Sound's position
         stream3D.setPosition(cos(theta) * 100.0f, 0.0f, sin(theta) * 100.0f);
         // Send a message to the console
-        std::cout << cos(theta) * 100.0f << ", 0.0f, " << sin(theta) * 100.0f << std::endl;
+        //std::cout << cos(theta) * 100.0f << ", 0.0f, " << sin(theta) * 100.0f << std::endl;
         // Update our Stream3D
         stream3D.update(1.0f / 60.0f);
         // When Stream3D is finished (impossible when looping)
@@ -437,6 +500,15 @@ void stream3DUnitTest()
             // Break from our loop
             break;
         }
+        // If a key was pressed
+        if (kbhit() == true)
+        {
+            // Grab the Keypressed
+            char ch = getch();
+            // If key was space then break
+            if (ch == 32)
+                break;
+         }
     }
     // Stop Stream3D
     stream3D.stop();
@@ -478,8 +550,10 @@ void musicUnitTest()
         this isn't my fault! */
     // Set music Volume
     audioSystem.setMusicVolume(1.0f);
+    // Send a mesaage to the console
+    std::cout << "Press Space to Stop this Unit Test" << std::endl;
     // Psuedo Main Loop
-    while (true)
+    while(true)
     {
         // Update the music
         music.update(1.0f / 60.0f);
@@ -489,7 +563,15 @@ void musicUnitTest()
             // Break from our loop
             break;
         }
-
+        // If a key was pressed
+        if (kbhit() == true)
+        {
+            // Grab the Keypressed
+            char ch = getch();
+            // If key was space then break
+            if (ch == 32)
+                break;
+         }
     }
     // Stop Music
     music.stop();

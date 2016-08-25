@@ -223,8 +223,8 @@ bool Stream::stream(int buffer)
         data.insert(data.end(), readBuffer.begin(), readBuffer.begin() + readSize);
         // Grab the audiosystem's frequency
         ALsizei frequency = OpenALGlobals::frequency;
-        // Here I assume that playback will be stereo and 16 bits per channel
-        ALenum format = AL_FORMAT_STEREO16;
+        // Set the Buffer Format (8/16 bit mono/stereo)
+        ALenum format = ((this->channels == 2) ? (AL_FORMAT_STEREO16) : (AL_FORMAT_MONO16));
         // Place our Buffer Data into the Buffer
         alBufferData(buffer, format, (void*)data.data(), data.size() * sizeof(int16_t), frequency);
         // Success

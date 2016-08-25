@@ -40,6 +40,8 @@ void Sound::update(float dTime)
     // Don't Update a paused Source
     if (this->isPaused() == true)
         return;
+    // Set the Volume
+    alSourcef(this->source, AL_GAIN, OpenALGlobals::soundVolume * this->volume);
     // If our Sound isn't looping
     if (this->loopFlag == false)
     {

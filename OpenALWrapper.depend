@@ -19,7 +19,7 @@
 
 1176444168 c:\mingw-4.8.1\libraries\openal\include\alc.h
 
-1472101718 source:c:\myprograms\openalwrapper\main.cpp
+1472103692 source:c:\myprograms\openalwrapper\main.cpp
 	<iostream>
 	<cstdio>
 	<conio.h>
@@ -68,7 +68,7 @@
 	<stdint.h>
 	<sys/types.h>
 
-1471272542 source:c:\myprograms\openalwrapper\gameaudio\sound\sound.cpp
+1472102806 source:c:\myprograms\openalwrapper\gameaudio\sound\sound.cpp
 	"Sound.h"
 
 1471274863 c:\myprograms\openalwrapper\gameaudio\sound\sound.h
@@ -122,7 +122,7 @@
 	"Utils/OpenALVector3D.h"
 	"Source/Source.h"
 
-1471922440 c:\myprograms\openalwrapper\gameaudio\stream\stream2d.h
+1472102342 c:\myprograms\openalwrapper\gameaudio\stream\stream2d.h
 	<iostream>
 	<vector>
 	<limits>
@@ -144,10 +144,10 @@
 	"Utils/OpenALVector3D.h"
 	"Stream/Stream.h"
 
-1472101043 source:c:\myprograms\openalwrapper\gameaudio\stream\stream.cpp
+1472102765 source:c:\myprograms\openalwrapper\gameaudio\stream\stream.cpp
 	"Stream.h"
 
-1472101952 source:c:\myprograms\openalwrapper\gameaudio\stream\stream2d.cpp
+1472102338 source:c:\myprograms\openalwrapper\gameaudio\stream\stream2d.cpp
 	"Stream2D.h"
 
 1472101952 source:c:\myprograms\openalwrapper\gameaudio\stream\stream3d.cpp
