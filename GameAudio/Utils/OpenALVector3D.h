@@ -11,8 +11,12 @@
 // C/C++ Includes
 #include <cmath>
 
-/** The OpenALVector3D class is a container for
-    a simple 3D Vector **/
+/** @class OpenALVector3D
+  * @brief A simple class for for a mathematical 3D Vector
+  * @detail The OpenALVector3D contains an x,y,z co-ordinate pairs
+  * and overloaded operations to support vector comparison
+  * addition, subtraction. It also has standard functions for
+  * vector maginitude and dot/cross product aswell as normalisation **/
 class OpenALVector3D
 {
     // *****************************

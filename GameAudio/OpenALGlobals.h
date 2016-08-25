@@ -22,5 +22,4 @@ namespace OpenALGlobals
     extern int frequency;
 }
 
-
 #endif // OPENALGLOBALS_H

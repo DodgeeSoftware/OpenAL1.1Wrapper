@@ -71,7 +71,7 @@
 1472102806 source:c:\myprograms\openalwrapper\gameaudio\sound\sound.cpp
 	"Sound.h"
 
-1471274863 c:\myprograms\openalwrapper\gameaudio\sound\sound.h
+1472110058 c:\myprograms\openalwrapper\gameaudio\sound\sound.h
 	<al.h>
 	<alc.h>
 	"Utils/OpenALUtils.h"
@@ -85,7 +85,7 @@
 	<al.h>
 	<alc.h>
 
-1471922466 c:\myprograms\openalwrapper\gameaudio\sound\sound2d.h
+1472110097 c:\myprograms\openalwrapper\gameaudio\sound\sound2d.h
 	<limits>
 	<al.h>
 	<alc.h>
@@ -95,7 +95,7 @@
 	"Source/Source.h"
 	"Sound/Sound.h"
 
-1471922457 c:\myprograms\openalwrapper\gameaudio\sound\sound3d.h
+1472110108 c:\myprograms\openalwrapper\gameaudio\sound\sound3d.h
 	<limits>
 	<al.h>
 	<alc.h>
@@ -153,7 +153,7 @@
 1472101952 source:c:\myprograms\openalwrapper\gameaudio\stream\stream3d.cpp
 	"Stream3D.h"
 
-1471274874 c:\myprograms\openalwrapper\gameaudio\sound\soundbuffer.h
+1472110234 c:\myprograms\openalwrapper\gameaudio\sound\soundbuffer.h
 	<string>
 	<al.h>
 	<alc.h>
@@ -161,7 +161,7 @@
 1469780215 source:c:\myprograms\openalwrapper\gameaudio\sound\soundbuffer.cpp
 	"SoundBuffer.h"
 
-1472108650 c:\myprograms\openalwrapper\gamecontent\audiomanager.h
+1472109633 c:\myprograms\openalwrapper\gamecontent\audiomanager.h
 	<iostream>
 	<string>
 	<vector>
@@ -173,13 +173,13 @@
 	"LibXMPUtils.h"
 	"SoundBuffer.h"
 
-1471201938 source:c:\myprograms\openalwrapper\gamecontent\audiomanager.cpp
+1472108987 source:c:\myprograms\openalwrapper\gamecontent\audiomanager.cpp
 	"AudioManager.h"
 
 1471272351 source:c:\myprograms\openalwrapper\gameaudio\music\music.cpp
 	"Music.h"
 
-1471274859 c:\myprograms\openalwrapper\gameaudio\music\music.h
+1472109888 c:\myprograms\openalwrapper\gameaudio\music\music.h
 	<string>
 	<iostream>
 	<al.h>
@@ -209,7 +209,7 @@
 1471267290 source:c:\myprograms\openalwrapper\gameaudio\capture\capturedevice.cpp
 	"CaptureDevice.h"
 
-1472106785 c:\myprograms\openalwrapper\gameaudio\capture\capturedevice.h
+1472109739 c:\myprograms\openalwrapper\gameaudio\capture\capturedevice.h
 	<string>
 	<iostream>
 	<al.h>

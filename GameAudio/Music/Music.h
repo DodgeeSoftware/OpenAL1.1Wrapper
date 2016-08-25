@@ -36,8 +36,7 @@
 /** @class Music
   * @brief A Container for a Tracker Music File (XM, S3M, MOD, IT, and others supported by libxmp)
   * @detail The Music Class is a small container for playing
-  * instances of tracker files
-**/
+  * instances of tracker files **/
 class Music : public Source
 {
     // ******************************

@@ -113,7 +113,7 @@ $(document).ready(function(){initNavTree('class_audio_manager.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>A simple class for loading and keeping track of <a class="el" href="class_sound.html">Sound</a> files  The <a class="el" href="class_audio_manager.html" title="A simple class for loading and keeping track of Sound files  The AudioManager loads SoundBuffer Objec...">AudioManager</a> loads <a class="el" href="class_sound_buffer.html">SoundBuffer</a> Objects from disk and maintains them for reuse in a map, matching the filename to the sound buffer. The ensures we only load each sound once.  
+<p>A simple class for loading and keeping track of <a class="el" href="class_sound.html" title="An playable instance of a SoundBuffer  Sources only come into existance when you call the play functi...">Sound</a> files  The <a class="el" href="class_audio_manager.html" title="A simple class for loading and keeping track of Sound files  The AudioManager loads SoundBuffer Objec...">AudioManager</a> loads <a class="el" href="class_sound_buffer.html" title="A container around an OpenAL AudioBuffer  AudioBuffers are PCM Data and this wrapper uses libsndfile ...">SoundBuffer</a> Objects from disk and maintains them for reuse in a map, matching the filename to the sound buffer. The ensures we only load each sound once.  
  <a href="class_audio_manager.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_audio_manager_8h_source.html">AudioManager.h</a>&gt;</code></p>
@@ -129,10 +129,10 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr class="memdesc:a4ea9712c0a402e46b90426e5f440635e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
 <tr class="separator:a4ea9712c0a402e46b90426e5f440635e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b530c6096e3c74bf5cbf803f3f6992e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_sound_buffer.html">SoundBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_manager.html#a7b530c6096e3c74bf5cbf803f3f6992e">getSoundBuffer</a> (std::string filename)</td></tr>
-<tr class="memdesc:a7b530c6096e3c74bf5cbf803f3f6992e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Get <a class="el" href="class_sound_buffer.html">SoundBuffer</a> function uses a hashtable to associate a filename with an instance of a <a class="el" href="class_sound_buffer.html">SoundBuffer</a>. If a <a class="el" href="class_sound_buffer.html">SoundBuffer</a> isn't associated with a key value, the function will load the a <a class="el" href="class_sound_buffer.html">SoundBuffer</a> from file and associate it with that filename.  <a href="#a7b530c6096e3c74bf5cbf803f3f6992e">More...</a><br /></td></tr>
+<tr class="memdesc:a7b530c6096e3c74bf5cbf803f3f6992e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Get <a class="el" href="class_sound_buffer.html" title="A container around an OpenAL AudioBuffer  AudioBuffers are PCM Data and this wrapper uses libsndfile ...">SoundBuffer</a> function uses a hashtable to associate a filename with an instance of a <a class="el" href="class_sound_buffer.html" title="A container around an OpenAL AudioBuffer  AudioBuffers are PCM Data and this wrapper uses libsndfile ...">SoundBuffer</a>. If a <a class="el" href="class_sound_buffer.html" title="A container around an OpenAL AudioBuffer  AudioBuffers are PCM Data and this wrapper uses libsndfile ...">SoundBuffer</a> isn't associated with a key value, the function will load the a <a class="el" href="class_sound_buffer.html" title="A container around an OpenAL AudioBuffer  AudioBuffers are PCM Data and this wrapper uses libsndfile ...">SoundBuffer</a> from file and associate it with that filename.  <a href="#a7b530c6096e3c74bf5cbf803f3f6992e">More...</a><br /></td></tr>
 <tr class="separator:a7b530c6096e3c74bf5cbf803f3f6992e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d10ed3421d67d1134a6bea3c65d8d39"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_sound_buffer.html">SoundBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_manager.html#a4d10ed3421d67d1134a6bea3c65d8d39">getSoundBuffer</a> (std::string filename, bool addToMap)</td></tr>
-<tr class="memdesc:a4d10ed3421d67d1134a6bea3c65d8d39"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Get <a class="el" href="class_sound_buffer.html">SoundBuffer</a> function uses a hashtable to associate a filename with an instance of a <a class="el" href="class_sound_buffer.html">SoundBuffer</a>. If a <a class="el" href="class_sound_buffer.html">SoundBuffer</a> isn't associated with a key value, the function will load the a <a class="el" href="class_sound_buffer.html">SoundBuffer</a> from file and associate it with that filename. This variation allows us to load a <a class="el" href="class_sound_buffer.html">SoundBuffer</a> without adding it to the hashtable.  <a href="#a4d10ed3421d67d1134a6bea3c65d8d39">More...</a><br /></td></tr>
+<tr class="memdesc:a4d10ed3421d67d1134a6bea3c65d8d39"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Get <a class="el" href="class_sound_buffer.html" title="A container around an OpenAL AudioBuffer  AudioBuffers are PCM Data and this wrapper uses libsndfile ...">SoundBuffer</a> function uses a hashtable to associate a filename with an instance of a <a class="el" href="class_sound_buffer.html" title="A container around an OpenAL AudioBuffer  AudioBuffers are PCM Data and this wrapper uses libsndfile ...">SoundBuffer</a>. If a <a class="el" href="class_sound_buffer.html" title="A container around an OpenAL AudioBuffer  AudioBuffers are PCM Data and this wrapper uses libsndfile ...">SoundBuffer</a> isn't associated with a key value, the function will load the a <a class="el" href="class_sound_buffer.html" title="A container around an OpenAL AudioBuffer  AudioBuffers are PCM Data and this wrapper uses libsndfile ...">SoundBuffer</a> from file and associate it with that filename. This variation allows us to load a <a class="el" href="class_sound_buffer.html" title="A container around an OpenAL AudioBuffer  AudioBuffers are PCM Data and this wrapper uses libsndfile ...">SoundBuffer</a> without adding it to the hashtable.  <a href="#a4d10ed3421d67d1134a6bea3c65d8d39">More...</a><br /></td></tr>
 <tr class="separator:a4d10ed3421d67d1134a6bea3c65d8d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3de7a0675c0fc80f05262f5d3ef2880"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab3de7a0675c0fc80f05262f5d3ef2880"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_manager.html#ab3de7a0675c0fc80f05262f5d3ef2880">clear</a> ()</td></tr>
@@ -168,7 +168,7 @@ std::map&lt; std::string, <a class="el" href="class_sound_buffer.html">SoundBuff
 <tr class="separator:aa419ea0f5e3643c1ce52485207d7c50c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A simple class for loading and keeping track of <a class="el" href="class_sound.html">Sound</a> files  The <a class="el" href="class_audio_manager.html" title="A simple class for loading and keeping track of Sound files  The AudioManager loads SoundBuffer Objec...">AudioManager</a> loads <a class="el" href="class_sound_buffer.html">SoundBuffer</a> Objects from disk and maintains them for reuse in a map, matching the filename to the sound buffer. The ensures we only load each sound once. </p>
+<div class="textblock"><p>A simple class for loading and keeping track of <a class="el" href="class_sound.html" title="An playable instance of a SoundBuffer  Sources only come into existance when you call the play functi...">Sound</a> files  The <a class="el" href="class_audio_manager.html" title="A simple class for loading and keeping track of Sound files  The AudioManager loads SoundBuffer Objec...">AudioManager</a> loads <a class="el" href="class_sound_buffer.html" title="A container around an OpenAL AudioBuffer  AudioBuffers are PCM Data and this wrapper uses libsndfile ...">SoundBuffer</a> Objects from disk and maintains them for reuse in a map, matching the filename to the sound buffer. The ensures we only load each sound once. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a4eaad9b78387d074164b933edaf67d38"></a>
 <div class="memitem">
@@ -291,14 +291,14 @@ std::map&lt; std::string, <a class="el" href="class_sound_buffer.html">SoundBuff
 </table>
 </div><div class="memdoc">
 
-<p>The Get <a class="el" href="class_sound_buffer.html">SoundBuffer</a> function uses a hashtable to associate a filename with an instance of a <a class="el" href="class_sound_buffer.html">SoundBuffer</a>. If a <a class="el" href="class_sound_buffer.html">SoundBuffer</a> isn't associated with a key value, the function will load the a <a class="el" href="class_sound_buffer.html">SoundBuffer</a> from file and associate it with that filename. </p>
+<p>The Get <a class="el" href="class_sound_buffer.html" title="A container around an OpenAL AudioBuffer  AudioBuffers are PCM Data and this wrapper uses libsndfile ...">SoundBuffer</a> function uses a hashtable to associate a filename with an instance of a <a class="el" href="class_sound_buffer.html" title="A container around an OpenAL AudioBuffer  AudioBuffers are PCM Data and this wrapper uses libsndfile ...">SoundBuffer</a>. If a <a class="el" href="class_sound_buffer.html" title="A container around an OpenAL AudioBuffer  AudioBuffers are PCM Data and this wrapper uses libsndfile ...">SoundBuffer</a> isn't associated with a key value, the function will load the a <a class="el" href="class_sound_buffer.html" title="A container around an OpenAL AudioBuffer  AudioBuffers are PCM Data and this wrapper uses libsndfile ...">SoundBuffer</a> from file and associate it with that filename. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">filename</td><td>The path to an audio file (WAV, OGG, SGI, DEC, AU, SND, AIFF, AIFC, RAW, IFF, SVX, VOC, W64, MAT4, MAT5, PVF, XI, HTK, CAF, SD2, FLAC) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>On success the function returns a <a class="el" href="class_sound_buffer.html">SoundBuffer</a> otherwise 0 </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>On success the function returns a <a class="el" href="class_sound_buffer.html" title="A container around an OpenAL AudioBuffer  AudioBuffers are PCM Data and this wrapper uses libsndfile ...">SoundBuffer</a> otherwise 0 </dd></dl>
 
 </div>
 </div>
@@ -334,15 +334,15 @@ std::map&lt; std::string, <a class="el" href="class_sound_buffer.html">SoundBuff
 </table>
 </div><div class="memdoc">
 
-<p>The Get <a class="el" href="class_sound_buffer.html">SoundBuffer</a> function uses a hashtable to associate a filename with an instance of a <a class="el" href="class_sound_buffer.html">SoundBuffer</a>. If a <a class="el" href="class_sound_buffer.html">SoundBuffer</a> isn't associated with a key value, the function will load the a <a class="el" href="class_sound_buffer.html">SoundBuffer</a> from file and associate it with that filename. This variation allows us to load a <a class="el" href="class_sound_buffer.html">SoundBuffer</a> without adding it to the hashtable. </p>
+<p>The Get <a class="el" href="class_sound_buffer.html" title="A container around an OpenAL AudioBuffer  AudioBuffers are PCM Data and this wrapper uses libsndfile ...">SoundBuffer</a> function uses a hashtable to associate a filename with an instance of a <a class="el" href="class_sound_buffer.html" title="A container around an OpenAL AudioBuffer  AudioBuffers are PCM Data and this wrapper uses libsndfile ...">SoundBuffer</a>. If a <a class="el" href="class_sound_buffer.html" title="A container around an OpenAL AudioBuffer  AudioBuffers are PCM Data and this wrapper uses libsndfile ...">SoundBuffer</a> isn't associated with a key value, the function will load the a <a class="el" href="class_sound_buffer.html" title="A container around an OpenAL AudioBuffer  AudioBuffers are PCM Data and this wrapper uses libsndfile ...">SoundBuffer</a> from file and associate it with that filename. This variation allows us to load a <a class="el" href="class_sound_buffer.html" title="A container around an OpenAL AudioBuffer  AudioBuffers are PCM Data and this wrapper uses libsndfile ...">SoundBuffer</a> without adding it to the hashtable. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">filename</td><td>The path to an audio file (WAV, OGG, SGI, DEC, AU, SND, AIFF, AIFC, RAW, IFF, SVX, VOC, W64, MAT4, MAT5, PVF, XI, HTK, CAF, SD2, FLAC) </td></tr>
-    <tr><td class="paramname">addToMap</td><td>A flag which allows a <a class="el" href="class_sound_buffer.html">SoundBuffer</a> to be loaded but not managed by the <a class="el" href="class_audio_manager.html" title="A simple class for loading and keeping track of Sound files  The AudioManager loads SoundBuffer Objec...">AudioManager</a> (i.e. not associated with this filename) </td></tr>
+    <tr><td class="paramname">addToMap</td><td>A flag which allows a <a class="el" href="class_sound_buffer.html" title="A container around an OpenAL AudioBuffer  AudioBuffers are PCM Data and this wrapper uses libsndfile ...">SoundBuffer</a> to be loaded but not managed by the <a class="el" href="class_audio_manager.html" title="A simple class for loading and keeping track of Sound files  The AudioManager loads SoundBuffer Objec...">AudioManager</a> (i.e. not associated with this filename) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>On success the function returns a <a class="el" href="class_sound_buffer.html">SoundBuffer</a> otherwise 0 </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>On success the function returns a <a class="el" href="class_sound_buffer.html" title="A container around an OpenAL AudioBuffer  AudioBuffers are PCM Data and this wrapper uses libsndfile ...">SoundBuffer</a> otherwise 0 </dd></dl>
 
 </div>
 </div>
@@ -422,7 +422,7 @@ std::map&lt; std::string, <a class="el" href="class_sound_buffer.html">SoundBuff
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_audio_manager.html">AudioManager</a></li>
-    <li class="footer">Generated on Thu Aug 25 2016 17:22:26 for OpenALWrapper by
+    <li class="footer">Generated on Thu Aug 25 2016 19:10:12 for OpenALWrapper by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

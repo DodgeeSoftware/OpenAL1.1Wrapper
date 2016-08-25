@@ -11,8 +11,12 @@
 // C/C++ Includes
 #include <cmath>
 
-/** The OpenALVector2D class is a container for
-    a simple 2D Vector **/
+/** @class OpenALVector2D
+  * @brief A simple class for for a mathematical 2D Vector
+  * @detail The OpenALVector2D contains an x,y co-ordinate pair
+  * and overloaded operations to support vector comparison
+  * addition, subtraction. It also has standard functions for
+  * vector maginitude and dot product aswell as normalisation **/
 class OpenALVector2D
 {
     // *****************************

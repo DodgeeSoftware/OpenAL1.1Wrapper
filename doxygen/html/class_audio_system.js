@@ -34,6 +34,7 @@ var class_audio_system =
     [ "isExtensionPresent", "class_audio_system.html#ab179fab45afea28a71d8c3daeb75426c", null ],
     [ "isMute", "class_audio_system.html#aa96eaeef3357a8c0ab45eb0be8772727", null ],
     [ "mute", "class_audio_system.html#ac15dd37a02d43542980224f3c8f1ccee", null ],
+    [ "operator=", "class_audio_system.html#acc276ef6cf2e1f0348310691ace9cf0d", null ],
     [ "setDistanceModel", "class_audio_system.html#a86656082f7952fc1fb643e7d01f82eb5", null ],
     [ "setDopplerFactor", "class_audio_system.html#ae0e1ab782de4b8ad785fbf288344166b", null ],
     [ "setListenerDirection", "class_audio_system.html#a4d7a36f8d69891ef916fc9f7c5ae6a89", null ],

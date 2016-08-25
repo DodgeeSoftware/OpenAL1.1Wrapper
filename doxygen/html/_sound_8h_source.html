@@ -133,114 +133,114 @@ $(document).ready(function(){initNavTree('_sound_8h_source.html','');});
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;Sound/SoundBuffer.h&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;Source/Source.h&quot;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_sound.html">   35</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_sound.html">Sound</a> : <span class="keyword">public</span> <a class="code" href="class_source.html">Source</a></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">// ****************************</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">// * CONSTRUCTOR / DESTRUCTOR *</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// ****************************</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_sound.html#a539c205cdf06fe2c621fd77c37bcfac9">   42</a></span>&#160;        <a class="code" href="class_sound.html#a539c205cdf06fe2c621fd77c37bcfac9">Sound</a>()</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="comment">// Clear Name</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            this-&gt;name.clear();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="comment">// Rest pSoundBuffer pointer</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            this-&gt;pSoundBuffer = 0;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        }</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_sound.html#a404da11d013bdce7f5bd84aef816ac2b">   50</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_sound.html#a404da11d013bdce7f5bd84aef816ac2b">~Sound</a>() {}</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_sound.html#a43ad3823dfcf016675053c2184bede07">   54</a></span>&#160;        <a class="code" href="class_sound.html#a43ad3823dfcf016675053c2184bede07">Sound</a>(<span class="keyword">const</span> <a class="code" href="class_sound.html">Sound</a>&amp; other) {}</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">// ************************</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// * OVERLOADED OPERATORS *</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">// ************************</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="comment">// Methods and functions</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_sound.html#acd69748493e978d1b7b751d7e65b69fc">   64</a></span>&#160;        <a class="code" href="class_sound.html">Sound</a>&amp; <a class="code" href="class_sound.html#acd69748493e978d1b7b751d7e65b69fc">operator=</a>(<span class="keyword">const</span> <a class="code" href="class_sound.html">Sound</a>&amp; rhs) { <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// ***********</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">// * GENERAL *</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">// ***********</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_sound.html#aad595b0dc5459e110b53a4e6b2adb0e4">play</a>();</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_sound.html#a1d8e1a1c76b620b7aa70a114f605d1c6">update</a>(<span class="keywordtype">float</span> dTime);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_sound.html#ae287b4d21a3bd978064da24f23bbef6c">start</a>();</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_sound.html#a07c551ab56d2f83a861a2f7fd81b480a">stop</a>();</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_sound.html#a65b0f66e9123caed2809da366ac4d377">pause</a>();</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_sound.html#a6139aff26f5bd3fea27fbef013124afc">resume</a>();</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_sound.html#a85b633b8dcb01ce44826486a007ee71c">clear</a>();</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_sound.html#ae901623570c37953349adfa458793714">free</a>();</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="comment">// Methods and members</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">// ********</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">// * NAME *</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">// ********</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="class_sound.html#abb9c06905d9742421afa89965880c34f">   95</a></span>&#160;        <span class="keyword">virtual</span> std::string <a class="code" href="class_sound.html#abb9c06905d9742421afa89965880c34f">getName</a>() { <span class="keywordflow">return</span> this-&gt;name; }</div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="class_sound.html#acc11d1883799b6141b61d1882701bbd1">   97</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_sound.html#acc11d1883799b6141b61d1882701bbd1">setName</a>(std::string name) { this-&gt;name = name; }</div>
-<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="class_sound.html#a6485df282fa5aaa1268abddf1c80f035">   99</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_sound.html#a6485df282fa5aaa1268abddf1c80f035">isNamed</a>() { <span class="keywordflow">return</span> (this-&gt;name.size() &gt; 0); }</div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="class_sound.html#a71ce648b7c5a63613d4ae0e453cbfb61">  101</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_sound.html#a71ce648b7c5a63613d4ae0e453cbfb61">clearName</a>() { this-&gt;name.clear(); }</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="comment">// unique name</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        std::string name;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="comment">// ****************</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="comment">// * SOUND BUFFER *</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="comment">// ****************</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="class_sound.html#aeb967047107d3fde4b74530a70250616">  112</a></span>&#160;        <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="class_sound_buffer.html">SoundBuffer</a>* <a class="code" href="class_sound.html#aeb967047107d3fde4b74530a70250616">getSoundBuffer</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> this-&gt;pSoundBuffer; }</div>
-<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="class_sound.html#a96cf23614d4473945f93001d2f8b7580">  114</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_sound.html#a96cf23614d4473945f93001d2f8b7580">setSoundBuffer</a>(<a class="code" href="class_sound_buffer.html">SoundBuffer</a>* pSoundBuffer)</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        {</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <span class="comment">// Keep a local reference to our SoundBuffer</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            this-&gt;pSoundBuffer = pSoundBuffer;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        }</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="comment">// SoundBuffer</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <a class="code" href="class_sound_buffer.html">SoundBuffer</a>* pSoundBuffer;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment">//    // ****************</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment">//    // * LUA BINDINGS *</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="comment">//    // ****************</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment">//    public:</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="comment">//        //! Bind this class to a lua state</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="comment">//        static void bindToLua(lua_State* pLuaState);</span></div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;};</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#endif // SOUND_H</span></div>
-<div class="ttc" id="class_source_html"><div class="ttname"><a href="class_source.html">Source</a></div><div class="ttdef"><b>Definition:</b> Source.h:25</div></div>
-<div class="ttc" id="class_sound_html"><div class="ttname"><a href="class_sound.html">Sound</a></div><div class="ttdef"><b>Definition:</b> Sound.h:35</div></div>
-<div class="ttc" id="class_sound_html_a6485df282fa5aaa1268abddf1c80f035"><div class="ttname"><a href="class_sound.html#a6485df282fa5aaa1268abddf1c80f035">Sound::isNamed</a></div><div class="ttdeci">virtual bool isNamed()</div><div class="ttdoc">Is Named. </div><div class="ttdef"><b>Definition:</b> Sound.h:99</div></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_sound.html">   36</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_sound.html">Sound</a> : <span class="keyword">public</span> <a class="code" href="class_source.html">Source</a></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">// ****************************</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// * CONSTRUCTOR / DESTRUCTOR *</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">// ****************************</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_sound.html#a539c205cdf06fe2c621fd77c37bcfac9">   43</a></span>&#160;        <a class="code" href="class_sound.html#a539c205cdf06fe2c621fd77c37bcfac9">Sound</a>()</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="comment">// Clear Name</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            this-&gt;name.clear();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="comment">// Rest pSoundBuffer pointer</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            this-&gt;pSoundBuffer = 0;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_sound.html#a404da11d013bdce7f5bd84aef816ac2b">   51</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_sound.html#a404da11d013bdce7f5bd84aef816ac2b">~Sound</a>() {}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_sound.html#a43ad3823dfcf016675053c2184bede07">   55</a></span>&#160;        <a class="code" href="class_sound.html#a43ad3823dfcf016675053c2184bede07">Sound</a>(<span class="keyword">const</span> <a class="code" href="class_sound.html">Sound</a>&amp; other) {}</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// ************************</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">// * OVERLOADED OPERATORS *</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// ************************</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="comment">// Methods and functions</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_sound.html#acd69748493e978d1b7b751d7e65b69fc">   65</a></span>&#160;        <a class="code" href="class_sound.html">Sound</a>&amp; <a class="code" href="class_sound.html#acd69748493e978d1b7b751d7e65b69fc">operator=</a>(<span class="keyword">const</span> <a class="code" href="class_sound.html">Sound</a>&amp; rhs) { <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">// ***********</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">// * GENERAL *</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">// ***********</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_sound.html#aad595b0dc5459e110b53a4e6b2adb0e4">play</a>();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_sound.html#a1d8e1a1c76b620b7aa70a114f605d1c6">update</a>(<span class="keywordtype">float</span> dTime);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_sound.html#ae287b4d21a3bd978064da24f23bbef6c">start</a>();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_sound.html#a07c551ab56d2f83a861a2f7fd81b480a">stop</a>();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_sound.html#a65b0f66e9123caed2809da366ac4d377">pause</a>();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_sound.html#a6139aff26f5bd3fea27fbef013124afc">resume</a>();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_sound.html#a85b633b8dcb01ce44826486a007ee71c">clear</a>();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_sound.html#ae901623570c37953349adfa458793714">free</a>();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="comment">// Methods and members</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">// ********</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">// * NAME *</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">// ********</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="class_sound.html#abb9c06905d9742421afa89965880c34f">   96</a></span>&#160;        <span class="keyword">virtual</span> std::string <a class="code" href="class_sound.html#abb9c06905d9742421afa89965880c34f">getName</a>() { <span class="keywordflow">return</span> this-&gt;name; }</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="class_sound.html#acc11d1883799b6141b61d1882701bbd1">   98</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_sound.html#acc11d1883799b6141b61d1882701bbd1">setName</a>(std::string name) { this-&gt;name = name; }</div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="class_sound.html#a6485df282fa5aaa1268abddf1c80f035">  100</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_sound.html#a6485df282fa5aaa1268abddf1c80f035">isNamed</a>() { <span class="keywordflow">return</span> (this-&gt;name.size() &gt; 0); }</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="class_sound.html#a71ce648b7c5a63613d4ae0e453cbfb61">  102</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_sound.html#a71ce648b7c5a63613d4ae0e453cbfb61">clearName</a>() { this-&gt;name.clear(); }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="comment">// unique name</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        std::string name;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="comment">// ****************</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="comment">// * SOUND BUFFER *</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="comment">// ****************</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="class_sound.html#aeb967047107d3fde4b74530a70250616">  113</a></span>&#160;        <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="class_sound_buffer.html">SoundBuffer</a>* <a class="code" href="class_sound.html#aeb967047107d3fde4b74530a70250616">getSoundBuffer</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> this-&gt;pSoundBuffer; }</div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="class_sound.html#a96cf23614d4473945f93001d2f8b7580">  115</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_sound.html#a96cf23614d4473945f93001d2f8b7580">setSoundBuffer</a>(<a class="code" href="class_sound_buffer.html">SoundBuffer</a>* pSoundBuffer)</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="comment">// Keep a local reference to our SoundBuffer</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            this-&gt;pSoundBuffer = pSoundBuffer;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        }</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="comment">// SoundBuffer</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <a class="code" href="class_sound_buffer.html">SoundBuffer</a>* pSoundBuffer;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment">//    // ****************</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="comment">//    // * LUA BINDINGS *</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment">//    // ****************</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="comment">//    public:</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="comment">//        //! Bind this class to a lua state</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="comment">//        static void bindToLua(lua_State* pLuaState);</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;};</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">#endif // SOUND_H</span></div>
+<div class="ttc" id="class_source_html"><div class="ttname"><a href="class_source.html">Source</a></div><div class="ttdoc">A container around an OpenAL Source  The Source Class is a wrapper around a single OpenAL source and ...</div><div class="ttdef"><b>Definition:</b> Source.h:28</div></div>
+<div class="ttc" id="class_sound_html"><div class="ttname"><a href="class_sound.html">Sound</a></div><div class="ttdoc">An playable instance of a SoundBuffer  Sources only come into existance when you call the play functi...</div><div class="ttdef"><b>Definition:</b> Sound.h:36</div></div>
+<div class="ttc" id="class_sound_html_a6485df282fa5aaa1268abddf1c80f035"><div class="ttname"><a href="class_sound.html#a6485df282fa5aaa1268abddf1c80f035">Sound::isNamed</a></div><div class="ttdeci">virtual bool isNamed()</div><div class="ttdoc">Is Named. </div><div class="ttdef"><b>Definition:</b> Sound.h:100</div></div>
 <div class="ttc" id="class_sound_html_a07c551ab56d2f83a861a2f7fd81b480a"><div class="ttname"><a href="class_sound.html#a07c551ab56d2f83a861a2f7fd81b480a">Sound::stop</a></div><div class="ttdeci">virtual void stop()</div><div class="ttdoc">Stop. </div><div class="ttdef"><b>Definition:</b> Sound.cpp:67</div></div>
-<div class="ttc" id="class_sound_html_a404da11d013bdce7f5bd84aef816ac2b"><div class="ttname"><a href="class_sound.html#a404da11d013bdce7f5bd84aef816ac2b">Sound::~Sound</a></div><div class="ttdeci">virtual ~Sound()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> Sound.h:50</div></div>
+<div class="ttc" id="class_sound_html_a404da11d013bdce7f5bd84aef816ac2b"><div class="ttname"><a href="class_sound.html#a404da11d013bdce7f5bd84aef816ac2b">Sound::~Sound</a></div><div class="ttdeci">virtual ~Sound()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> Sound.h:51</div></div>
 <div class="ttc" id="class_sound_html_a65b0f66e9123caed2809da366ac4d377"><div class="ttname"><a href="class_sound.html#a65b0f66e9123caed2809da366ac4d377">Sound::pause</a></div><div class="ttdeci">virtual void pause()</div><div class="ttdoc">Pause. </div><div class="ttdef"><b>Definition:</b> Sound.cpp:85</div></div>
 <div class="ttc" id="class_sound_html_aad595b0dc5459e110b53a4e6b2adb0e4"><div class="ttname"><a href="class_sound.html#aad595b0dc5459e110b53a4e6b2adb0e4">Sound::play</a></div><div class="ttdeci">virtual void play()</div><div class="ttdoc">Play. </div><div class="ttdef"><b>Definition:</b> Sound.cpp:3</div></div>
 <div class="ttc" id="class_sound_html_a6139aff26f5bd3fea27fbef013124afc"><div class="ttname"><a href="class_sound.html#a6139aff26f5bd3fea27fbef013124afc">Sound::resume</a></div><div class="ttdeci">virtual void resume()</div><div class="ttdoc">Resume. </div><div class="ttdef"><b>Definition:</b> Sound.cpp:91</div></div>
-<div class="ttc" id="class_sound_html_a539c205cdf06fe2c621fd77c37bcfac9"><div class="ttname"><a href="class_sound.html#a539c205cdf06fe2c621fd77c37bcfac9">Sound::Sound</a></div><div class="ttdeci">Sound()</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> Sound.h:42</div></div>
-<div class="ttc" id="class_sound_html_a43ad3823dfcf016675053c2184bede07"><div class="ttname"><a href="class_sound.html#a43ad3823dfcf016675053c2184bede07">Sound::Sound</a></div><div class="ttdeci">Sound(const Sound &amp;other)</div><div class="ttdoc">Copy Constructor. </div><div class="ttdef"><b>Definition:</b> Sound.h:54</div></div>
-<div class="ttc" id="class_sound_html_a71ce648b7c5a63613d4ae0e453cbfb61"><div class="ttname"><a href="class_sound.html#a71ce648b7c5a63613d4ae0e453cbfb61">Sound::clearName</a></div><div class="ttdeci">virtual void clearName()</div><div class="ttdoc">Clear Name. </div><div class="ttdef"><b>Definition:</b> Sound.h:101</div></div>
-<div class="ttc" id="class_sound_html_a96cf23614d4473945f93001d2f8b7580"><div class="ttname"><a href="class_sound.html#a96cf23614d4473945f93001d2f8b7580">Sound::setSoundBuffer</a></div><div class="ttdeci">virtual void setSoundBuffer(SoundBuffer *pSoundBuffer)</div><div class="ttdoc">Set the SoundBuffer. </div><div class="ttdef"><b>Definition:</b> Sound.h:114</div></div>
-<div class="ttc" id="class_sound_html_acc11d1883799b6141b61d1882701bbd1"><div class="ttname"><a href="class_sound.html#acc11d1883799b6141b61d1882701bbd1">Sound::setName</a></div><div class="ttdeci">virtual void setName(std::string name)</div><div class="ttdoc">Set Name. </div><div class="ttdef"><b>Definition:</b> Sound.h:97</div></div>
-<div class="ttc" id="class_sound_html_acd69748493e978d1b7b751d7e65b69fc"><div class="ttname"><a href="class_sound.html#acd69748493e978d1b7b751d7e65b69fc">Sound::operator=</a></div><div class="ttdeci">Sound &amp; operator=(const Sound &amp;rhs)</div><div class="ttdoc">Sound Assignment operator. </div><div class="ttdef"><b>Definition:</b> Sound.h:64</div></div>
+<div class="ttc" id="class_sound_html_a539c205cdf06fe2c621fd77c37bcfac9"><div class="ttname"><a href="class_sound.html#a539c205cdf06fe2c621fd77c37bcfac9">Sound::Sound</a></div><div class="ttdeci">Sound()</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> Sound.h:43</div></div>
+<div class="ttc" id="class_sound_html_a43ad3823dfcf016675053c2184bede07"><div class="ttname"><a href="class_sound.html#a43ad3823dfcf016675053c2184bede07">Sound::Sound</a></div><div class="ttdeci">Sound(const Sound &amp;other)</div><div class="ttdoc">Copy Constructor. </div><div class="ttdef"><b>Definition:</b> Sound.h:55</div></div>
+<div class="ttc" id="class_sound_html_a71ce648b7c5a63613d4ae0e453cbfb61"><div class="ttname"><a href="class_sound.html#a71ce648b7c5a63613d4ae0e453cbfb61">Sound::clearName</a></div><div class="ttdeci">virtual void clearName()</div><div class="ttdoc">Clear Name. </div><div class="ttdef"><b>Definition:</b> Sound.h:102</div></div>
+<div class="ttc" id="class_sound_html_a96cf23614d4473945f93001d2f8b7580"><div class="ttname"><a href="class_sound.html#a96cf23614d4473945f93001d2f8b7580">Sound::setSoundBuffer</a></div><div class="ttdeci">virtual void setSoundBuffer(SoundBuffer *pSoundBuffer)</div><div class="ttdoc">Set the SoundBuffer. </div><div class="ttdef"><b>Definition:</b> Sound.h:115</div></div>
+<div class="ttc" id="class_sound_html_acc11d1883799b6141b61d1882701bbd1"><div class="ttname"><a href="class_sound.html#acc11d1883799b6141b61d1882701bbd1">Sound::setName</a></div><div class="ttdeci">virtual void setName(std::string name)</div><div class="ttdoc">Set Name. </div><div class="ttdef"><b>Definition:</b> Sound.h:98</div></div>
+<div class="ttc" id="class_sound_html_acd69748493e978d1b7b751d7e65b69fc"><div class="ttname"><a href="class_sound.html#acd69748493e978d1b7b751d7e65b69fc">Sound::operator=</a></div><div class="ttdeci">Sound &amp; operator=(const Sound &amp;rhs)</div><div class="ttdoc">Sound Assignment operator. </div><div class="ttdef"><b>Definition:</b> Sound.h:65</div></div>
 <div class="ttc" id="class_sound_html_a1d8e1a1c76b620b7aa70a114f605d1c6"><div class="ttname"><a href="class_sound.html#a1d8e1a1c76b620b7aa70a114f605d1c6">Sound::update</a></div><div class="ttdeci">virtual void update(float dTime)</div><div class="ttdoc">Update. </div><div class="ttdef"><b>Definition:</b> Sound.cpp:35</div></div>
-<div class="ttc" id="class_sound_html_abb9c06905d9742421afa89965880c34f"><div class="ttname"><a href="class_sound.html#abb9c06905d9742421afa89965880c34f">Sound::getName</a></div><div class="ttdeci">virtual std::string getName()</div><div class="ttdoc">Get Name. </div><div class="ttdef"><b>Definition:</b> Sound.h:95</div></div>
+<div class="ttc" id="class_sound_html_abb9c06905d9742421afa89965880c34f"><div class="ttname"><a href="class_sound.html#abb9c06905d9742421afa89965880c34f">Sound::getName</a></div><div class="ttdeci">virtual std::string getName()</div><div class="ttdoc">Get Name. </div><div class="ttdef"><b>Definition:</b> Sound.h:96</div></div>
 <div class="ttc" id="class_sound_html_ae287b4d21a3bd978064da24f23bbef6c"><div class="ttname"><a href="class_sound.html#ae287b4d21a3bd978064da24f23bbef6c">Sound::start</a></div><div class="ttdeci">virtual void start()</div><div class="ttdoc">Start. </div><div class="ttdef"><b>Definition:</b> Sound.cpp:61</div></div>
 <div class="ttc" id="class_sound_html_a85b633b8dcb01ce44826486a007ee71c"><div class="ttname"><a href="class_sound.html#a85b633b8dcb01ce44826486a007ee71c">Sound::clear</a></div><div class="ttdeci">virtual void clear()</div><div class="ttdoc">Clear. </div><div class="ttdef"><b>Definition:</b> Sound.cpp:97</div></div>
 <div class="ttc" id="class_sound_html_ae901623570c37953349adfa458793714"><div class="ttname"><a href="class_sound.html#ae901623570c37953349adfa458793714">Sound::free</a></div><div class="ttdeci">virtual void free()</div><div class="ttdoc">Free. </div><div class="ttdef"><b>Definition:</b> Sound.cpp:131</div></div>
-<div class="ttc" id="class_sound_buffer_html"><div class="ttname"><a href="class_sound_buffer.html">SoundBuffer</a></div><div class="ttdef"><b>Definition:</b> SoundBuffer.h:29</div></div>
-<div class="ttc" id="class_sound_html_aeb967047107d3fde4b74530a70250616"><div class="ttname"><a href="class_sound.html#aeb967047107d3fde4b74530a70250616">Sound::getSoundBuffer</a></div><div class="ttdeci">virtual const SoundBuffer * getSoundBuffer() const </div><div class="ttdoc">Get the SoundBuffer. </div><div class="ttdef"><b>Definition:</b> Sound.h:112</div></div>
+<div class="ttc" id="class_sound_buffer_html"><div class="ttname"><a href="class_sound_buffer.html">SoundBuffer</a></div><div class="ttdoc">A container around an OpenAL AudioBuffer  AudioBuffers are PCM Data and this wrapper uses libsndfile ...</div><div class="ttdef"><b>Definition:</b> SoundBuffer.h:35</div></div>
+<div class="ttc" id="class_sound_html_aeb967047107d3fde4b74530a70250616"><div class="ttname"><a href="class_sound.html#aeb967047107d3fde4b74530a70250616">Sound::getSoundBuffer</a></div><div class="ttdeci">virtual const SoundBuffer * getSoundBuffer() const </div><div class="ttdoc">Get the SoundBuffer. </div><div class="ttdef"><b>Definition:</b> Sound.h:113</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_7033345717a97ecf1203e65fc25e6a8e.html">GameAudio</a></li><li class="navelem"><a class="el" href="dir_b1958a357e35001d90b28382b5e9a658.html">Sound</a></li><li class="navelem"><b>Sound.h</b></li>
-    <li class="footer">Generated on Thu Aug 25 2016 17:22:26 for OpenALWrapper by
+    <li class="footer">Generated on Thu Aug 25 2016 19:10:12 for OpenALWrapper by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

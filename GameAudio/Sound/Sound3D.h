@@ -31,12 +31,11 @@
 #include "Source/Source.h"
 #include "Sound/Sound.h"
 
-/** @class Sound2D
+/** @class Sound3D
   * @brief An playable instance of a SoundBuffer with 3D Spacial functions
   * @detail Sources only come into existance when you call the play function.
   * Properties of a source are stored locally and used either while
-  * a source is valid (aka playing) or initially set in the play function.
-**/
+  * a source is valid (aka playing) or initially set in the play function. **/
 class Sound3D : public Sound
 {
     // ***************

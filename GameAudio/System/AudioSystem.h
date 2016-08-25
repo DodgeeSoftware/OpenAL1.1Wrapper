@@ -25,7 +25,16 @@
 #include "Utils/OpenALUtils.h"
 #include "Capture/CaptureDevice.h"
 
-/** The AudioSystem is the main core of the AudioWrapper **/
+/** @class AudioSystem
+  * @brief A container around an OpenAL Device and Context
+  * @detail This class is the core of Audio in the wrapper.
+  * Initialise this before using the wrapper and be sure
+  * to shutdown when you are finished with it. Use this to set
+  * the position of the listener, get the frequency of the audio
+  * device, record audio and set globals such as muting the
+  * AudioSystem or changing System Volume (OpenAL doesn't support
+  * global volume / mute, I tried to implement them myself and
+  * OpenAL's design isn't very flexible this way) **/
 class AudioSystem
 {
     // ******************************
@@ -47,29 +56,48 @@ class AudioSystem
         //! Copy Constructors
         AudioSystem(AudioSystem& audioSystem) {}
 
+    // ************************
+    // * OVERLOADED OPERATORS *
+    // ************************
+    public:
+        // Methods and members
+
+    protected:
+        //! AudioSystem Assignment operator
+        AudioSystem& operator=(const AudioSystem& other) { return *this; }
+
     // ***********
     // * GENERAL *
     // ***********
     public:
-        //! Initialise the AudioSystem
+        /** @brief Initialise the AudioSystem
+          * @return true on success false on failure **/
         virtual bool init();
-        //! Advance to the next frame
+        /** @brief Advance to the next frame **/
         virtual void update();
-        //! Shutdown the AudioSystem
+        /** @brief Shutdown the AudioSystem **/
         virtual void shutdown();
 
     public:
-        //! Is Default Audio Output Device Available
+        /** @brief Is Default Audio Output Device Available
+          * @return true if there is a default device available otherwise false **/
         virtual bool isDefaultAudioDeviceAvailable();
-        //! Get the Name of the Default Output Device (if there is one)
+        /** @brief Get the Name of the Default Output Device (if there is one)
+          * @return The Name of the Default Audio Device **/
         virtual std::string defaultAudioDeviceName();
-        //! Is Audio Output Device Available
+        /** @brief Is there an Audio Output Device Available *
+            @return true if there is an Audio Deviec Available otherwise false */
         virtual bool isAudioDeviceAvailable();
-        //! Get a list of Available Output Devices
+        /** @brief Get a list of Available Output Devices
+          * @return an stl::vector of strings each entry containing
+          * the name of a single Audio Device **/
         virtual std::vector<std::string> getAudioDevices();
 
     public:
-        //! Get the AudioDevice
+        /* TODO: We need to wrap up the ALCDevice, that way there are no difficulties
+            binding this to script */
+        /** @brief Get the AudioDevice
+          * @return the AudioDevice **/
         virtual const ALCdevice* getAudioDevice() const { return this->pAudioDevice; }
 
     protected:
@@ -82,7 +110,8 @@ class AudioSystem
     // * VENDOR *
     // **********
     public:
-        //! Get Vendor
+        /** @brief Get the OpenAL Driver Vendor
+          * @return The name of the Vendor **/
         virtual std::string getVendor();
 
     protected:
@@ -92,7 +121,8 @@ class AudioSystem
     // * VERSION *
     // ***********
     public:
-        //! Get the Version of OpenAL
+        /** @brief Get the Version of OpenAL
+          * @return The version of OpenAL **/
         virtual std::string getVersion();
 
     protected:
@@ -102,7 +132,8 @@ class AudioSystem
     // * RENDERER *
     // ************
     public:
-        //! Get Renderer
+        /** @brief Get Renderer for OpenAL
+          * @return The OpenAL renderer **/
         virtual std::string getRenderer();
 
     protected:
@@ -112,7 +143,9 @@ class AudioSystem
     // * FREQUENCY *
     // *************
     public:
-        //! Get frequency
+        /** @brief Get frequency
+          * @return The Device Requency
+          * (aka 22050 htz or 44100htz) **/
         virtual int getFrequency();
 
     protected:
@@ -122,7 +155,9 @@ class AudioSystem
     // * REFRESH RATE *
     // ****************
     public:
-        //! Get Refresh Rate
+        /** @brief Get Refresh Rate
+          * @return The rate at which OpenAL updates
+          * in frames per second **/
         virtual int getRefreshRate();
 
     protected:
@@ -132,9 +167,11 @@ class AudioSystem
     // * EXTENSIONS *
     // **************
     public:
-        //! Get Extensions
+        /** @brief Get A list of Extensions
+          * @return A string with a list of extensions **/
         virtual std::string getExtensions();
-        //! Is Extension Present
+        /** @brief Is Extension Present?
+          * @return true if an extension is present otherwise false **/
         virtual bool isExtensionPresent(std::string extensionName);
 
     protected:
@@ -144,9 +181,10 @@ class AudioSystem
     // * DOPPLER FACTOR *
     // ******************
     public:
-        //! Get Doppler Factor
+        /** @brief Get Doppler Factor
+          * @return the Doppler Factor **/
         virtual float getDopplerFactor();
-        //! Set Doppler Factor
+        /** @brief Set Doppler Factor **/
         virtual void setDopplerFactor(float dopplerFactor);
 
     protected:
@@ -156,9 +194,10 @@ class AudioSystem
     // * SPEED OF SOUND *
     // ******************
     public:
-        //! Get Speed of Sound
+        /** @brief Get Speed of Sound
+          * @return The Speed Of Sound being used **/
         virtual float getSpeedOfSound();
-        //! Set Speed of Sound
+        /** @brief Set Speed of Sound **/
         virtual void setSpeedOfSound(float speed);
 
     protected:
@@ -169,17 +208,31 @@ class AudioSystem
     // ************
     /* NOTE: Listener functions will only affect positional audio */
     public:
-        //! Get Lister X
+        /** @brief Get Listener X
+          * @return listener X **/
         virtual float getListenerX();
-        //! Get Lister Y
+        /** @brief Get Listener Y
+          * @return listener Y **/
         virtual float getListenerY();
-        //! Get Lister Z
+        /** @brief Get Listener Z
+          * @return listener Z **/
         virtual float getListenerZ();
-        //! Set Listener Position
+        /** @brief Set Listener 2D Position
+          * @param x horizontal position
+          * @param y vertical position **/
         virtual void setListenerPosition(float x, float y);
-        //! Set Listener Position
+        /** @brief Set Listener 3D Position
+          * @param x horizontal position
+          * @param y horizontal position
+          * @param z vertical position **/
         virtual void setListenerPosition(float x, float y, float z);
-        //! Set Listener Direction
+        /** @brief Set Listener Direction
+          * @param directionX x part of the direction vector the listener is facing
+          * @param directiony y part of the direction vector the listener is facing
+          * @param directiony z part of the direction vector the listener is facing
+          * @param upX the x part of the upward vector for the listener
+          * @param upY the y part of the upward vector for the listener
+          * @param upZ the z part of the upward vector for the listener **/
         virtual void setListenerDirection(float directionX, float directionY, float directionZ, float upX, float upY, float upZ);
 
     protected:
@@ -189,9 +242,14 @@ class AudioSystem
     // * DISTANCE MODEL *
     // ******************
     public:
-        //! Get the Distance Model
+        /** @brief Get the Distance Model
+          * @return the distance model being used.
+          * NOTE: I have been unable to find documentation
+          * that explains this**/
         virtual int getDistanceModel();
-        //! Set Distance Model
+        /** @brief Set Distance Model
+          * @param model the distane model to be used
+          * NOTE: I have been unable to find documentation **/
         virtual void setDistanceModel(int model);
 
     // **********************************
@@ -200,11 +258,14 @@ class AudioSystem
     /* NOTE: This section exists to enable and disable
         context capabilities */
     public:
-        //! Is Context Capability Enabled
+        /** @brief Is Context Capability Enabled
+          * @param feature the feature we are querying **/
         virtual bool isEnabled(int feature);
-        //! Enable context capablility
+        /** @brief Enable context capablility
+          * @param feature the feature we are enabling **/
         virtual void enable(int feature);
-        //! Disable context capablility
+        /** @brief Disable context capablility
+          * @param feature the feature we are enabling **/
         virtual void disable(int feature);
 
     protected:
@@ -218,21 +279,27 @@ class AudioSystem
         positional sounds if even that because it varies from driver
         to driver */
     public:
-        //! Get Music Volume
+        /** @brief Get Music Volume
+            @return the music volume in the range of 0.0f - 1.0f **/
         virtual float getMusicVolume();
-        //! Set Music Volume
+        /** @brief Set Music Volume
+          * @param volume the volume in the range of 0.0f - 1.0f **/
         virtual void setMusicVolume(float volume);
-        //! Get Sound Volume
+        /** @brief Get Sound Volume
+          * @return the sound volume in the range of 0.0f - 1.0f **/
         virtual float getSoundVolume();
-        //! Set Sound Volume
+        /** @brief Set Sound Volume
+          * @param volume the sound volume in the range of 0.0f - 1.0f **/
         virtual void setSoundVolume(float volume);
-        //! Is Mute
+        /** @brief Is Mute
+          * @return true if the AudioSystem is muted false otherwise **/
         virtual bool isMute();
-        //! Set Mute Flag
+        /** @brief Set Mute Flag
+          * @param state true to mute the AudioSystem false otherwise **/
         virtual void setMute(bool state);
-        //! Mute
+        /** @brief Mute the AudioSystem **/
         virtual void mute();
-        //! Unmute
+        /** @brief Unmute the AudioSystem **/
         virtual void unmute();
 
     protected:
@@ -242,16 +309,26 @@ class AudioSystem
     // * RECORDING *
     // *************
     public:
-        //! Is Default Audio Capture Device Available
+        /** @brief Is Default Audio Capture Device Available
+          * @return true if there is a default audio capture device available otherwise false **/
         virtual bool isDefaultAudioCaptureDeviceAvailable();
-        //! Get Default Audio Capture Device Name
+        /** @brief Get Default Audio CaptureDevice Name
+          * @return the name of the Default Audio CaptureDevice**/
         virtual std::string getDefaultAudioCaptureDeviceName();
-        //! Is Audio Capture Device Available
+        /** @brief Is any Audio Capture Device Available
+          * @return true if there is a audio capture device available otherwise false **/
         virtual bool isAudioCaptureDeviceAvailable();
-        //! Get A List of Available Audio Capture Devices
+        /** @brief Get A List of Available Audio Capture Devices
+          * @return an stl vector where each element is the string name
+          * of an AudioDevice **/
         virtual std::vector<std::string> getAudioCaptureDevices();
-        //! Get Audio Capture Device by Number
+        /** @brief Get Audio Capture Device by Number
+          * @param id a numbericID associated with the CaptureDevice (0 being the first and default)
+          * @return A CaptureDevice **/
         virtual CaptureDevice* getAudioCaptureDevice(int id);
+        /** @brief Get CaptureDeviceCount
+          * @return the number of Capture Devices available **/
+        virtual int getCaptureDeviceCount();
 
     protected:
         // Capture Device Map

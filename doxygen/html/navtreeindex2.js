@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"functions_func.html":[1,3,1],
 "functions_func_c.html":[1,3,1,1],
 "functions_func_d.html":[1,3,1,2],
 "functions_func_e.html":[1,3,1,3],

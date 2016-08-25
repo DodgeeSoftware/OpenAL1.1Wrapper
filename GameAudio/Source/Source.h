@@ -19,9 +19,12 @@
 // GAMEAUDIO Includes
 #include "OpenALGlobals.h"
 
-/** The Source Class is a wrapper around a single source and
-    all of the functions that operate on a source. It brings common
-    source functions into one base interface **/
+/** @class Source
+  * @brief A container around an OpenAL Source
+  * @detail The Source Class is a wrapper around a single OpenAL source and
+  * all of the functions that operate on a source. It brings common
+  * source functions into one base interface
+  * it **/
 class Source
 {
     // *****************************

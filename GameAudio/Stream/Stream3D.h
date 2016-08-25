@@ -25,7 +25,15 @@
 #include "Utils/OpenALVector3D.h"
 #include "Stream/Stream.h"
 
-/** The Stream2D is a container for a 2D stream **/
+/** @class Stream3D
+  * @brief A container around an OpenAL Source with positin functions
+  * and a FileStream
+  * @detail This class will open a file stream and read it little
+  * by little creating buffers which are cycled to create seamless
+  * audio (as opposed to Sound/Sound2D/Sound3D which have to load
+  * SoundBuffers ) All formats supported by libsnd are supported.
+  * I deliberatly don not support mp3 because it is a proprietary
+  * format requiring royalites use ogg files instead **/
 class Stream3D : public Stream
 {
     // ****************************

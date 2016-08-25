@@ -35,8 +35,7 @@
 /** @class CaptureDevice
   * @brief A Container for a Single Audio Capture Device
   * @detail The CaptureDevice Class is a container for
-  * a single capture / recording device
-**/
+  * a single capture / recording device **/
 class CaptureDevice
 {
     // *****************************
