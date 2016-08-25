@@ -24,8 +24,14 @@
 //}
 //#include <luabind/luabind.hpp>
 
-/** The SoundBuffer Class contains the ID for a complete
-    PCM Buffer **/
+/** @class SoundBuffer
+  * @brief A container around an OpenAL AudioBuffer
+  * @detail AudioBuffers are PCM Data and this wrapper
+  * uses libsndfile to extract our PCM Data and create
+  * an OpenAL AudioBuffer. We Pass this Object to a
+  * Sound, Sound2D or Sound3D class so that we can play
+  * it
+**/
 class SoundBuffer
 {
     // ****************************

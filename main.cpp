@@ -59,29 +59,23 @@ int main(int argc, char* argv[])
         return -1;
     }
 
+    // UNIT TESTS
     // Run Sound Unit Test
     soundUnitTest();
-
     // Run Sound2D Unit Test
     sound2DUnitTest();
-
     // Run Sound3D Unit Test
     sound3DUnitTest();
-
     // Run Stream Unit Test
     streamUnitTest();
-
     // Run Stream2D Unit Test
     stream2DUnitTest();
-
     // Run Stream3D Unit Test
     stream3DUnitTest();
-
     // Run Music Unit Test
     musicUnitTest();
-
-    //// Run Capture Test
-    //captureTest();
+    // Run Capture Test NOTE: Outside of my spec for a simple Game OpenAL Wrapper
+    captureTest();
 
     // ShutDown the Audio System
     audioSystem.shutdown();
@@ -100,7 +94,9 @@ void soundUnitTest()
     std::cout << "PERFORMING SOUND UNIT TEST" << std::endl;
     std::cout << std::endl;
     std::cout << "Loading Sound...";
+    // Grab a SoundBuffer
     SoundBuffer* pSoundBuffer = audioManager.getSoundBuffer("media/sounds/bensound-betterdays.ogg");
+    // If our SoundBuffer is invalid
     if (pSoundBuffer == 0)
     {
         // Send a message to the console
@@ -159,7 +155,9 @@ void sound2DUnitTest()
     std::cout << "PERFORMING SOUND2D UNIT TEST" << std::endl;
     std::cout << std::endl;
     std::cout << "Loading Sound...";
+    // Grab a SoundBuffer
     SoundBuffer* pSoundBuffer = audioManager.getSoundBuffer("media/sounds/positionalSound.wav");
+    // If our SoundBuffer is invalid
     if (pSoundBuffer == 0)
     {
         // Send a message to the console
@@ -240,7 +238,9 @@ void sound3DUnitTest()
     std::cout << "PERFORMING SOUND3D UNIT TEST" << std::endl;
     std::cout << std::endl;
     std::cout << "Loading Sound...";
+    // Grab a SoundBuffer
     SoundBuffer* pSoundBuffer = audioManager.getSoundBuffer("media/sounds/positionalSound.wav");
+    // If our SoundBuffer is invalid
     if (pSoundBuffer == 0)
     {
         // Send a message to the console
@@ -452,6 +452,7 @@ void stream3DUnitTest()
     std::cout << std::endl;
     // Make a Stream3D
     Stream3D stream3D;
+    // Try and load the Stream
     if (stream3D.load("media/sounds/positionalSound.wav") == false)
     {
         // Send a message to the console
@@ -588,7 +589,6 @@ void captureTest()
      // Send a message to the console
     std::cout << "PERFORMING AUDIO CAPTURE UNIT TEST" << std::endl;
     std::cout << std::endl;
-
     // Grab the Capture Device
     CaptureDevice* pCaptureDevice = audioSystem.getAudioCaptureDevice(0);
     // Validate Capture Device

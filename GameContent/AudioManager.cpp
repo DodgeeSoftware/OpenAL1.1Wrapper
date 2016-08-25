@@ -121,3 +121,53 @@ void AudioManager::clear()
     this->soundBufferMap.clear();
 }
 
+std::string AudioManager::getLocalPath(std::string filename)
+{
+    // Copy our filename
+    std::string relativePath(filename);
+    /* TODO: This could represent a bug on machines that use different slashes
+        as a result this could comprimise portability */
+    // Find the last forward slash
+    unsigned int pos = relativePath.find_last_of('/');
+    // If our string is empty return an empty string
+    if (pos == std::string::npos)
+        return std::string();
+    // Extract the relative path
+    relativePath = relativePath.substr(0, pos + 1);
+    // Return the relative path
+    return relativePath;
+}
+
+std::string AudioManager::toUpperCase(std::string text)
+{
+    // Copy our string
+    std::string uppercase(text);
+    // Go through each letter converting it to uppercase
+    for (std::string::iterator p = uppercase.begin(); p != uppercase.end(); p++)
+        *p = std::toupper(*p);
+    // Return our uppercase string
+    return uppercase;
+}
+
+std::string AudioManager::toLowerCase(std::string text)
+{
+    // Copy our string
+    std::string uppercase(text);
+    // Go through each  letter at a time making it lowercase
+    for (std::string::iterator p = uppercase.begin(); p != uppercase.end(); p++)
+        *p = std::tolower(*p);
+    // return our string
+    return uppercase;
+}
+
+std::string AudioManager::convertBoolToString(bool value)
+{
+    // convert and return our string
+    return (value == true) ? "TRUE": "FALSE";
+}
+
+bool AudioManager::convertStringToBool(std::string value)
+{
+    // convert and return our bool
+    return (this->toUpperCase(value) == "TRUE") ? true: false;
+}

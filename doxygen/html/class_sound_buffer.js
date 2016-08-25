@@ -1,0 +1,25 @@
+var class_sound_buffer =
+[
+    [ "SoundBuffer", "class_sound_buffer.html#a1ce470022e65ac0e97160b8255caac2c", null ],
+    [ "~SoundBuffer", "class_sound_buffer.html#a6194e297f981d1acaa542543b98f5e9f", null ],
+    [ "SoundBuffer", "class_sound_buffer.html#a838399ea272d97af6007e146249f2672", null ],
+    [ "getBits", "class_sound_buffer.html#a9b078ed19e0d4f2afb9fa86c18718ff0", null ],
+    [ "getBufferID", "class_sound_buffer.html#aad54d3309b16dbdfb47cb3f407b9913d", null ],
+    [ "getChannels", "class_sound_buffer.html#a80e898322c50dd7b3ad47b69cf0bde6f", null ],
+    [ "getFilename", "class_sound_buffer.html#a9f5dbd4bb3db2f27f64f86a48e7734b4", null ],
+    [ "getFrequency", "class_sound_buffer.html#ad9883a695f6be42e124eaf8e30a73502", null ],
+    [ "getSize", "class_sound_buffer.html#af6ad127b5ff6f4c50df0566a9a199b25", null ],
+    [ "operator=", "class_sound_buffer.html#a1f3220ecfd403e7143a3c705b37aca5c", null ],
+    [ "setBits", "class_sound_buffer.html#afae3f52bccf7c77bcacad2c2f7883af8", null ],
+    [ "setBufferID", "class_sound_buffer.html#a99c1323e77ae4b3bc6e5a17c92ddb4e8", null ],
+    [ "setChannels", "class_sound_buffer.html#a36219227b20e7002b7a7f1129aff507a", null ],
+    [ "setFilename", "class_sound_buffer.html#a3dd30c09564c7733c298bacbf8003c1a", null ],
+    [ "setFrequency", "class_sound_buffer.html#a2e11678265c61d25f6acac859ed5329e", null ],
+    [ "setSize", "class_sound_buffer.html#a37a3d6d9f4b87c5f15b7b5a98dad0f61", null ],
+    [ "bits", "class_sound_buffer.html#a09a9843748b073eae2a37dfd821f2c3f", null ],
+    [ "bufferID", "class_sound_buffer.html#a5ca68ef31d481fa1bfdf6386a6038940", null ],
+    [ "channels", "class_sound_buffer.html#a150d49eb48763b287a9ffb23e13f4134", null ],
+    [ "filename", "class_sound_buffer.html#af3cb350fa71ad303bd9d1ed5e18c4e68", null ],
+    [ "frequency", "class_sound_buffer.html#a42860035c4b796d04480fb00d50b1532", null ],
+    [ "size", "class_sound_buffer.html#a2607ae8db3bd9ae635bce97b636ee0ca", null ]
+];

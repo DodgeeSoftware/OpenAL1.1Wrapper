@@ -31,8 +31,12 @@
 #include "Utils/OpenALVector3D.h"
 #include "Sound/SoundBuffer.h"
 
-/** The CaptureDevice Class is a container for
-    a single capture / recording device **/
+
+/** @class CaptureDevice
+  * @brief A Container for a Single Audio Capture Device
+  * @detail The CaptureDevice Class is a container for
+  * a single capture / recording device
+**/
 class CaptureDevice
 {
     // *****************************
@@ -67,7 +71,11 @@ class CaptureDevice
     // * GENERAL FUNCTIONS *
     // *********************
     public:
-        //! Open Capture Device
+        /**  @brief Open Capture Device
+          *  @param[in] frequency The frequency in hertz to sample audio
+          *  @param[in] format The format of the sample (i.e. AL_FORMAT_STEREO16 or AL_FORMAT_MONO16 etc)
+          *  @return true on success / false on failure
+        **/
         virtual bool open(int frequency, int format, int bufferSize);
         //! Close Capture Device
         virtual void close();

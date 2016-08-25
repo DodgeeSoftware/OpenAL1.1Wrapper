@@ -19,7 +19,7 @@
 
 1176444168 c:\mingw-4.8.1\libraries\openal\include\alc.h
 
-1472103692 source:c:\myprograms\openalwrapper\main.cpp
+1472105918 source:c:\myprograms\openalwrapper\main.cpp
 	<iostream>
 	<cstdio>
 	<conio.h>
@@ -161,7 +161,7 @@
 1469780215 source:c:\myprograms\openalwrapper\gameaudio\sound\soundbuffer.cpp
 	"SoundBuffer.h"
 
-1471274974 c:\myprograms\openalwrapper\gamecontent\audiomanager.h
+1472108650 c:\myprograms\openalwrapper\gamecontent\audiomanager.h
 	<iostream>
 	<string>
 	<vector>
@@ -209,7 +209,7 @@
 1471267290 source:c:\myprograms\openalwrapper\gameaudio\capture\capturedevice.cpp
 	"CaptureDevice.h"
 
-1471274854 c:\myprograms\openalwrapper\gameaudio\capture\capturedevice.h
+1472106785 c:\myprograms\openalwrapper\gameaudio\capture\capturedevice.h
 	<string>
 	<iostream>
 	<al.h>

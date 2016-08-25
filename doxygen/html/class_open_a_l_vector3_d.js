@@ -1,0 +1,27 @@
+var class_open_a_l_vector3_d =
+[
+    [ "OpenALVector3D", "class_open_a_l_vector3_d.html#a23e19f62b8fcec09e00f78534ea21e01", null ],
+    [ "OpenALVector3D", "class_open_a_l_vector3_d.html#a5d145ecfc41da9a41f2420a655bbc868", null ],
+    [ "OpenALVector3D", "class_open_a_l_vector3_d.html#a5166e6bafcd06042233833f80bd9729b", null ],
+    [ "~OpenALVector3D", "class_open_a_l_vector3_d.html#aed2761134d32639c04fbecb3146e9f86", null ],
+    [ "crossProduct", "class_open_a_l_vector3_d.html#a825a455722f1dc3c84b18f850ad023af", null ],
+    [ "dotProduct", "class_open_a_l_vector3_d.html#a83575d6d5b344dd27da3601f98aa7baf", null ],
+    [ "getX", "class_open_a_l_vector3_d.html#a03f90f131b8d3c837fc80bc710098012", null ],
+    [ "getY", "class_open_a_l_vector3_d.html#a01d2e632471e75a62d1efbfe11da1d2e", null ],
+    [ "getZ", "class_open_a_l_vector3_d.html#a4842ff99cfe264bdd0ac31411ccbc45c", null ],
+    [ "magnitude", "class_open_a_l_vector3_d.html#a6f307188e419d7d95c95a7de07182354", null ],
+    [ "normalise", "class_open_a_l_vector3_d.html#ab47e4d4ac453a0c547660fc818cb1dd3", null ],
+    [ "normalised", "class_open_a_l_vector3_d.html#a67b666f2452df587d8ffdd395ea265c2", null ],
+    [ "operator*", "class_open_a_l_vector3_d.html#aa8bd6f41c4e0582eb59298fa0eaaccbd", null ],
+    [ "operator+", "class_open_a_l_vector3_d.html#a352995777dbabd98fa33cb85d5601147", null ],
+    [ "operator-", "class_open_a_l_vector3_d.html#a8bd82691e45434886174e3ea37a49b3c", null ],
+    [ "operator/", "class_open_a_l_vector3_d.html#aaccb8f073e0eea5aba180e889c8f13e1", null ],
+    [ "operator=", "class_open_a_l_vector3_d.html#a7862abb5cb04435da130daa9433a57ee", null ],
+    [ "setPosition", "class_open_a_l_vector3_d.html#ac15620eacd52a692c4d9ea7b2542679c", null ],
+    [ "setX", "class_open_a_l_vector3_d.html#a4a9ef370f66bc9e93de6932a798f55dd", null ],
+    [ "setY", "class_open_a_l_vector3_d.html#a960c15d195395840c29e836df6cda4f5", null ],
+    [ "setZ", "class_open_a_l_vector3_d.html#ae2bf15250404ccb994200a683f14dc22", null ],
+    [ "x", "class_open_a_l_vector3_d.html#a3262055c1658a7c0116d18f337bea448", null ],
+    [ "y", "class_open_a_l_vector3_d.html#a096cb6b7776437daaeee9e33f1a078f5", null ],
+    [ "z", "class_open_a_l_vector3_d.html#a0e32d54900b353acc9885343b5f9974a", null ]
+];
