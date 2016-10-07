@@ -77,7 +77,7 @@ int main(int argc, char* argv[])
     stream3DUnitTest();
     // Run Music Unit Test
     musicUnitTest();
-    // Run Capture Test NOTE: Outside of my spec for a simple Game OpenAL Wrapper
+    // Run Capture Test NOTE: Outside of my spec for a simple GameAudio(OpenAL Wrapper)
     captureTest();
 
     // ShutDown the Audio System

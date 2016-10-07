@@ -1,8 +1,8 @@
 # depslib dependency file v1.0
-1471920881 source:c:\myprograms\openalwrapper\gameaudio\system\audiosystem.cpp
+1472134640 source:c:\myprograms\openalwrapper\gameaudio\system\audiosystem.cpp
 	"AudioSystem.h"
 
-1472122747 c:\myprograms\openalwrapper\gameaudio\system\audiosystem.h
+1472136875 c:\myprograms\openalwrapper\gameaudio\system\audiosystem.h
 	<cmath>
 	<string>
 	<iostream>
@@ -19,7 +19,7 @@
 
 1176444168 c:\mingw-4.8.1\libraries\openal\include\alc.h
 
-1472105918 source:c:\myprograms\openalwrapper\main.cpp
+1472137783 source:c:\myprograms\openalwrapper\main.cpp
 	<iostream>
 	<cstdio>
 	<conio.h>
@@ -29,7 +29,7 @@
 	"AudioManager.h"
 	<xmp.h>
 
-1471274964 c:\myprograms\openalwrapper\gameaudio\gameaudio.h
+1472137109 c:\myprograms\openalwrapper\gameaudio\gameaudio.h
 	"OpenALGlobals.h"
 	"OpenALUtils.h"
 	"LibSNDFileUtils.h"
@@ -71,7 +71,7 @@
 1472102806 source:c:\myprograms\openalwrapper\gameaudio\sound\sound.cpp
 	"Sound.h"
 
-1472124068 c:\myprograms\openalwrapper\gameaudio\sound\sound.h
+1472136463 c:\myprograms\openalwrapper\gameaudio\sound\sound.h
 	<al.h>
 	<alc.h>
 	"Utils/OpenALUtils.h"
@@ -80,12 +80,12 @@
 	"Sound/SoundBuffer.h"
 	"Source/Source.h"
 
-1471274916 c:\myprograms\openalwrapper\gameaudio\utils\openalutils.h
+1472136977 c:\myprograms\openalwrapper\gameaudio\utils\openalutils.h
 	<string>
 	<al.h>
 	<alc.h>
 
-1472134212 c:\myprograms\openalwrapper\gameaudio\sound\sound2d.h
+1472136499 c:\myprograms\openalwrapper\gameaudio\sound\sound2d.h
 	<limits>
 	<al.h>
 	<alc.h>
@@ -95,7 +95,7 @@
 	"Source/Source.h"
 	"Sound/Sound.h"
 
-1472129632 c:\myprograms\openalwrapper\gameaudio\sound\sound3d.h
+1472136495 c:\myprograms\openalwrapper\gameaudio\sound\sound3d.h
 	<limits>
 	<al.h>
 	<alc.h>
@@ -111,7 +111,7 @@
 1472134595 source:c:\myprograms\openalwrapper\gameaudio\sound\sound3d.cpp
 	"Sound3D.h"
 
-1472133841 c:\myprograms\openalwrapper\gameaudio\stream\stream.h
+1472136678 c:\myprograms\openalwrapper\gameaudio\stream\stream.h
 	<iostream>
 	<vector>
 	<sndfile.hh>
@@ -122,7 +122,7 @@
 	"Utils/OpenALVector3D.h"
 	"Source/Source.h"
 
-1472134321 c:\myprograms\openalwrapper\gameaudio\stream\stream2d.h
+1472136737 c:\myprograms\openalwrapper\gameaudio\stream\stream2d.h
 	<iostream>
 	<vector>
 	<limits>
@@ -133,7 +133,7 @@
 	"Utils/OpenALVector2D.h"
 	"Stream/Stream.h"
 
-1472134556 c:\myprograms\openalwrapper\gameaudio\stream\stream3d.h
+1472136751 c:\myprograms\openalwrapper\gameaudio\stream\stream3d.h
 	<iostream>
 	<vector>
 	<limits>
@@ -153,7 +153,7 @@
 1472134561 source:c:\myprograms\openalwrapper\gameaudio\stream\stream3d.cpp
 	"Stream3D.h"
 
-1472131205 c:\myprograms\openalwrapper\gameaudio\sound\soundbuffer.h
+1472136553 c:\myprograms\openalwrapper\gameaudio\sound\soundbuffer.h
 	<string>
 	<al.h>
 	<alc.h>
@@ -161,7 +161,7 @@
 1469780215 source:c:\myprograms\openalwrapper\gameaudio\sound\soundbuffer.cpp
 	"SoundBuffer.h"
 
-1472122747 c:\myprograms\openalwrapper\gamecontent\audiomanager.h
+1472136344 c:\myprograms\openalwrapper\gamecontent\audiomanager.h
 	<iostream>
 	<string>
 	<vector>
@@ -179,7 +179,7 @@
 1472123613 source:c:\myprograms\openalwrapper\gameaudio\music\music.cpp
 	"Music.h"
 
-1472123755 c:\myprograms\openalwrapper\gameaudio\music\music.h
+1472136432 c:\myprograms\openalwrapper\gameaudio\music\music.h
 	<string>
 	<iostream>
 	<al.h>
@@ -191,14 +191,14 @@
 
 1468931759 c:\mingw-4.8.1\libraries\libxmp-4.4.0\include\xmp.h
 
-1472114841 c:\myprograms\openalwrapper\gameaudio\openalglobals.h
+1472137163 c:\myprograms\openalwrapper\gameaudio\openalglobals.h
 	<al.h>
 	<alc.h>
 
-1472114831 c:\myprograms\openalwrapper\gameaudio\utils\openalvector2d.h
+1472137015 c:\myprograms\openalwrapper\gameaudio\utils\openalvector2d.h
 	<cmath>
 
-1472114834 c:\myprograms\openalwrapper\gameaudio\utils\openalvector3d.h
+1472137029 c:\myprograms\openalwrapper\gameaudio\utils\openalvector3d.h
 	<cmath>
 
 1470162048 source:c:\myprograms\openalwrapper\gameaudio\extensions\alew.cpp
@@ -209,7 +209,7 @@
 1471267290 source:c:\myprograms\openalwrapper\gameaudio\capture\capturedevice.cpp
 	"CaptureDevice.h"
 
-1472122747 c:\myprograms\openalwrapper\gameaudio\capture\capturedevice.h
+1472136394 c:\myprograms\openalwrapper\gameaudio\capture\capturedevice.h
 	<string>
 	<iostream>
 	<al.h>
@@ -219,13 +219,13 @@
 	"Utils/OpenALVector3D.h"
 	"Sound/SoundBuffer.h"
 
-1471274912 c:\myprograms\openalwrapper\gameaudio\utils\libxmputils.h
+1472136960 c:\myprograms\openalwrapper\gameaudio\utils\libxmputils.h
 	<xmp.h>
 
-1471274908 c:\myprograms\openalwrapper\gameaudio\utils\libsndfileutils.h
+1472136925 c:\myprograms\openalwrapper\gameaudio\utils\libsndfileutils.h
 	<sndfile.hh>
 
-1472132436 c:\myprograms\openalwrapper\gameaudio\source\source.h
+1472136595 c:\myprograms\openalwrapper\gameaudio\source\source.h
 	<string>
 	<iostream>
 	<al.h>

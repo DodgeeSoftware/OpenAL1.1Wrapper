@@ -146,7 +146,6 @@
 		</Unit>
 		<Unit filename="GameAudio/Music/Music.cpp" />
 		<Unit filename="GameAudio/Music/Music.h" />
-		<Unit filename="GameAudio/NOTES.txt" />
 		<Unit filename="GameAudio/OpenALGlobals.cpp" />
 		<Unit filename="GameAudio/OpenALGlobals.h" />
 		<Unit filename="GameAudio/Sound/Sound.cpp" />
