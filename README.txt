@@ -39,6 +39,13 @@ supported by libsnd (I prefer ogg, NOTE: I do not support mp3 and other non-free
 Stream's load method call play to begin playback. Being sure to update your stream in your programs update
 loop.
 
+~~~~~~~~
+WARNING
+~~~~~~~~
+Problem with OpenAL is there is no virtual channel mixing. This means you can only have 32 sounds effects at
+one time. Attempting to play sounds when there are more than 32 will simply fail and not produce the sound.
+
+
 ~~~~~~~~~~~~~~~~~~~
 Developmental Notes
 ~~~~~~~~~~~~~~~~~~~
