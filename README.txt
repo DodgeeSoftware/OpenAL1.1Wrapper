@@ -1,7 +1,4 @@
-
-***********
-* READ ME *
-***********
+# OpenALWrapper
 
 This OpenALWrapper is released under GPLv3
 
